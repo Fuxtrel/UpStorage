@@ -12,6 +12,7 @@
   </property>
   <property name="font">
    <font>
+    <family>MS UI Gothic</family>
     <pointsize>14</pointsize>
    </font>
   </property>
@@ -19,249 +20,629 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QGridLayout" name="gridLayout">
-    <item row="1" column="0">
-     <widget class="QWidget" name="widget" native="true">
-      <property name="minimumSize">
-       <size>
-        <width>1008</width>
-        <height>585</height>
-       </size>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="currentIndex">
+       <number>1</number>
       </property>
-      <property name="maximumSize">
-       <size>
-        <width>1008</width>
-        <height>585</height>
-       </size>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background: #FFFFFF;
-box-shadow: 3.75px 0px 15px rgba(65, 130, 183, 0.12), -3.75px 0px 15px rgba(65, 130, 183, 0.12);
-border-radius: 15px;</string>
-      </property>
-      <widget class="QLabel" name="label">
-       <property name="geometry">
-        <rect>
-         <x>590</x>
-         <y>41</y>
-         <width>199</width>
-         <height>44</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>Noto Sans CJK HK</family>
-         <pointsize>24</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>Регистрация</string>
-       </property>
-      </widget>
-      <widget class="QWidget" name="widget_2" native="true">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>0</y>
-         <width>400</width>
-         <height>585</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background: #64AEEA;
-border: 1px solid rgba(248, 248, 248, 0.6);
-box-sizing: border-box;
-/* для блоков */
-
-box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.8), 2px 2px 10px rgba(7, 62, 113, 0.05);
-border-radius: 15px;
-</string>
-       </property>
-       <widget class="QFrame" name="frame">
+      <widget class="QWidget" name="page_3">
+       <widget class="QWidget" name="widget" native="true">
         <property name="geometry">
          <rect>
-          <x>385</x>
-          <y>1</y>
-          <width>16</width>
-          <height>583</height>
+          <x>360</x>
+          <y>181</y>
+          <width>1008</width>
+          <height>585</height>
          </rect>
         </property>
+        <property name="minimumSize">
+         <size>
+          <width>1008</width>
+          <height>585</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>1008</width>
+          <height>585</height>
+         </size>
+        </property>
         <property name="styleSheet">
-         <string notr="true">border-color:#64AEEA;</string>
+         <string notr="true">background: #FFFFFF;
+border-radius: 15px;</string>
         </property>
-        <property name="frameShape">
-         <enum>QFrame::StyledPanel</enum>
-        </property>
-        <property name="frameShadow">
-         <enum>QFrame::Raised</enum>
-        </property>
-       </widget>
-      </widget>
-      <widget class="QPushButton" name="pushButton">
-       <property name="geometry">
-        <rect>
-         <x>547</x>
-         <y>461</y>
-         <width>285</width>
-         <height>45</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>Loma</family>
-         <pointsize>13</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background: #F7F9FB;
+        <widget class="QLabel" name="label">
+         <property name="geometry">
+          <rect>
+           <x>590</x>
+           <y>41</y>
+           <width>199</width>
+           <height>44</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Noto Sans CJK HK</family>
+           <pointsize>24</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Регистрация</string>
+         </property>
+        </widget>
+        <widget class="QWidget" name="widget_2" native="true">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>400</width>
+           <height>585</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: #64AEEA;
+border: 1px solid rgba(248, 248, 248, 0.6);
+border-radius: 15px;
+</string>
+         </property>
+         <widget class="QLabel" name="label_4">
+          <property name="geometry">
+           <rect>
+            <x>666</x>
+            <y>220</y>
+            <width>351</width>
+            <height>341</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-color: rgb(100, 174, 234);
+border-radius:15px;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_2">
+          <property name="geometry">
+           <rect>
+            <x>57</x>
+            <y>461</y>
+            <width>285</width>
+            <height>45</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Loma</family>
+            <pointsize>13</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background:rgb(100, 174, 234) ;
+border: 3px solid #F7F9FB; padding: 5px;
+border-radius: 15px;
+</string>
+          </property>
+          <property name="text">
+           <string>Перейти к авторизации</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit">
+         <property name="geometry">
+          <rect>
+           <x>496</x>
+           <y>142</y>
+           <width>388</width>
+           <height>47</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>MS Shell Dlg 2</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: rgb(238, 238, 236);
+border: 3px;
+border-color: rgb(114, 159, 207) ;
+border-radius: 15px;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="placeholderText">
+          <string>ФИО</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_2">
+         <property name="geometry">
+          <rect>
+           <x>496</x>
+           <y>211</y>
+           <width>388</width>
+           <height>47</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>MS Shell Dlg 2</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: rgb(238, 238, 236);
+border: 3px;
+border-color: rgb(114, 159, 207) ;
+border-radius: 15px;</string>
+         </property>
+         <property name="placeholderText">
+          <string>Email</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_3">
+         <property name="geometry">
+          <rect>
+           <x>496</x>
+           <y>281</y>
+           <width>388</width>
+           <height>47</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>MS Shell Dlg 2</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: rgb(238, 238, 236);
+border: 3px;
+border-color: rgb(114, 159, 207) ;
+border-radius: 15px;</string>
+         </property>
+         <property name="placeholderText">
+          <string>Пароль</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_2">
+         <property name="geometry">
+          <rect>
+           <x>500</x>
+           <y>340</y>
+           <width>387</width>
+           <height>91</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Nirmala UI</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-radius: 3px;</string>
+         </property>
+         <property name="text">
+          <string>  Я принимаю условия Пользовательского соглашения и даю свое согласие на обработку моей персональной информации на условиях определенных Политикой конфиденциальности</string>
+         </property>
+         <property name="textFormat">
+          <enum>Qt::AutoText</enum>
+         </property>
+         <property name="scaledContents">
+          <bool>false</bool>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignJustify|Qt::AlignTop</set>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="checkBox">
+         <property name="geometry">
+          <rect>
+           <x>510</x>
+           <y>340</y>
+           <width>16</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>CheckBox</string>
+         </property>
+        </widget>
+        <widget class="QWidget" name="widget_5" native="true">
+         <property name="geometry">
+          <rect>
+           <x>385</x>
+           <y>0</y>
+           <width>15</width>
+           <height>585</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_8">
+         <property name="geometry">
+          <rect>
+           <x>496</x>
+           <y>125</y>
+           <width>191</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_9">
+         <property name="geometry">
+          <rect>
+           <x>496</x>
+           <y>193</y>
+           <width>191</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_10">
+         <property name="geometry">
+          <rect>
+           <x>496</x>
+           <y>260</y>
+           <width>191</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton">
+         <property name="geometry">
+          <rect>
+           <x>550</x>
+           <y>461</y>
+           <width>281</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>13</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: #F7F9FB;
 border: 3px solid rgb(114, 159, 207); padding: 5px;
 border-radius: 15px;
 </string>
-       </property>
-       <property name="text">
-        <string>Зарегистрироваться</string>
-       </property>
+         </property>
+         <property name="text">
+          <string>Зарегистрироваться</string>
+         </property>
+        </widget>
+       </widget>
       </widget>
-      <widget class="QWidget" name="widget_4" native="true">
-       <property name="geometry">
-        <rect>
-         <x>496</x>
-         <y>349</y>
-         <width>387</width>
-         <height>80</height>
-        </rect>
-       </property>
-       <widget class="QCheckBox" name="checkBox">
+      <widget class="QWidget" name="page_4">
+       <widget class="QWidget" name="widget_3" native="true">
         <property name="geometry">
          <rect>
-          <x>0</x>
-          <y>2</y>
-          <width>16</width>
-          <height>16</height>
+          <x>360</x>
+          <y>180</y>
+          <width>1008</width>
+          <height>585</height>
          </rect>
         </property>
-        <property name="font">
-         <font>
-          <pointsize>6</pointsize>
-         </font>
+        <property name="minimumSize">
+         <size>
+          <width>1008</width>
+          <height>585</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>1008</width>
+          <height>585</height>
+         </size>
         </property>
         <property name="styleSheet">
-         <string notr="true">border-radius: 10px;</string>
+         <string notr="true">background: #FFFFFF;
+border-radius: 15px;</string>
+        </property>
+        <widget class="QPushButton" name="pushButton_4">
+         <property name="geometry">
+          <rect>
+           <x>155</x>
+           <y>460</y>
+           <width>250</width>
+           <height>45</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Loma</family>
+           <pointsize>13</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: #F7F9FB;
+border: 3px solid rgb(114, 159, 207); padding: 5px;
+border-radius: 15px;
+</string>
+         </property>
+         <property name="text">
+          <string>Войти</string>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="checkBox_2">
+         <property name="geometry">
+          <rect>
+           <x>86</x>
+           <y>366</y>
+           <width>16</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>CheckBox</string>
+         </property>
+        </widget>
+        <widget class="QWidget" name="widget_4" native="true">
+         <property name="geometry">
+          <rect>
+           <x>548</x>
+           <y>0</y>
+           <width>461</width>
+           <height>585</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: #64AEEA;
+border: 1px solid rgba(248, 248, 248, 0.6);
+border-radius: 15px;
+</string>
+         </property>
+         <widget class="QLabel" name="label_5">
+          <property name="geometry">
+           <rect>
+            <x>666</x>
+            <y>220</y>
+            <width>351</width>
+            <height>341</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-color: rgb(100, 174, 234);
+border-radius:15px;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_3">
+          <property name="geometry">
+           <rect>
+            <x>106</x>
+            <y>460</y>
+            <width>250</width>
+            <height>45</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Loma</family>
+            <pointsize>13</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background:rgb(100, 174, 234) ;
+border: 3px solid #F7F9FB; padding: 5px;
+border-radius: 15px;
+</string>
+          </property>
+          <property name="text">
+           <string>Зарегестрироваться</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_7">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>80</y>
+            <width>261</width>
+            <height>91</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>MS Shell Dlg 2</family>
+            <pointsize>20</pointsize>
+           </font>
+          </property>
+          <property name="tabletTracking">
+           <bool>false</bool>
+          </property>
+          <property name="acceptDrops">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: white;
+border-color:rgb(100, 174, 234);</string>
+          </property>
+          <property name="text">
+           <string>Добро пожаловать в UpStorage</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QCommandLinkButton" name="commandLinkButton">
+         <property name="geometry">
+          <rect>
+           <x>104</x>
+           <y>357</y>
+           <width>121</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Nirmala UI Semilight</family>
+           <pointsize>10</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+           <kerning>false</kerning>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>Запомнить меня</string>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_5">
+         <property name="geometry">
+          <rect>
+           <x>86</x>
+           <y>242</y>
+           <width>388</width>
+           <height>45</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>MS Shell Dlg 2</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: rgb(238, 238, 236);
+border: 3px;
+border-color: rgb(114, 159, 207) ;
+border-radius: 15px;</string>
+         </property>
+         <property name="placeholderText">
+          <string>Email</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_6">
+         <property name="geometry">
+          <rect>
+           <x>86</x>
+           <y>302</y>
+           <width>388</width>
+           <height>45</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>MS Shell Dlg 2</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: rgb(238, 238, 236);
+border: 3px;
+border-color: rgb(114, 159, 207) ;
+border-radius: 15px;</string>
+         </property>
+         <property name="placeholderText">
+          <string>Пароль</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_3">
+         <property name="geometry">
+          <rect>
+           <x>122</x>
+           <y>120</y>
+           <width>316</width>
+           <height>38</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Noto Sans CJK HK</family>
+           <pointsize>22</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Вход в учётную запись</string>
+         </property>
+        </widget>
+        <widget class="QCommandLinkButton" name="commandLinkButton_2">
+         <property name="geometry">
+          <rect>
+           <x>330</x>
+           <y>357</y>
+           <width>121</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Nirmala UI Semilight</family>
+           <pointsize>10</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+           <kerning>false</kerning>
+          </font>
+         </property>
+         <property name="text">
+          <string>Забыли пароль?</string>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+        </widget>
+        <widget class="QWidget" name="widget_6" native="true">
+         <property name="geometry">
+          <rect>
+           <x>534</x>
+           <y>0</y>
+           <width>30</width>
+           <height>585</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-width:0px;
+border-radius:0px;
+</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QLabel" name="label_6">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>240</y>
+          <width>241</width>
+          <height>421</height>
+         </rect>
         </property>
         <property name="text">
          <string/>
         </property>
        </widget>
-       <widget class="QLabel" name="label_2">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>3</y>
-          <width>387</width>
-          <height>81</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <pointsize>12</pointsize>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">border-radius: 3px;</string>
-        </property>
-        <property name="text">
-         <string>      Я принимаю условия Пользовательского соглашения и даю свое согласие на обработку моей персональной информации на условиях определенных Политикой конфиденциальности</string>
-        </property>
-        <property name="textFormat">
-         <enum>Qt::AutoText</enum>
-        </property>
-        <property name="scaledContents">
-         <bool>false</bool>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignJustify|Qt::AlignTop</set>
-        </property>
-        <property name="wordWrap">
-         <bool>true</bool>
-        </property>
-       </widget>
-       <zorder>label_2</zorder>
-       <zorder>checkBox</zorder>
-      </widget>
-      <widget class="QLineEdit" name="lineEdit">
-       <property name="geometry">
-        <rect>
-         <x>496</x>
-         <y>157</y>
-         <width>388</width>
-         <height>47</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>14</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background: rgb(238, 238, 236);
-border: 3px;
-border-color: rgb(114, 159, 207) ;
-border-radius: 15px;</string>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="placeholderText">
-        <string>ФИО</string>
-       </property>
-      </widget>
-      <widget class="QLineEdit" name="lineEdit_2">
-       <property name="geometry">
-        <rect>
-         <x>496</x>
-         <y>219</y>
-         <width>388</width>
-         <height>47</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>14</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background: rgb(238, 238, 236);
-border: 3px;
-border-color: rgb(114, 159, 207) ;
-border-radius: 15px;</string>
-       </property>
-       <property name="placeholderText">
-        <string>Email</string>
-       </property>
-      </widget>
-      <widget class="QLineEdit" name="lineEdit_3">
-       <property name="geometry">
-        <rect>
-         <x>496</x>
-         <y>281</y>
-         <width>388</width>
-         <height>47</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>14</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background: rgb(238, 238, 236);
-border: 3px;
-border-color: rgb(114, 159, 207) ;
-border-radius: 15px;</string>
-       </property>
-       <property name="placeholderText">
-        <string>Пароль</string>
-       </property>
       </widget>
      </widget>
     </item>
@@ -273,7 +654,7 @@ border-radius: 15px;</string>
      <x>0</x>
      <y>0</y>
      <width>1680</width>
-     <height>27</height>
+     <height>24</height>
     </rect>
    </property>
   </widget>
