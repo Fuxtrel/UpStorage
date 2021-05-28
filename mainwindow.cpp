@@ -28,8 +28,13 @@ void MainWindow::on_pushButton_clicked(){
     getRegValues();
 }
 
+void MainWindow::on_pushButton_4_clicked(){
+    getSignInValues();
+}
+
 bool MainWindow::getRegValues(){
-    if(getRegFIO() && getRegEmail() && getRegPass()){
+    bool checkFields[3] = {getRegFIO(), getRegEmail(), getRegPass()};
+    if(checkFields[0] && checkFields[1] && checkFields[2]){
         QFile file(authoirty_data_file);
         if(file.isOpen()){
             qDebug() << "File is open";
@@ -50,7 +55,7 @@ bool MainWindow::getRegValues(){
 }
 
 bool MainWindow::getRegEmail(){
-    if(ui->lineEdit->text().isEmpty()){
+    if(ui->lineEdit_2->text().isEmpty()){
         ui->label_9->setText("Неподходящее email");
         ui->label_9->setStyleSheet("color:#ff0000;");
         return false;
@@ -61,21 +66,25 @@ bool MainWindow::getRegEmail(){
     } else{
         ui->label_9->setText("Готово");
         ui->label_9->setStyleSheet("color:#4eeb00;");
-        fields.regemail = ui->lineEdit->text();
+        fields.regemail = ui->lineEdit_2->text();
         qDebug() << fields.regemail;
     }
     return true;
 }
 
 bool MainWindow::getRegPass(){
-    if(ui->lineEdit->text().isEmpty()){
+    if(ui->lineEdit_3->text().isEmpty()){
         ui->label_10->setText("Неподходящее пароль");
+        ui->label_10->setStyleSheet("color:#ff0000;");
+        return false;
+    }else if(ui->lineEdit_3->text().length() < 9){
+        ui->label_10->setText("Пароль слишком короткий");
         ui->label_10->setStyleSheet("color:#ff0000;");
         return false;
     }else{
         ui->label_10->setText("Готово");
         ui->label_10->setStyleSheet("color:#4eeb00;");
-        fields.regpass = ui->lineEdit_2->text();
+        fields.regpass = ui->lineEdit_3->text();
         qDebug() << fields.regpass;
     }
     return true;
@@ -96,14 +105,46 @@ bool MainWindow::getRegFIO(){
 }
 
 bool MainWindow::getSignInValues(){
+    bool checkFields[2] = {getSignInEmail(), getSignInPass()};
+    if(!checkFields[0] && !checkFields[1]){
+        return false;
+    }
     return true;
 }
 
 bool MainWindow::getSignInEmail(){
+    if(ui->lineEdit_5->text().isEmpty()){
+        ui->label_11->setText("Неподходящее email");
+        ui->label_11->setStyleSheet("color:#ff0000;");
+        return false;
+    }else if((!fields.checkEmail(ui->lineEdit_2->text()))) {
+        ui->label_11->setText("Неподходящее email");
+        ui->label_11->setStyleSheet("color:#ff0000;");
+        return false;
+    } else{
+        ui->label_11->setText("Готово");
+        ui->label_11->setStyleSheet("color:#4eeb00;");
+        fields.regemail = ui->lineEdit_5->text();
+        qDebug() << fields.regemail;
+    }
     return true;
 }
 
 bool MainWindow::getSignInPass(){
+    if(ui->lineEdit_6->text().isEmpty()){
+        ui->label_12->setText("Неподходящее пароль");
+        ui->label_12->setStyleSheet("color:#ff0000;");
+        return false;
+    }else if(ui->lineEdit_6->text().length() < 9){
+        ui->label_12->setText("Пароль слишком короткий");
+        ui->label_12->setStyleSheet("color:#ff0000;");
+        return false;
+    }else{
+        ui->label_12->setText("Готово");
+        ui->label_12->setStyleSheet("color:#4eeb00;");
+        fields.regpass = ui->lineEdit_6->text();
+        qDebug() << fields.regpass;
+    }
     return true;
 }
 

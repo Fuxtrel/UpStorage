@@ -314,6 +314,7 @@ border-radius: 15px;</string>
          </property>
          <property name="font">
           <font>
+           <family>MS Shell Dlg 2</family>
            <pointsize>13</pointsize>
           </font>
          </property>
@@ -355,31 +356,6 @@ border-radius: 15px;
          <string notr="true">background: #FFFFFF;
 border-radius: 15px;</string>
         </property>
-        <widget class="QPushButton" name="pushButton_4">
-         <property name="geometry">
-          <rect>
-           <x>155</x>
-           <y>460</y>
-           <width>250</width>
-           <height>45</height>
-          </rect>
-         </property>
-         <property name="font">
-          <font>
-           <family>Loma</family>
-           <pointsize>13</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background: #F7F9FB;
-border: 3px solid rgb(114, 159, 207); padding: 5px;
-border-radius: 15px;
-</string>
-         </property>
-         <property name="text">
-          <string>Войти</string>
-         </property>
-        </widget>
         <widget class="QCheckBox" name="checkBox_2">
          <property name="geometry">
           <rect>
@@ -521,7 +497,7 @@ border-color:rgb(100, 174, 234);</string>
          <property name="geometry">
           <rect>
            <x>86</x>
-           <y>242</y>
+           <y>236</y>
            <width>388</width>
            <height>45</height>
           </rect>
@@ -627,6 +603,56 @@ border-radius: 15px;</string>
           <string notr="true">border-width:0px;
 border-radius:0px;
 </string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_11">
+         <property name="geometry">
+          <rect>
+           <x>86</x>
+           <y>220</y>
+           <width>131</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_12">
+         <property name="geometry">
+          <rect>
+           <x>86</x>
+           <y>283</y>
+           <width>171</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_4">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>460</y>
+           <width>250</width>
+           <height>45</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>13</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: #F7F9FB;
+border: 3px solid rgb(114, 159, 207); padding: 5px;
+border-radius: 15px;
+</string>
+         </property>
+         <property name="text">
+          <string>Войти</string>
          </property>
         </widget>
        </widget>
