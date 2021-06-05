@@ -25,11 +25,62 @@ void MainWindow::on_pushButton_3_clicked(){
 }
 
 void MainWindow::on_pushButton_clicked(){
-    getRegValues();
+    if(getRegValues()){
+        QNetworkAccessManager *mgr = new QNetworkAccessManager(this);
+        const QUrl url(QStringLiteral("https://upstorage.net/api/auth/sign-up"));
+        QNetworkRequest request(url);
+        request.setHeader(QNetworkRequest::ContentTypeHeader, "application/json");
+        QJsonObject obj;
+        obj["email"] = fields.regemail;
+        obj["passsword"] = fields.regpass;
+        QJsonDocument doc(obj);
+        QByteArray data = doc.toJson();
+        qDebug() << doc.toJson();
+        QNetworkReply *reply = mgr->post(request, data);
+
+        QObject::connect(reply, &QNetworkReply::finished, [=](){
+            if(reply->error() == QNetworkReply::NoError){
+                QString contents = QString::fromUtf8(reply->readAll());
+                qDebug() << contents;
+            }
+            else{
+                QString err = reply->errorString();
+                qDebug() << err;
+                QString contents = QString::fromUtf8(reply->readAll());
+                qDebug() << contents;
+            }
+            reply->deleteLater();
+        });
+    }
 }
 
 void MainWindow::on_pushButton_4_clicked(){
-    getSignInValues();
+    if(getSignInValues()){
+        QNetworkAccessManager *mgr = new QNetworkAccessManager(this);
+        const QUrl url(QStringLiteral("https://upstorage.net/api/auth/sign-in"));
+        QNetworkRequest request(url);
+        request.setHeader(QNetworkRequest::ContentTypeHeader, "application/json");
+        QJsonObject obj;
+        obj["email"] = "a99som@rambler.ru";
+        obj["passsword"] = "1234";
+        obj["invitationToken"] = "";
+        obj["tenantId"] = "";
+        QJsonDocument doc(obj);
+        QByteArray data = doc.toJson();
+        QNetworkReply *reply = mgr->post(request, data);
+
+        QObject::connect(reply, &QNetworkReply::finished, [=](){
+            if(reply->error() == QNetworkReply::NoError){
+                QString contents = QString::fromUtf8(reply->readAll());
+                qDebug() << contents;
+            }
+            else{
+                QString err = reply->errorString();
+                qDebug() << err;
+            }
+            reply->deleteLater();
+        });
+    }
 }
 
 bool MainWindow::getRegValues(){
@@ -77,7 +128,7 @@ bool MainWindow::getRegPass(){
         ui->label_10->setText("Неподходящее пароль");
         ui->label_10->setStyleSheet("color:#ff0000;");
         return false;
-    }else if(ui->lineEdit_3->text().length() < 9){
+    }else if(ui->lineEdit_3->text().length() < 8){
         ui->label_10->setText("Пароль слишком короткий");
         ui->label_10->setStyleSheet("color:#ff0000;");
         return false;

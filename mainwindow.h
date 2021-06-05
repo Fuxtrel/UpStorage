@@ -7,6 +7,14 @@
 #include <QFile>
 #include <QDir>
 #include <QDataStream>
+#include <QNetworkAccessManager>
+#include <QNetworkRequest>
+#include <QJsonObject>
+#include <QJsonDocument>
+#include <QSsl>
+#include <QSslSocket>
+#include <QNetworkReply>
+
 #include "fields_values.h"
 
 
