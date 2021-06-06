@@ -6,9 +6,33 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1680</width>
-    <height>947</height>
+    <width>1280</width>
+    <height>832</height>
    </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1280</width>
+    <height>780</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1280</width>
+    <height>832</height>
+   </size>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>1280</width>
+    <height>780</height>
+   </size>
   </property>
   <property name="font">
    <font>
@@ -19,10 +43,65 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgba(0, 0, 0, 0);</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
+   <property name="minimumSize">
+    <size>
+     <width>1280</width>
+     <height>780</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1280</width>
+     <height>780</height>
+    </size>
+   </property>
+   <property name="autoFillBackground">
+    <bool>true</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgba(0, 0, 0, 0)</string>
+   </property>
    <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
     <item>
      <widget class="QStackedWidget" name="stackedWidget">
+      <property name="minimumSize">
+       <size>
+        <width>1280</width>
+        <height>780</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>1280</width>
+        <height>780</height>
+       </size>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+</string>
+      </property>
       <property name="currentIndex">
        <number>0</number>
       </property>
@@ -30,60 +109,54 @@
        <widget class="QWidget" name="widget" native="true">
         <property name="geometry">
          <rect>
-          <x>360</x>
-          <y>181</y>
-          <width>1008</width>
-          <height>585</height>
+          <x>0</x>
+          <y>0</y>
+          <width>1280</width>
+          <height>780</height>
          </rect>
         </property>
         <property name="minimumSize">
          <size>
-          <width>1008</width>
-          <height>585</height>
+          <width>1280</width>
+          <height>780</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>1008</width>
-          <height>585</height>
+          <width>1280</width>
+          <height>780</height>
          </size>
         </property>
         <property name="styleSheet">
          <string notr="true">background: #FFFFFF;
-border-radius: 15px;</string>
+
+</string>
         </property>
-        <widget class="QLabel" name="label">
-         <property name="geometry">
-          <rect>
-           <x>590</x>
-           <y>41</y>
-           <width>199</width>
-           <height>44</height>
-          </rect>
-         </property>
-         <property name="font">
-          <font>
-           <family>Noto Sans CJK HK</family>
-           <pointsize>24</pointsize>
-          </font>
-         </property>
-         <property name="text">
-          <string>Регистрация</string>
-         </property>
-        </widget>
         <widget class="QWidget" name="widget_2" native="true">
          <property name="geometry">
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>400</width>
-           <height>585</height>
+           <width>560</width>
+           <height>780</height>
           </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>560</width>
+           <height>780</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>560</width>
+           <height>780</height>
+          </size>
          </property>
          <property name="styleSheet">
           <string notr="true">background: #64AEEA;
 border: 1px solid rgba(248, 248, 248, 0.6);
-border-radius: 15px;
+
 </string>
          </property>
          <widget class="QLabel" name="label_4">
@@ -106,10 +179,10 @@ border-radius:15px;</string>
          <widget class="QPushButton" name="pushButton_2">
           <property name="geometry">
            <rect>
-            <x>57</x>
-            <y>461</y>
-            <width>285</width>
-            <height>45</height>
+            <x>100</x>
+            <y>610</y>
+            <width>301</width>
+            <height>51</height>
            </rect>
           </property>
           <property name="font">
@@ -129,187 +202,13 @@ border-radius: 15px;
           </property>
          </widget>
         </widget>
-        <widget class="QLineEdit" name="lineEdit">
-         <property name="geometry">
-          <rect>
-           <x>496</x>
-           <y>142</y>
-           <width>388</width>
-           <height>47</height>
-          </rect>
-         </property>
-         <property name="font">
-          <font>
-           <family>MS Shell Dlg 2</family>
-           <pointsize>14</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background: rgb(238, 238, 236);
-border: 3px;
-border-color: rgb(114, 159, 207) ;
-border-radius: 15px;</string>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-         <property name="placeholderText">
-          <string>ФИО</string>
-         </property>
-        </widget>
-        <widget class="QLineEdit" name="lineEdit_2">
-         <property name="geometry">
-          <rect>
-           <x>496</x>
-           <y>211</y>
-           <width>388</width>
-           <height>47</height>
-          </rect>
-         </property>
-         <property name="font">
-          <font>
-           <family>MS Shell Dlg 2</family>
-           <pointsize>14</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background: rgb(238, 238, 236);
-border: 3px;
-border-color: rgb(114, 159, 207) ;
-border-radius: 15px;</string>
-         </property>
-         <property name="placeholderText">
-          <string>Email</string>
-         </property>
-        </widget>
-        <widget class="QLineEdit" name="lineEdit_3">
-         <property name="geometry">
-          <rect>
-           <x>496</x>
-           <y>281</y>
-           <width>388</width>
-           <height>47</height>
-          </rect>
-         </property>
-         <property name="font">
-          <font>
-           <family>MS Shell Dlg 2</family>
-           <pointsize>14</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background: rgb(238, 238, 236);
-border: 3px;
-border-color: rgb(114, 159, 207) ;
-border-radius: 15px;</string>
-         </property>
-         <property name="placeholderText">
-          <string>Пароль</string>
-         </property>
-        </widget>
-        <widget class="QLabel" name="label_2">
-         <property name="geometry">
-          <rect>
-           <x>500</x>
-           <y>340</y>
-           <width>387</width>
-           <height>91</height>
-          </rect>
-         </property>
-         <property name="font">
-          <font>
-           <family>Nirmala UI</family>
-           <pointsize>12</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">border-radius: 3px;</string>
-         </property>
-         <property name="text">
-          <string>  Я принимаю условия Пользовательского соглашения и даю свое согласие на обработку моей персональной информации на условиях определенных Политикой конфиденциальности</string>
-         </property>
-         <property name="textFormat">
-          <enum>Qt::AutoText</enum>
-         </property>
-         <property name="scaledContents">
-          <bool>false</bool>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignJustify|Qt::AlignTop</set>
-         </property>
-         <property name="wordWrap">
-          <bool>true</bool>
-         </property>
-        </widget>
-        <widget class="QCheckBox" name="checkBox">
-         <property name="geometry">
-          <rect>
-           <x>510</x>
-           <y>340</y>
-           <width>16</width>
-           <height>20</height>
-          </rect>
-         </property>
-         <property name="text">
-          <string>CheckBox</string>
-         </property>
-        </widget>
-        <widget class="QWidget" name="widget_5" native="true">
-         <property name="geometry">
-          <rect>
-           <x>385</x>
-           <y>0</y>
-           <width>15</width>
-           <height>585</height>
-          </rect>
-         </property>
-        </widget>
-        <widget class="QLabel" name="label_8">
-         <property name="geometry">
-          <rect>
-           <x>496</x>
-           <y>125</y>
-           <width>191</width>
-           <height>16</height>
-          </rect>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
-        <widget class="QLabel" name="label_9">
-         <property name="geometry">
-          <rect>
-           <x>496</x>
-           <y>193</y>
-           <width>191</width>
-           <height>16</height>
-          </rect>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
-        <widget class="QLabel" name="label_10">
-         <property name="geometry">
-          <rect>
-           <x>496</x>
-           <y>260</y>
-           <width>191</width>
-           <height>16</height>
-          </rect>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
         <widget class="QPushButton" name="pushButton">
          <property name="geometry">
           <rect>
-           <x>550</x>
-           <y>461</y>
-           <width>281</width>
-           <height>51</height>
+           <x>753</x>
+           <y>650</y>
+           <width>334</width>
+           <height>60</height>
           </rect>
          </property>
          <property name="font">
@@ -328,60 +227,303 @@ border-radius: 15px;
           <string>Зарегистрироваться</string>
          </property>
         </widget>
+        <widget class="QWidget" name="verticalLayoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>640</x>
+           <y>100</y>
+           <width>561</width>
+           <height>391</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>360</width>
+              <height>44</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Noto Sans CJK HK</family>
+              <pointsize>21</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Регистрация</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_8">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit">
+            <property name="minimumSize">
+             <size>
+              <width>480</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>60</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>MS Shell Dlg 2</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background: rgb(238, 238, 236);
+border: 3px;
+border-color: rgb(114, 159, 207) ;
+border-radius: 15px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="placeholderText">
+             <string>ФИО</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_9">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_2">
+            <property name="minimumSize">
+             <size>
+              <width>480</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>480</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>MS Shell Dlg 2</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background: rgb(238, 238, 236);
+border: 3px;
+border-color: rgb(114, 159, 207) ;
+border-radius: 15px;</string>
+            </property>
+            <property name="placeholderText">
+             <string>Email</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_10">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_3">
+            <property name="minimumSize">
+             <size>
+              <width>480</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>480</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>MS Shell Dlg 2</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background: rgb(238, 238, 236);
+border: 3px;
+border-color: rgb(114, 159, 207) ;
+border-radius: 15px;</string>
+            </property>
+            <property name="placeholderText">
+             <string>Пароль</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QLabel" name="label_2">
+         <property name="geometry">
+          <rect>
+           <x>690</x>
+           <y>500</y>
+           <width>491</width>
+           <height>81</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Я принимаю условия Пользовательского соглашения и даю свое согласие на обработку моей персональной информации на условиях определенных Политикой конфиденциальности</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="checkBox">
+         <property name="geometry">
+          <rect>
+           <x>650</x>
+           <y>500</y>
+           <width>21</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>600</width>
+           <height>90</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>aakar</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">subcontrol-position: left top;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
        </widget>
       </widget>
       <widget class="QWidget" name="page_4">
        <widget class="QWidget" name="widget_3" native="true">
         <property name="geometry">
          <rect>
-          <x>360</x>
-          <y>180</y>
-          <width>1008</width>
-          <height>585</height>
+          <x>0</x>
+          <y>0</y>
+          <width>1280</width>
+          <height>780</height>
          </rect>
         </property>
         <property name="minimumSize">
          <size>
-          <width>1008</width>
-          <height>585</height>
+          <width>1280</width>
+          <height>780</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>1008</width>
-          <height>585</height>
+          <width>1280</width>
+          <height>780</height>
          </size>
         </property>
         <property name="styleSheet">
          <string notr="true">background: #FFFFFF;
-border-radius: 15px;</string>
+
+</string>
         </property>
-        <widget class="QCheckBox" name="checkBox_2">
-         <property name="geometry">
-          <rect>
-           <x>86</x>
-           <y>366</y>
-           <width>16</width>
-           <height>20</height>
-          </rect>
-         </property>
-         <property name="text">
-          <string>CheckBox</string>
-         </property>
-        </widget>
         <widget class="QWidget" name="widget_4" native="true">
          <property name="geometry">
           <rect>
-           <x>548</x>
+           <x>720</x>
            <y>0</y>
-           <width>461</width>
-           <height>585</height>
+           <width>560</width>
+           <height>780</height>
           </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>780</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>780</height>
+          </size>
          </property>
          <property name="styleSheet">
           <string notr="true">background: #64AEEA;
 border: 1px solid rgba(248, 248, 248, 0.6);
-border-radius: 15px;
+
 </string>
          </property>
          <widget class="QLabel" name="label_5">
@@ -404,11 +546,23 @@ border-radius:15px;</string>
          <widget class="QPushButton" name="pushButton_3">
           <property name="geometry">
            <rect>
-            <x>106</x>
-            <y>460</y>
-            <width>250</width>
-            <height>45</height>
+            <x>128</x>
+            <y>650</y>
+            <width>334</width>
+            <height>70</height>
            </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>334</width>
+            <height>70</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>334</width>
+            <height>60</height>
+           </size>
           </property>
           <property name="font">
            <font>
@@ -417,7 +571,7 @@ border-radius:15px;</string>
            </font>
           </property>
           <property name="styleSheet">
-           <string notr="true">background:rgb(100, 174, 234) ;
+           <string notr="true">background:white ;
 border: 3px solid #F7F9FB; padding: 5px;
 border-radius: 15px;
 </string>
@@ -429,16 +583,16 @@ border-radius: 15px;
          <widget class="QLabel" name="label_7">
           <property name="geometry">
            <rect>
-            <x>100</x>
-            <y>80</y>
-            <width>261</width>
-            <height>91</height>
+            <x>129</x>
+            <y>70</y>
+            <width>334</width>
+            <height>88</height>
            </rect>
           </property>
           <property name="font">
            <font>
             <family>MS Shell Dlg 2</family>
-            <pointsize>20</pointsize>
+            <pointsize>18</pointsize>
            </font>
           </property>
           <property name="tabletTracking">
@@ -462,183 +616,26 @@ border-color:rgb(100, 174, 234);</string>
           </property>
          </widget>
         </widget>
-        <widget class="QCommandLinkButton" name="commandLinkButton">
-         <property name="geometry">
-          <rect>
-           <x>104</x>
-           <y>357</y>
-           <width>121</width>
-           <height>31</height>
-          </rect>
-         </property>
-         <property name="font">
-          <font>
-           <family>Nirmala UI Semilight</family>
-           <pointsize>10</pointsize>
-           <weight>50</weight>
-           <bold>false</bold>
-           <kerning>false</kerning>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true"/>
-         </property>
-         <property name="text">
-          <string>Запомнить меня</string>
-         </property>
-         <property name="iconSize">
-          <size>
-           <width>0</width>
-           <height>0</height>
-          </size>
-         </property>
-        </widget>
-        <widget class="QLineEdit" name="lineEdit_5">
-         <property name="geometry">
-          <rect>
-           <x>86</x>
-           <y>236</y>
-           <width>388</width>
-           <height>45</height>
-          </rect>
-         </property>
-         <property name="font">
-          <font>
-           <family>MS Shell Dlg 2</family>
-           <pointsize>14</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background: rgb(238, 238, 236);
-border: 3px;
-border-color: rgb(114, 159, 207) ;
-border-radius: 15px;</string>
-         </property>
-         <property name="placeholderText">
-          <string>Email</string>
-         </property>
-        </widget>
-        <widget class="QLineEdit" name="lineEdit_6">
-         <property name="geometry">
-          <rect>
-           <x>86</x>
-           <y>302</y>
-           <width>388</width>
-           <height>45</height>
-          </rect>
-         </property>
-         <property name="font">
-          <font>
-           <family>MS Shell Dlg 2</family>
-           <pointsize>14</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background: rgb(238, 238, 236);
-border: 3px;
-border-color: rgb(114, 159, 207) ;
-border-radius: 15px;</string>
-         </property>
-         <property name="placeholderText">
-          <string>Пароль</string>
-         </property>
-        </widget>
-        <widget class="QLabel" name="label_3">
-         <property name="geometry">
-          <rect>
-           <x>122</x>
-           <y>120</y>
-           <width>316</width>
-           <height>38</height>
-          </rect>
-         </property>
-         <property name="font">
-          <font>
-           <family>Noto Sans CJK HK</family>
-           <pointsize>22</pointsize>
-          </font>
-         </property>
-         <property name="text">
-          <string>Вход в учётную запись</string>
-         </property>
-        </widget>
-        <widget class="QCommandLinkButton" name="commandLinkButton_2">
-         <property name="geometry">
-          <rect>
-           <x>330</x>
-           <y>357</y>
-           <width>121</width>
-           <height>31</height>
-          </rect>
-         </property>
-         <property name="font">
-          <font>
-           <family>Nirmala UI Semilight</family>
-           <pointsize>10</pointsize>
-           <weight>50</weight>
-           <bold>false</bold>
-           <kerning>false</kerning>
-          </font>
-         </property>
-         <property name="text">
-          <string>Забыли пароль?</string>
-         </property>
-         <property name="iconSize">
-          <size>
-           <width>0</width>
-           <height>0</height>
-          </size>
-         </property>
-        </widget>
-        <widget class="QWidget" name="widget_6" native="true">
-         <property name="geometry">
-          <rect>
-           <x>534</x>
-           <y>0</y>
-           <width>30</width>
-           <height>585</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">border-width:0px;
-border-radius:0px;
-</string>
-         </property>
-        </widget>
-        <widget class="QLabel" name="label_11">
-         <property name="geometry">
-          <rect>
-           <x>86</x>
-           <y>220</y>
-           <width>131</width>
-           <height>16</height>
-          </rect>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
-        <widget class="QLabel" name="label_12">
-         <property name="geometry">
-          <rect>
-           <x>86</x>
-           <y>283</y>
-           <width>171</width>
-           <height>16</height>
-          </rect>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
         <widget class="QPushButton" name="pushButton_4">
          <property name="geometry">
           <rect>
-           <x>150</x>
-           <y>460</y>
-           <width>250</width>
-           <height>45</height>
+           <x>193</x>
+           <y>650</y>
+           <width>334</width>
+           <height>60</height>
           </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>334</width>
+           <height>60</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>334</width>
+           <height>60</height>
+          </size>
          </property>
          <property name="font">
           <font>
@@ -655,19 +652,260 @@ border-radius: 15px;</string>
           <string>Войти</string>
          </property>
         </widget>
-       </widget>
-       <widget class="QLabel" name="label_6">
-        <property name="geometry">
-         <rect>
-          <x>120</x>
-          <y>240</y>
-          <width>241</width>
-          <height>421</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
+        <widget class="QWidget" name="verticalLayoutWidget_2">
+         <property name="geometry">
+          <rect>
+           <x>120</x>
+           <y>150</y>
+           <width>482</width>
+           <height>406</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <widget class="QLabel" name="label_3">
+              <property name="minimumSize">
+               <size>
+                <width>361</width>
+                <height>44</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>361</width>
+                <height>44</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Noto Sans CJK HK</family>
+                <pointsize>19</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Вход в учётную запись</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::MinimumExpanding</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>107</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_11">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_5">
+            <property name="minimumSize">
+             <size>
+              <width>480</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>480</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>MS Shell Dlg 2</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background: rgb(238, 238, 236);
+border: 3px;
+border-color: rgb(114, 159, 207) ;
+border-radius: 15px;</string>
+            </property>
+            <property name="placeholderText">
+             <string>Email</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_12">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_6">
+            <property name="minimumSize">
+             <size>
+              <width>480</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>480</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>MS Shell Dlg 2</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background: rgb(238, 238, 236);
+border: 3px;
+border-color: rgb(114, 159, 207) ;
+border-radius: 15px;</string>
+            </property>
+            <property name="placeholderText">
+             <string>Пароль</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="widget_7" native="true">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>40</height>
+             </size>
+            </property>
+            <widget class="QCheckBox" name="checkBox_2">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>10</y>
+               <width>171</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>1000</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Запомнить меня</string>
+             </property>
+            </widget>
+            <widget class="QCommandLinkButton" name="commandLinkButton_2">
+             <property name="geometry">
+              <rect>
+               <x>310</x>
+               <y>0</y>
+               <width>165</width>
+               <height>30</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>165</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>165</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Nirmala UI Semilight</family>
+               <pointsize>10</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+               <strikeout>false</strikeout>
+               <kerning>false</kerning>
+              </font>
+             </property>
+             <property name="layoutDirection">
+              <enum>Qt::LeftToRight</enum>
+             </property>
+             <property name="text">
+              <string>Забыли пароль?</string>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="checkable">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
        </widget>
       </widget>
      </widget>
@@ -679,8 +917,8 @@ border-radius: 15px;</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1680</width>
-     <height>24</height>
+     <width>1280</width>
+     <height>26</height>
     </rect>
    </property>
   </widget>

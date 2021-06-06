@@ -10,6 +10,10 @@ set(CMAKE_AUTORCC ON)
 
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+if(UNIX)
+    set(CMAKE_PREFIX_PATH "/home/alex/Qt/5.15.2/gcc_64")
+endif()
+
 
 
 # QtCreator supports the following variables for Android, which are identical to qmake Android variables.
@@ -26,7 +30,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 #endif()
 
 find_package(OpenSSL REQUIRED)
-find_package(QT NAMES Qt6 Qt5 COMPONENTS Widgets Svg REQUIRED)
+find_package(QT NAMES Qt5 Qt6 COMPONENTS Widgets Svg REQUIRED)
 find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Network Widgets Svg REQUIRED)
 
 set(PROJECT_SOURCES
@@ -57,7 +61,7 @@ endif()
 
 include_directories (${OpenSSL_INCLUDE_DIRS})
 link_directories(UpStorage ${OpenSSL_LIBRARY_DIRS})
-target_link_libraries(UpStorage PRIVATE Qt${QT_VERSION_MAJOR}::Network Qt${QT_VERSION_MAJOR}::Widgets Qt${QT_VERSION_MAJOR}::Svg OpenSSL::SSL)
+target_link_libraries(UpStorage PRIVATE Qt${QT_VERSION_MAJOR}::Network Qt${QT_VERSION_MAJOR}::Widgets OpenSSL::SSL Qt${QT_VERSION_MAJOR}::Svg)
 
 set_target_properties(UpStorage PROPERTIES
     MACOSX_BUNDLE_GUI_IDENTIFIER my.example.com

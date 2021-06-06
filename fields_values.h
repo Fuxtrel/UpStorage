@@ -2,6 +2,7 @@
 #define FIELDS_VALUES_H
 
 #include <QMainWindow>
+#include <QDebug>
 
 
 class Fields_values{

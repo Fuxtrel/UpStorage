@@ -10,6 +10,88 @@ MainWindow::MainWindow(QWidget *parent)
     ui->stackedWidget->setCurrentIndex(0);
     authoirty_data_file = QDir::currentPath() + "/authoirty_data_file.txt";
     qDebug() << authoirty_data_file;
+
+    //фон из облачков на странице регистрации
+    auto reg_clouds = new QSvgWidget(ui->widget_2);
+    QString path_clouds =  + "../clouds.svg";
+    reg_clouds->setGeometry(0,0,560, 780);
+    reg_clouds->setStyleSheet(
+                     "border-color:#64AEEA;"
+                              "background-color:rgba(0, 0, 0, 0);"
+                              "border-radius: 15px;"
+                              );
+    reg_clouds->load(path_clouds);
+
+    //фон из облачков на странице входа
+    auto in_clouds = new QSvgWidget(ui->widget_4);
+    in_clouds->setGeometry(0,0,560, 780);
+    in_clouds->setStyleSheet(
+                    "border-color:#64AEEA;"
+                             "background-color:rgba(0, 0, 0, 0);"
+                             "border-radius: 15px;"
+                             );
+    in_clouds->load(path_clouds);
+
+    //чел ты на странице регистрации
+    auto svgw = new QSvgWidget(ui->widget_2);
+    QString path =  + "../chelty.svg";
+    svgw->setGeometry(30,110,363, 400);
+    svgw->setStyleSheet("border-color:#64AEEA;"
+                        "background-color:rgba(0, 0, 0, 0);"
+                        "border-color:rgba(100, 174, 234, 0);");
+    svgw->load(path);
+
+    //логотип на сранице входит
+    auto svgw_1 = new QSvgWidget(ui->widget_3);
+    QString path_2 =  + "../logo.svg";
+    svgw_1->setGeometry(25,25,185, 46);
+    svgw_1->setStyleSheet("border-color:#64AEEA");
+    svgw_1->load(path_2);
+
+    //кнопка на странице регистрации свап
+    ui->pushButton_2 = new QPushButton(reg_clouds);
+    ui->pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
+    ui->pushButton_2->setGeometry(QRect(100, 650, 334, 60));
+    QFont font1;
+    font1.setFamily(QString::fromUtf8("Loma"));
+    font1.setPointSize(13);
+    ui->pushButton_2->setFont(font1);
+    ui->pushButton_2->setStyleSheet(QString::fromUtf8("background:rgb(100, 174, 234) ;\n"
+                                                  "border: 3px solid #F7F9FB; padding: 5px;\n"
+                                                  "border-radius: 15px;\n"
+                                                  ""));
+    ui->pushButton_2->setText(QCoreApplication::translate("MainWindow", "\320\237\320\265\321\200\320\265\320\271\321\202\320\270 \320\272 \320\260\320\262\321\202\320\276\321\200\320\270\320\267\320\260\321\206\320\270\320\270", nullptr));
+
+    //кнопка на странице входа свап
+    ui->pushButton_3 = new QPushButton(in_clouds);
+    ui->pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
+    ui->pushButton_3->setGeometry(QRect(128, 650, 334, 60));
+    ui->pushButton_3->setMinimumSize(QSize(334, 70));
+    ui->pushButton_3->setMaximumSize(QSize(334, 60));
+    ui->pushButton_3->setFont(font1);
+    ui->pushButton_3->setStyleSheet(QString::fromUtf8("background:white ;\n"
+                                                  "border: 3px solid #F7F9FB; padding: 5px;\n"
+                                                  "border-radius: 15px;\n"
+                                                  ""));
+    ui->pushButton_3->setText(QCoreApplication::translate("MainWindow", "\320\227\320\260\321\200\320\265\320\263\320\265\321\201\321\202\321\200\320\270\321\200\320\276\320\262\320\260\321\202\321\214\321\201\321\217", nullptr));
+   //надпись на странице входа
+    ui->label_7 = new QLabel(in_clouds);
+    ui->label_7->setObjectName(QString::fromUtf8("label_7"));
+    ui->label_7->setGeometry(QRect(129, 70, 334, 88));
+    QFont font6;
+    font6.setFamily(QString::fromUtf8("MS Shell Dlg 2"));
+    font6.setPointSize(18);
+    ui->label_7->setFont(font6);
+    ui->label_7->setTabletTracking(false);
+    ui->label_7->setAcceptDrops(false);
+    ui->label_7->setStyleSheet(QString::fromUtf8("color: white;\n"
+                                             "border-color:rgba(100, 174, 234, 0);"
+                                             "background-color: rgba(0, 0, 0, 0 ;)"));
+    ui->label_7->setAlignment(Qt::AlignCenter);
+    ui->label_7->setWordWrap(true);
+    ui->label_7->setText(QCoreApplication::translate("MainWindow", "\320\224\320\276\320\261\321\200\320\276 \320\277\320\276\320\266\320\260\320\273\320\276\320\262\320\260\321\202\321\214 \320\262 UpStorage", nullptr));
+    connect(ui->pushButton_2, SIGNAL (clicked()), this, SLOT (on_pushButton_2_clicked()));
+    connect(ui->pushButton_3, SIGNAL (clicked()), this, SLOT (on_pushButton_3_clicked()));
 }
 
 MainWindow::~MainWindow(){
@@ -198,7 +280,6 @@ bool MainWindow::getSignInPass(){
     }
     return true;
 }
-
 
 
 

@@ -3,7 +3,6 @@
 
 #include <QMainWindow>
 #include <QStackedWidget>
-#include <QtSvgWidgets/QSvgWidget>
 #include <QFile>
 #include <QDir>
 #include <QDataStream>
@@ -14,7 +13,7 @@
 #include <QSsl>
 #include <QSslSocket>
 #include <QNetworkReply>
-
+#include <QtSvg/QSvgWidget>
 #include "fields_values.h"
 
 
