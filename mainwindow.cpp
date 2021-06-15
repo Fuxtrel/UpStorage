@@ -92,6 +92,11 @@ MainWindow::MainWindow(QWidget *parent)
     ui->label_7->setText(QCoreApplication::translate("MainWindow", "\320\224\320\276\320\261\321\200\320\276 \320\277\320\276\320\266\320\260\320\273\320\276\320\262\320\260\321\202\321\214 \320\262 UpStorage", nullptr));
     connect(ui->pushButton_2, SIGNAL (clicked()), this, SLOT (on_pushButton_2_clicked()));
     connect(ui->pushButton_3, SIGNAL (clicked()), this, SLOT (on_pushButton_3_clicked()));
+    connect(ui->commandLinkButton_2, SIGNAL (clicked()), this, SLOT (on_commandLinkButton_2()));
+    connect(ui->pushButton_5, SIGNAL (clicked()), this, SLOT (on_commandLinkButton_5()));
+    connect(ui->pushButton_6, SIGNAL (clicked()), this, SLOT (on_commandLinkButton_6()));
+    connect(ui->pushButton_8, SIGNAL (clicked()), this, SLOT (on_commandLinkButton_8()));
+
 }
 
 MainWindow::~MainWindow(){
@@ -105,6 +110,27 @@ void MainWindow::on_pushButton_2_clicked(){
 void MainWindow::on_pushButton_3_clicked(){
     ui->stackedWidget->setCurrentIndex(0);
 }
+
+void MainWindow::on_commandLinkButton_2(){
+    ui->stackedWidget->setCurrentIndex(2);
+}
+
+
+void MainWindow::on_pushButton_5_clicked(){
+    if(getRecoverEmail()){
+        ui->stackedWidget->setCurrentIndex(3);
+    }
+}
+
+void MainWindow::on_pushButton_6_clicked(){
+    ui->stackedWidget->setCurrentIndex(0);
+}
+
+void MainWindow::on_pushButton_8_clicked(){
+    ui->stackedWidget->setCurrentIndex(0);
+}
+
+
 
 void MainWindow::on_pushButton_clicked(){
     if(getRegValues()){
@@ -162,6 +188,12 @@ void MainWindow::on_pushButton_4_clicked(){
             }
             reply->deleteLater();
         });
+        ui->stackedWidget->setCurrentIndex(4);
+        if(ui->stackedWidget->currentIndex() == 4) {
+            ui->centralwidget->setMaximumHeight(2160);
+            ui->home_page->setMaximumWidth(3840);
+            ui->home_page->setMaximumHeight(2160);
+        }
     }
 }
 
@@ -250,7 +282,7 @@ bool MainWindow::getSignInEmail(){
         ui->label_11->setText("Неподходящее email");
         ui->label_11->setStyleSheet("color:#ff0000;");
         return false;
-    }else if((!fields.checkEmail(ui->lineEdit_2->text()))) {
+    }else if((!fields.checkEmail(ui->lineEdit_5->text()))) {
         ui->label_11->setText("Неподходящее email");
         ui->label_11->setStyleSheet("color:#ff0000;");
         return false;
@@ -277,6 +309,23 @@ bool MainWindow::getSignInPass(){
         ui->label_12->setStyleSheet("color:#4eeb00;");
         fields.regpass = ui->lineEdit_6->text();
         qDebug() << fields.regpass;
+    }
+    return true;
+}
+
+bool MainWindow::getRecoverEmail() {
+    if(ui->lineEdit_4->text().isEmpty()){
+        ui->label_14->setText("Неподходящее email");
+        ui->label_14->setStyleSheet("color:#ff0000;");
+        return false;
+    }else if((!fields.checkEmail(ui->lineEdit_4->text()))) {
+        ui->label_14->setText("Неподходящее email");
+        ui->label_14->setStyleSheet("color:#ff0000;");
+        return false;
+    } else{
+        ui->label_14->setText("Готово");
+        ui->label_14->setStyleSheet("color:#4eeb00;");
+        qDebug() << fields.regemail;
     }
     return true;
 }

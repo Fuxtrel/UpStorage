@@ -15,6 +15,8 @@
 #include <QNetworkReply>
 #include <QtSvg/QSvgWidget>
 #include "fields_values.h"
+#include <QtCha>
+#include "./ui_mainwindow.h"
 
 
 QT_BEGIN_NAMESPACE
@@ -40,6 +42,15 @@ private slots:
 
     void on_pushButton_4_clicked();
 
+    void on_pushButton_5_clicked();
+
+    void on_pushButton_6_clicked();
+
+    void on_pushButton_8_clicked();
+
+    void on_commandLinkButton_2();
+
+
 private:
 
     QString authoirty_data_file;
@@ -51,5 +62,6 @@ private:
     bool getSignInValues();
     bool getSignInEmail();
     bool getSignInPass();
+    bool getRecoverEmail();
 };
 #endif // MAINWINDOW_H

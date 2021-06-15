@@ -30,7 +30,7 @@ endif()
 #endif()
 
 find_package(OpenSSL REQUIRED)
-find_package(QT NAMES Qt5 Qt6 COMPONENTS Widgets Svg REQUIRED)
+find_package(QT NAMES Qt5 Qt6 COMPONENTS Widgets SvgREQUIRED)
 find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Network Widgets Svg REQUIRED)
 
 set(PROJECT_SOURCES

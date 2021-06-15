@@ -13,6 +13,8 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QCheckBox>
 #include <QtWidgets/QCommandLinkButton>
+#include <QtWidgets/QFormLayout>
+#include <QtWidgets/QGridLayout>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
@@ -31,9 +33,10 @@ class Ui_MainWindow
 {
 public:
     QWidget *centralwidget;
-    QVBoxLayout *verticalLayout;
+    QFormLayout *formLayout;
     QStackedWidget *stackedWidget;
-    QWidget *page_3;
+    QWidget *reg_page;
+    QGridLayout *gridLayout_2;
     QWidget *widget;
     QWidget *widget_2;
     QLabel *label_4;
@@ -50,7 +53,8 @@ public:
     QLineEdit *lineEdit_3;
     QLabel *label_2;
     QCheckBox *checkBox;
-    QWidget *page_4;
+    QWidget *in_page;
+    QGridLayout *gridLayout_3;
     QWidget *widget_3;
     QWidget *widget_4;
     QLabel *label_5;
@@ -69,6 +73,38 @@ public:
     QWidget *widget_7;
     QCheckBox *checkBox_2;
     QCommandLinkButton *commandLinkButton_2;
+    QWidget *recover_pass_page;
+    QGridLayout *gridLayout;
+    QLabel *label_6;
+    QLabel *label_13;
+    QLabel *label_14;
+    QLineEdit *lineEdit_4;
+    QPushButton *pushButton_5;
+    QPushButton *pushButton_6;
+    QWidget *get_cod_page;
+    QGridLayout *gridLayout_4;
+    QLabel *label_15;
+    QLabel *label_16;
+    QLabel *label_17;
+    QLineEdit *lineEdit_7;
+    QPushButton *pushButton_7;
+    QPushButton *pushButton_8;
+    QWidget *home_page;
+    QGridLayout *gridLayout_5;
+    QWidget *widget_10;
+    QFormLayout *formLayout_2;
+    QWidget *widget_5;
+    QWidget *verticalLayoutWidget_3;
+    QVBoxLayout *verticalLayout_3;
+    QLabel *label_18;
+    QCommandLinkButton *commandLinkButton;
+    QCommandLinkButton *commandLinkButton_3;
+    QCommandLinkButton *commandLinkButton_4;
+    QCommandLinkButton *commandLinkButton_5;
+    QWidget *widget_6;
+    QVBoxLayout *verticalLayout_6;
+    QWidget *widget_8;
+    QWidget *widget_9;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -76,14 +112,14 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(1280, 832);
+        MainWindow->resize(1280, 780);
         QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Minimum);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(MainWindow->sizePolicy().hasHeightForWidth());
         MainWindow->setSizePolicy(sizePolicy);
         MainWindow->setMinimumSize(QSize(1280, 780));
-        MainWindow->setMaximumSize(QSize(1280, 832));
+        MainWindow->setMaximumSize(QSize(3840, 2160));
         MainWindow->setBaseSize(QSize(1280, 780));
         QFont font;
         font.setFamily(QString::fromUtf8("MS UI Gothic"));
@@ -93,26 +129,28 @@ public:
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         centralwidget->setMinimumSize(QSize(1280, 780));
-        centralwidget->setMaximumSize(QSize(1280, 780));
-        centralwidget->setAutoFillBackground(true);
+        centralwidget->setMaximumSize(QSize(3840, 2160));
+        centralwidget->setAutoFillBackground(false);
         centralwidget->setStyleSheet(QString::fromUtf8("background-color:rgba(0, 0, 0, 0)"));
-        verticalLayout = new QVBoxLayout(centralwidget);
-        verticalLayout->setSpacing(0);
-        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
-        verticalLayout->setContentsMargins(0, 0, 0, 0);
+        formLayout = new QFormLayout(centralwidget);
+        formLayout->setObjectName(QString::fromUtf8("formLayout"));
+        formLayout->setContentsMargins(0, 0, 0, 0);
         stackedWidget = new QStackedWidget(centralwidget);
         stackedWidget->setObjectName(QString::fromUtf8("stackedWidget"));
         stackedWidget->setMinimumSize(QSize(1280, 780));
-        stackedWidget->setMaximumSize(QSize(1280, 780));
-        stackedWidget->setAutoFillBackground(true);
-        stackedWidget->setStyleSheet(QString::fromUtf8(""));
-        page_3 = new QWidget();
-        page_3->setObjectName(QString::fromUtf8("page_3"));
-        widget = new QWidget(page_3);
+        stackedWidget->setMaximumSize(QSize(3840, 2160));
+        stackedWidget->setAutoFillBackground(false);
+        stackedWidget->setStyleSheet(QString::fromUtf8("background-color:white;"));
+        reg_page = new QWidget();
+        reg_page->setObjectName(QString::fromUtf8("reg_page"));
+        gridLayout_2 = new QGridLayout(reg_page);
+        gridLayout_2->setSpacing(0);
+        gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
+        gridLayout_2->setContentsMargins(0, 0, 0, 0);
+        widget = new QWidget(reg_page);
         widget->setObjectName(QString::fromUtf8("widget"));
-        widget->setGeometry(QRect(0, 0, 1280, 780));
         widget->setMinimumSize(QSize(1280, 780));
-        widget->setMaximumSize(QSize(1280, 780));
+        widget->setMaximumSize(QSize(4000, 4000));
         widget->setStyleSheet(QString::fromUtf8("background: #FFFFFF;\n"
 "\n"
 ""));
@@ -245,12 +283,18 @@ public:
         font5.setPointSize(12);
         checkBox->setFont(font5);
         checkBox->setStyleSheet(QString::fromUtf8("subcontrol-position: left top;"));
-        stackedWidget->addWidget(page_3);
-        page_4 = new QWidget();
-        page_4->setObjectName(QString::fromUtf8("page_4"));
-        widget_3 = new QWidget(page_4);
+
+        gridLayout_2->addWidget(widget, 0, 0, 1, 1);
+
+        stackedWidget->addWidget(reg_page);
+        in_page = new QWidget();
+        in_page->setObjectName(QString::fromUtf8("in_page"));
+        gridLayout_3 = new QGridLayout(in_page);
+        gridLayout_3->setSpacing(0);
+        gridLayout_3->setObjectName(QString::fromUtf8("gridLayout_3"));
+        gridLayout_3->setContentsMargins(0, 0, 0, 0);
+        widget_3 = new QWidget(in_page);
         widget_3->setObjectName(QString::fromUtf8("widget_3"));
-        widget_3->setGeometry(QRect(0, 0, 1280, 780));
         widget_3->setMinimumSize(QSize(1280, 780));
         widget_3->setMaximumSize(QSize(1280, 780));
         widget_3->setStyleSheet(QString::fromUtf8("background: #FFFFFF;\n"
@@ -364,6 +408,7 @@ public:
 "border: 3px;\n"
 "border-color: rgb(114, 159, 207) ;\n"
 "border-radius: 15px;"));
+        lineEdit_6->setEchoMode(QLineEdit::Password);
 
         verticalLayout_4->addWidget(lineEdit_6);
 
@@ -395,14 +440,219 @@ public:
 
         verticalLayout_4->addWidget(widget_7);
 
-        stackedWidget->addWidget(page_4);
 
-        verticalLayout->addWidget(stackedWidget);
+        gridLayout_3->addWidget(widget_3, 0, 0, 1, 1);
+
+        stackedWidget->addWidget(in_page);
+        recover_pass_page = new QWidget();
+        recover_pass_page->setObjectName(QString::fromUtf8("recover_pass_page"));
+        gridLayout = new QGridLayout(recover_pass_page);
+        gridLayout->setSpacing(0);
+        gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
+        gridLayout->setContentsMargins(0, 0, 0, 0);
+        label_6 = new QLabel(recover_pass_page);
+        label_6->setObjectName(QString::fromUtf8("label_6"));
+        QFont font9;
+        font9.setPointSize(26);
+        label_6->setFont(font9);
+
+        gridLayout->addWidget(label_6, 0, 0, 1, 1);
+
+        label_13 = new QLabel(recover_pass_page);
+        label_13->setObjectName(QString::fromUtf8("label_13"));
+        label_13->setWordWrap(true);
+
+        gridLayout->addWidget(label_13, 1, 0, 1, 1);
+
+        label_14 = new QLabel(recover_pass_page);
+        label_14->setObjectName(QString::fromUtf8("label_14"));
+
+        gridLayout->addWidget(label_14, 2, 0, 1, 1);
+
+        lineEdit_4 = new QLineEdit(recover_pass_page);
+        lineEdit_4->setObjectName(QString::fromUtf8("lineEdit_4"));
+        QFont font10;
+        font10.setPointSize(18);
+        lineEdit_4->setFont(font10);
+        lineEdit_4->setStyleSheet(QString::fromUtf8("background: #F7F9FB;\n"
+"border: 3px solid rgb(26, 125, 241); padding: 5px;\n"
+"border-radius: 15px;"));
+
+        gridLayout->addWidget(lineEdit_4, 3, 0, 1, 1);
+
+        pushButton_5 = new QPushButton(recover_pass_page);
+        pushButton_5->setObjectName(QString::fromUtf8("pushButton_5"));
+        QFont font11;
+        font11.setPointSize(14);
+        pushButton_5->setFont(font11);
+        pushButton_5->setStyleSheet(QString::fromUtf8("background: rgb(26, 125, 241);\n"
+"border: 3px solid rgb(26, 125, 241); padding: 5px;\n"
+"border-radius: 15px;"));
+
+        gridLayout->addWidget(pushButton_5, 4, 0, 1, 1);
+
+        pushButton_6 = new QPushButton(recover_pass_page);
+        pushButton_6->setObjectName(QString::fromUtf8("pushButton_6"));
+        pushButton_6->setFont(font11);
+        pushButton_6->setStyleSheet(QString::fromUtf8("background: #F7F9FB;\n"
+"border: 3px solid rgb(26, 125, 241); padding: 5px;\n"
+"border-radius: 15px;"));
+
+        gridLayout->addWidget(pushButton_6, 5, 0, 1, 1);
+
+        stackedWidget->addWidget(recover_pass_page);
+        get_cod_page = new QWidget();
+        get_cod_page->setObjectName(QString::fromUtf8("get_cod_page"));
+        gridLayout_4 = new QGridLayout(get_cod_page);
+        gridLayout_4->setSpacing(0);
+        gridLayout_4->setObjectName(QString::fromUtf8("gridLayout_4"));
+        gridLayout_4->setContentsMargins(0, 0, 0, 0);
+        label_15 = new QLabel(get_cod_page);
+        label_15->setObjectName(QString::fromUtf8("label_15"));
+        QFont font12;
+        font12.setPointSize(33);
+        label_15->setFont(font12);
+
+        gridLayout_4->addWidget(label_15, 0, 0, 1, 1);
+
+        label_16 = new QLabel(get_cod_page);
+        label_16->setObjectName(QString::fromUtf8("label_16"));
+        label_16->setWordWrap(true);
+
+        gridLayout_4->addWidget(label_16, 1, 0, 1, 1);
+
+        label_17 = new QLabel(get_cod_page);
+        label_17->setObjectName(QString::fromUtf8("label_17"));
+
+        gridLayout_4->addWidget(label_17, 2, 0, 1, 1);
+
+        lineEdit_7 = new QLineEdit(get_cod_page);
+        lineEdit_7->setObjectName(QString::fromUtf8("lineEdit_7"));
+        lineEdit_7->setFont(font10);
+        lineEdit_7->setStyleSheet(QString::fromUtf8("background: #F7F9FB;\n"
+"border: 3px solid rgb(26, 125, 241); padding: 5px;\n"
+"border-radius: 15px;"));
+
+        gridLayout_4->addWidget(lineEdit_7, 3, 0, 1, 1);
+
+        pushButton_7 = new QPushButton(get_cod_page);
+        pushButton_7->setObjectName(QString::fromUtf8("pushButton_7"));
+        QFont font13;
+        font13.setPointSize(16);
+        pushButton_7->setFont(font13);
+        pushButton_7->setStyleSheet(QString::fromUtf8("background: rgb(26, 125, 241);\n"
+"border: 3px solid rgb(26, 125, 241); padding: 5px;\n"
+"border-radius: 15px;"));
+
+        gridLayout_4->addWidget(pushButton_7, 4, 0, 1, 1);
+
+        pushButton_8 = new QPushButton(get_cod_page);
+        pushButton_8->setObjectName(QString::fromUtf8("pushButton_8"));
+        QFont font14;
+        font14.setPointSize(15);
+        pushButton_8->setFont(font14);
+        pushButton_8->setStyleSheet(QString::fromUtf8("background: #F7F9FB;\n"
+"border: 3px solid rgb(26, 125, 241); padding: 5px;\n"
+"border-radius: 15px;"));
+
+        gridLayout_4->addWidget(pushButton_8, 5, 0, 1, 1);
+
+        stackedWidget->addWidget(get_cod_page);
+        home_page = new QWidget();
+        home_page->setObjectName(QString::fromUtf8("home_page"));
+        gridLayout_5 = new QGridLayout(home_page);
+        gridLayout_5->setSpacing(0);
+        gridLayout_5->setObjectName(QString::fromUtf8("gridLayout_5"));
+        gridLayout_5->setContentsMargins(0, 0, 0, 0);
+        widget_10 = new QWidget(home_page);
+        widget_10->setObjectName(QString::fromUtf8("widget_10"));
+        widget_10->setMinimumSize(QSize(1280, 780));
+        formLayout_2 = new QFormLayout(widget_10);
+        formLayout_2->setObjectName(QString::fromUtf8("formLayout_2"));
+        formLayout_2->setHorizontalSpacing(0);
+        formLayout_2->setVerticalSpacing(0);
+        formLayout_2->setContentsMargins(0, 0, 0, 0);
+        widget_5 = new QWidget(widget_10);
+        widget_5->setObjectName(QString::fromUtf8("widget_5"));
+        QSizePolicy sizePolicy1(QSizePolicy::Fixed, QSizePolicy::Preferred);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
+        sizePolicy1.setHeightForWidth(widget_5->sizePolicy().hasHeightForWidth());
+        widget_5->setSizePolicy(sizePolicy1);
+        widget_5->setMinimumSize(QSize(389, 780));
+        widget_5->setMaximumSize(QSize(389, 4000));
+        widget_5->setStyleSheet(QString::fromUtf8("background: #C4C4C4;"));
+        verticalLayoutWidget_3 = new QWidget(widget_5);
+        verticalLayoutWidget_3->setObjectName(QString::fromUtf8("verticalLayoutWidget_3"));
+        verticalLayoutWidget_3->setGeometry(QRect(10, 40, 371, 401));
+        verticalLayout_3 = new QVBoxLayout(verticalLayoutWidget_3);
+        verticalLayout_3->setObjectName(QString::fromUtf8("verticalLayout_3"));
+        verticalLayout_3->setContentsMargins(0, 0, 0, 0);
+        label_18 = new QLabel(verticalLayoutWidget_3);
+        label_18->setObjectName(QString::fromUtf8("label_18"));
+        label_18->setMinimumSize(QSize(291, 148));
+        label_18->setMaximumSize(QSize(1000, 148));
+        QFont font15;
+        font15.setPointSize(28);
+        label_18->setFont(font15);
+        label_18->setAlignment(Qt::AlignCenter);
+
+        verticalLayout_3->addWidget(label_18);
+
+        commandLinkButton = new QCommandLinkButton(verticalLayoutWidget_3);
+        commandLinkButton->setObjectName(QString::fromUtf8("commandLinkButton"));
+
+        verticalLayout_3->addWidget(commandLinkButton);
+
+        commandLinkButton_3 = new QCommandLinkButton(verticalLayoutWidget_3);
+        commandLinkButton_3->setObjectName(QString::fromUtf8("commandLinkButton_3"));
+
+        verticalLayout_3->addWidget(commandLinkButton_3);
+
+        commandLinkButton_4 = new QCommandLinkButton(verticalLayoutWidget_3);
+        commandLinkButton_4->setObjectName(QString::fromUtf8("commandLinkButton_4"));
+
+        verticalLayout_3->addWidget(commandLinkButton_4);
+
+        commandLinkButton_5 = new QCommandLinkButton(verticalLayoutWidget_3);
+        commandLinkButton_5->setObjectName(QString::fromUtf8("commandLinkButton_5"));
+
+        verticalLayout_3->addWidget(commandLinkButton_5);
+
+
+        formLayout_2->setWidget(0, QFormLayout::LabelRole, widget_5);
+
+        widget_6 = new QWidget(widget_10);
+        widget_6->setObjectName(QString::fromUtf8("widget_6"));
+        verticalLayout_6 = new QVBoxLayout(widget_6);
+        verticalLayout_6->setSpacing(0);
+        verticalLayout_6->setObjectName(QString::fromUtf8("verticalLayout_6"));
+        verticalLayout_6->setContentsMargins(0, 0, 0, 0);
+        widget_8 = new QWidget(widget_6);
+        widget_8->setObjectName(QString::fromUtf8("widget_8"));
+
+        verticalLayout_6->addWidget(widget_8);
+
+        widget_9 = new QWidget(widget_6);
+        widget_9->setObjectName(QString::fromUtf8("widget_9"));
+        widget_9->setStyleSheet(QString::fromUtf8("background: rgba(196, 196, 196, 0.21);"));
+
+        verticalLayout_6->addWidget(widget_9);
+
+
+        formLayout_2->setWidget(0, QFormLayout::FieldRole, widget_6);
+
+
+        gridLayout_5->addWidget(widget_10, 0, 0, 1, 1);
+
+        stackedWidget->addWidget(home_page);
+
+        formLayout->setWidget(0, QFormLayout::LabelRole, stackedWidget);
 
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 1280, 26));
+        menubar->setGeometry(QRect(0, 0, 1280, 22));
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
@@ -444,6 +694,23 @@ public:
         lineEdit_6->setPlaceholderText(QCoreApplication::translate("MainWindow", "\320\237\320\260\321\200\320\276\320\273\321\214", nullptr));
         checkBox_2->setText(QCoreApplication::translate("MainWindow", "\320\227\320\260\320\277\320\276\320\274\320\275\320\270\321\202\321\214 \320\274\320\265\320\275\321\217", nullptr));
         commandLinkButton_2->setText(QCoreApplication::translate("MainWindow", "\320\227\320\260\320\261\321\213\320\273\320\270 \320\277\320\260\321\200\320\276\320\273\321\214?", nullptr));
+        label_6->setText(QCoreApplication::translate("MainWindow", "Welcome to UpStorage", nullptr));
+        label_13->setText(QCoreApplication::translate("MainWindow", "\320\243\320\272\320\260\320\266\320\270\321\202\320\265 \321\215\320\273\320\265\320\272\321\202\321\200\320\276\320\275\320\275\321\213\320\271 \320\260\320\264\321\200\320\265\321\201, \320\272 \320\272\320\276\321\202\320\276\321\200\320\276\320\274\321\203 \320\277\321\200\320\270\320\262\321\217\320\267\320\260\320\275 \320\262\320\260\321\210 \320\260\320\272\320\272\320\260\321\203\320\275\321\202", nullptr));
+        label_14->setText(QString());
+        lineEdit_4->setPlaceholderText(QCoreApplication::translate("MainWindow", "Email", nullptr));
+        pushButton_5->setText(QCoreApplication::translate("MainWindow", "\320\222\320\276\321\201\321\201\321\202\320\260\320\275\320\276\320\262\320\270\321\202\321\214", nullptr));
+        pushButton_6->setText(QCoreApplication::translate("MainWindow", "\320\235\320\260\320\267\320\260\320\264", nullptr));
+        label_15->setText(QCoreApplication::translate("MainWindow", "UpStorage", nullptr));
+        label_16->setText(QCoreApplication::translate("MainWindow", "\320\235\320\260 \320\262\320\260\321\210 email \320\261\321\213\320\273 \320\276\321\202\320\277\321\200\320\260\320\262\320\273\320\265\320\275 \320\272\320\276\320\264 \320\264\320\276\321\201\321\202\321\203\320\277\320\260", nullptr));
+        label_17->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        lineEdit_7->setPlaceholderText(QCoreApplication::translate("MainWindow", "\320\232\320\276\320\264", nullptr));
+        pushButton_7->setText(QCoreApplication::translate("MainWindow", "\320\222\320\262\320\276\320\264", nullptr));
+        pushButton_8->setText(QCoreApplication::translate("MainWindow", "\320\235\320\260\320\267\320\260\320\264", nullptr));
+        label_18->setText(QCoreApplication::translate("MainWindow", "UpStorage", nullptr));
+        commandLinkButton->setText(QCoreApplication::translate("MainWindow", "\320\223\320\273\320\260\320\262\320\275\320\260\321\217", nullptr));
+        commandLinkButton_3->setText(QCoreApplication::translate("MainWindow", "\320\244\320\260\320\271\320\273\321\213", nullptr));
+        commandLinkButton_4->setText(QCoreApplication::translate("MainWindow", "\320\241\320\264\320\260\321\207\320\260 \320\274\320\265\321\201\321\202\320\260", nullptr));
+        commandLinkButton_5->setText(QCoreApplication::translate("MainWindow", "\320\235\320\260\321\201\321\202\321\200\320\276\320\271\320\272\320\270", nullptr));
     } // retranslateUi
 
 };
