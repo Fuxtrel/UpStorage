@@ -15,7 +15,6 @@
 #include <QNetworkReply>
 #include <QtSvg/QSvgWidget>
 #include "fields_values.h"
-#include <QtCha>
 #include "./ui_mainwindow.h"
 
 

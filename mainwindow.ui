@@ -1200,7 +1200,7 @@ border-radius: 15px;</string>
                 <x>10</x>
                 <y>40</y>
                 <width>371</width>
-                <height>401</height>
+                <height>501</height>
                </rect>
               </property>
               <layout class="QVBoxLayout" name="verticalLayout_3">
@@ -1236,12 +1236,31 @@ border-radius: 15px;</string>
                  <property name="text">
                   <string>Главная</string>
                  </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>logo_home.svg</normaloff>logo_home.svg</iconset>
+                 </property>
                 </widget>
                </item>
                <item>
                 <widget class="QCommandLinkButton" name="commandLinkButton_3">
                  <property name="text">
                   <string>Файлы</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>all_files.svg</normaloff>all_files.svg</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCommandLinkButton" name="commandLinkButton_6">
+                 <property name="text">
+                  <string>Избранное</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>favorites.svg</normaloff>favorites.svg</iconset>
                  </property>
                 </widget>
                </item>
@@ -1250,12 +1269,42 @@ border-radius: 15px;</string>
                  <property name="text">
                   <string>Сдача места</string>
                  </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>sale_place.svg</normaloff>sale_place.svg</iconset>
+                 </property>
                 </widget>
                </item>
                <item>
                 <widget class="QCommandLinkButton" name="commandLinkButton_5">
                  <property name="text">
                   <string>Настройки</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>settings.svg</normaloff>settings.svg</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCommandLinkButton" name="commandLinkButton_7">
+                 <property name="text">
+                  <string>Удалённые файлы</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>delete.svg</normaloff>delete.svg</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCommandLinkButton" name="commandLinkButton_8">
+                 <property name="text">
+                  <string>Подписка премиум</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>premium.svg</normaloff>premium.svg</iconset>
                  </property>
                 </widget>
                </item>

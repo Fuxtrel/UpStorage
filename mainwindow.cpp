@@ -97,6 +97,9 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->pushButton_6, SIGNAL (clicked()), this, SLOT (on_commandLinkButton_6()));
     connect(ui->pushButton_8, SIGNAL (clicked()), this, SLOT (on_commandLinkButton_8()));
 
+    setMaximumHeight(780);
+    setMaximumWidth(1280);
+    ui->centralwidget->setGeometry(0, 0, 1280, 780);
 }
 
 MainWindow::~MainWindow(){
@@ -163,7 +166,7 @@ void MainWindow::on_pushButton_clicked(){
 }
 
 void MainWindow::on_pushButton_4_clicked(){
-    if(getSignInValues()){
+    if(true){/*getSignInValues()*/
         QNetworkAccessManager *mgr = new QNetworkAccessManager(this);
         const QUrl url(QStringLiteral("https://upstorage.net/api/auth/sign-in"));
         QNetworkRequest request(url);

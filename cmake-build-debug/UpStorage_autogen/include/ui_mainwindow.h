@@ -10,6 +10,7 @@
 #define UI_MAINWINDOW_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QCheckBox>
 #include <QtWidgets/QCommandLinkButton>
@@ -99,11 +100,18 @@ public:
     QLabel *label_18;
     QCommandLinkButton *commandLinkButton;
     QCommandLinkButton *commandLinkButton_3;
+    QCommandLinkButton *commandLinkButton_6;
     QCommandLinkButton *commandLinkButton_4;
     QCommandLinkButton *commandLinkButton_5;
+    QCommandLinkButton *commandLinkButton_7;
+    QCommandLinkButton *commandLinkButton_8;
     QWidget *widget_6;
     QVBoxLayout *verticalLayout_6;
     QWidget *widget_8;
+    QLabel *title_home_page;
+    QLabel *place_in_use;
+    QLabel *label_21;
+    QLabel *balance_score;
     QWidget *widget_9;
     QMenuBar *menubar;
     QStatusBar *statusbar;
@@ -584,7 +592,7 @@ public:
         widget_5->setStyleSheet(QString::fromUtf8("background: #C4C4C4;"));
         verticalLayoutWidget_3 = new QWidget(widget_5);
         verticalLayoutWidget_3->setObjectName(QString::fromUtf8("verticalLayoutWidget_3"));
-        verticalLayoutWidget_3->setGeometry(QRect(10, 40, 371, 401));
+        verticalLayoutWidget_3->setGeometry(QRect(10, 40, 371, 501));
         verticalLayout_3 = new QVBoxLayout(verticalLayoutWidget_3);
         verticalLayout_3->setObjectName(QString::fromUtf8("verticalLayout_3"));
         verticalLayout_3->setContentsMargins(0, 0, 0, 0);
@@ -601,23 +609,59 @@ public:
 
         commandLinkButton = new QCommandLinkButton(verticalLayoutWidget_3);
         commandLinkButton->setObjectName(QString::fromUtf8("commandLinkButton"));
+        QIcon icon;
+        icon.addFile(QString::fromUtf8("../logo_home.svg"), QSize(), QIcon::Normal, QIcon::On);
+        commandLinkButton->setIcon(icon);
 
         verticalLayout_3->addWidget(commandLinkButton);
 
         commandLinkButton_3 = new QCommandLinkButton(verticalLayoutWidget_3);
         commandLinkButton_3->setObjectName(QString::fromUtf8("commandLinkButton_3"));
+        QIcon icon1;
+        icon1.addFile(QString::fromUtf8("../all_files.svg"), QSize(), QIcon::Normal, QIcon::On);
+        commandLinkButton_3->setIcon(icon1);
 
         verticalLayout_3->addWidget(commandLinkButton_3);
 
+        commandLinkButton_6 = new QCommandLinkButton(verticalLayoutWidget_3);
+        commandLinkButton_6->setObjectName(QString::fromUtf8("commandLinkButton_6"));
+        QIcon icon2;
+        icon2.addFile(QString::fromUtf8("../favorites.svg"), QSize(), QIcon::Normal, QIcon::On);
+        commandLinkButton_6->setIcon(icon2);
+
+        verticalLayout_3->addWidget(commandLinkButton_6);
+
         commandLinkButton_4 = new QCommandLinkButton(verticalLayoutWidget_3);
         commandLinkButton_4->setObjectName(QString::fromUtf8("commandLinkButton_4"));
+        QIcon icon3;
+        icon3.addFile(QString::fromUtf8("../sale_place.svg"), QSize(), QIcon::Normal, QIcon::On);
+        commandLinkButton_4->setIcon(icon3);
 
         verticalLayout_3->addWidget(commandLinkButton_4);
 
         commandLinkButton_5 = new QCommandLinkButton(verticalLayoutWidget_3);
         commandLinkButton_5->setObjectName(QString::fromUtf8("commandLinkButton_5"));
+        QIcon icon4;
+        icon4.addFile(QString::fromUtf8("../settings.svg"), QSize(), QIcon::Normal, QIcon::On);
+        commandLinkButton_5->setIcon(icon4);
 
         verticalLayout_3->addWidget(commandLinkButton_5);
+
+        commandLinkButton_7 = new QCommandLinkButton(verticalLayoutWidget_3);
+        commandLinkButton_7->setObjectName(QString::fromUtf8("commandLinkButton_7"));
+        QIcon icon5;
+        icon5.addFile(QString::fromUtf8("../delete.svg"), QSize(), QIcon::Normal, QIcon::On);
+        commandLinkButton_7->setIcon(icon5);
+
+        verticalLayout_3->addWidget(commandLinkButton_7);
+
+        commandLinkButton_8 = new QCommandLinkButton(verticalLayoutWidget_3);
+        commandLinkButton_8->setObjectName(QString::fromUtf8("commandLinkButton_8"));
+        QIcon icon6;
+        icon6.addFile(QString::fromUtf8("../premium.svg"), QSize(), QIcon::Normal, QIcon::On);
+        commandLinkButton_8->setIcon(icon6);
+
+        verticalLayout_3->addWidget(commandLinkButton_8);
 
 
         formLayout_2->setWidget(0, QFormLayout::LabelRole, widget_5);
@@ -630,6 +674,28 @@ public:
         verticalLayout_6->setContentsMargins(0, 0, 0, 0);
         widget_8 = new QWidget(widget_6);
         widget_8->setObjectName(QString::fromUtf8("widget_8"));
+        title_home_page = new QLabel(widget_8);
+        title_home_page->setObjectName(QString::fromUtf8("title_home_page"));
+        title_home_page->setGeometry(QRect(410, 40, 171, 41));
+        title_home_page->setFont(font9);
+        place_in_use = new QLabel(widget_8);
+        place_in_use->setObjectName(QString::fromUtf8("place_in_use"));
+        place_in_use->setGeometry(QRect(100, 240, 201, 101));
+        QFont font16;
+        font16.setPointSize(24);
+        place_in_use->setFont(font16);
+        place_in_use->setAlignment(Qt::AlignCenter);
+        place_in_use->setWordWrap(true);
+        label_21 = new QLabel(widget_8);
+        label_21->setObjectName(QString::fromUtf8("label_21"));
+        label_21->setGeometry(QRect(350, 230, 231, 71));
+        label_21->setFont(font16);
+        label_21->setAlignment(Qt::AlignCenter);
+        label_21->setWordWrap(true);
+        balance_score = new QLabel(widget_8);
+        balance_score->setObjectName(QString::fromUtf8("balance_score"));
+        balance_score->setGeometry(QRect(630, 230, 181, 41));
+        balance_score->setFont(font16);
 
         verticalLayout_6->addWidget(widget_8);
 
@@ -660,7 +726,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        stackedWidget->setCurrentIndex(0);
+        stackedWidget->setCurrentIndex(4);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -709,8 +775,15 @@ public:
         label_18->setText(QCoreApplication::translate("MainWindow", "UpStorage", nullptr));
         commandLinkButton->setText(QCoreApplication::translate("MainWindow", "\320\223\320\273\320\260\320\262\320\275\320\260\321\217", nullptr));
         commandLinkButton_3->setText(QCoreApplication::translate("MainWindow", "\320\244\320\260\320\271\320\273\321\213", nullptr));
+        commandLinkButton_6->setText(QCoreApplication::translate("MainWindow", "\320\230\320\267\320\261\321\200\320\260\320\275\320\275\320\276\320\265", nullptr));
         commandLinkButton_4->setText(QCoreApplication::translate("MainWindow", "\320\241\320\264\320\260\321\207\320\260 \320\274\320\265\321\201\321\202\320\260", nullptr));
         commandLinkButton_5->setText(QCoreApplication::translate("MainWindow", "\320\235\320\260\321\201\321\202\321\200\320\276\320\271\320\272\320\270", nullptr));
+        commandLinkButton_7->setText(QCoreApplication::translate("MainWindow", "\320\243\320\264\320\260\320\273\321\221\320\275\320\275\321\213\320\265 \321\204\320\260\320\271\320\273\321\213", nullptr));
+        commandLinkButton_8->setText(QCoreApplication::translate("MainWindow", "\320\237\320\276\320\264\320\277\320\270\321\201\320\272\320\260 \320\277\321\200\320\265\320\274\320\270\321\203\320\274", nullptr));
+        title_home_page->setText(QCoreApplication::translate("MainWindow", "\320\222\321\213 \321\201\320\264\320\260\321\221\321\202\320\265", nullptr));
+        place_in_use->setText(QCoreApplication::translate("MainWindow", "\320\234\320\265\321\201\321\202\320\276 \320\270\321\201\320\277\320\276\320\273\321\214\320\267\321\203\320\265\321\202\321\201\321\217 \320\275\320\260", nullptr));
+        label_21->setText(QCoreApplication::translate("MainWindow", "\320\222\321\213 \320\277\320\276\320\273\321\203\321\207\320\260\320\265\321\202\320\265 \320\272\320\260\320\266\320\264\321\213\320\271 \320\264\320\265\320\275\321\214", nullptr));
+        balance_score->setText(QCoreApplication::translate("MainWindow", "\320\222\320\260\321\210 \320\261\320\260\320\273\320\260\320\275\321\201", nullptr));
     } // retranslateUi
 
 };
