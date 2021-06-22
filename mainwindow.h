@@ -14,6 +14,7 @@
 #include <QSslSocket>
 #include <QNetworkReply>
 #include <QtSvg/QSvgWidget>
+#include <QFontDatabase>
 #include "fields_values.h"
 #include "./ui_mainwindow.h"
 

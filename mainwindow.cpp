@@ -11,6 +11,13 @@ MainWindow::MainWindow(QWidget *parent)
     authoirty_data_file = QDir::currentPath() + "/authoirty_data_file.txt";
     qDebug() << authoirty_data_file;
 
+    //Добавление шрифта
+    int id = QFontDatabase::addApplicationFont("../fonts/Lato/Lato-Regular.ttf");
+    QString Lato = QFontDatabase::applicationFontFamilies(id).at(0);
+    QFont lato(Lato, 15, QFont::Normal, false);
+
+
+
     //фон из облачков на странице регистрации
     auto reg_clouds = new QSvgWidget(ui->widget_2);
     QString path_clouds =  + "../clouds.svg";
@@ -22,6 +29,20 @@ MainWindow::MainWindow(QWidget *parent)
                               );
     reg_clouds->load(path_clouds);
 
+    //фон домашней страницы
+    auto blue_bg = new QSvgWidget(ui->widget_5);
+    QString path_blue_bg =  + "../pictures/home_page/Union_top.svg";
+    blue_bg->setGeometry(0,0,335, 91);
+    blue_bg->load(path_blue_bg);
+    //фон домашней страницы
+
+    //фон домашней страницы
+    auto blue_bg_bottom = new QSvgWidget(ui->widget_5);
+    QString blue_bg_bottom_path =  + "../pictures/home_page/Union_bottom.svg";
+    blue_bg_bottom->setGeometry(0,499,335, 281);
+    blue_bg_bottom->load(blue_bg_bottom_path);
+    //фон домашней страницы
+
     //фон из облачков на странице входа
     auto in_clouds = new QSvgWidget(ui->widget_4);
     in_clouds->setGeometry(0,0,560, 780);
@@ -31,6 +52,7 @@ MainWindow::MainWindow(QWidget *parent)
                              "border-radius: 15px;"
                              );
     in_clouds->load(path_clouds);
+    //фон из облачков на странице входа
 
     //чел ты на странице регистрации
     auto svgw = new QSvgWidget(ui->widget_2);
@@ -41,7 +63,7 @@ MainWindow::MainWindow(QWidget *parent)
                         "border-color:rgba(100, 174, 234, 0);");
     svgw->load(path);
 
-    //логотип на сранице входит
+    //логотип на сранице входа
     auto svgw_1 = new QSvgWidget(ui->widget_3);
     QString path_2 =  + "../logo.svg";
     svgw_1->setGeometry(25,25,185, 46);
@@ -100,6 +122,20 @@ MainWindow::MainWindow(QWidget *parent)
     setMaximumHeight(780);
     setMaximumWidth(1280);
     ui->centralwidget->setGeometry(0, 0, 1280, 780);
+    ui->commandLinkButton->setFont(lato);
+    ui->commandLinkButton_3->setFont(lato);
+    ui->commandLinkButton_4->setFont(lato);
+    ui->commandLinkButton_5->setFont(lato);
+    ui->commandLinkButton_6->setFont(lato);
+    ui->commandLinkButton_7->setFont(lato);
+    ui->commandLinkButton_8->setFont(lato);
+    ui->commandLinkButton->setIconSize(QSize(26, 25));
+    ui->commandLinkButton_3->setIconSize(QSize(26, 25));
+    ui->commandLinkButton_4->setIconSize(QSize(26, 25));
+    ui->commandLinkButton_5->setIconSize(QSize(26, 25));
+    ui->commandLinkButton_6->setIconSize(QSize(26, 25));
+    ui->commandLinkButton_7->setIconSize(QSize(26, 25));
+    ui->commandLinkButton_8->setIconSize(QSize(26, 25));
 }
 
 MainWindow::~MainWindow(){
