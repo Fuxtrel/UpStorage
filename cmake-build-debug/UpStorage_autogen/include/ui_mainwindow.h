@@ -93,7 +93,7 @@ public:
     QWidget *home_page;
     QGridLayout *gridLayout_5;
     QWidget *widget_10;
-    QFormLayout *formLayout_2;
+    QGridLayout *gridLayout_6;
     QWidget *widget_5;
     QWidget *verticalLayoutWidget_3;
     QVBoxLayout *verticalLayout_3;
@@ -104,6 +104,10 @@ public:
     QCommandLinkButton *commandLinkButton_5;
     QCommandLinkButton *commandLinkButton_7;
     QCommandLinkButton *commandLinkButton_8;
+    QCommandLinkButton *commandLinkButton_10;
+    QCommandLinkButton *commandLinkButton_11;
+    QCommandLinkButton *commandLinkButton_12;
+    QCommandLinkButton *commandLinkButton_13;
     QWidget *widget_6;
     QVBoxLayout *verticalLayout_6;
     QWidget *widget_9;
@@ -120,7 +124,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(1280, 780);
+        MainWindow->resize(1303, 793);
         QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Minimum);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
@@ -568,6 +572,11 @@ public:
         stackedWidget->addWidget(get_cod_page);
         home_page = new QWidget();
         home_page->setObjectName(QString::fromUtf8("home_page"));
+        QSizePolicy sizePolicy1(QSizePolicy::Maximum, QSizePolicy::Maximum);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
+        sizePolicy1.setHeightForWidth(home_page->sizePolicy().hasHeightForWidth());
+        home_page->setSizePolicy(sizePolicy1);
         gridLayout_5 = new QGridLayout(home_page);
         gridLayout_5->setSpacing(0);
         gridLayout_5->setObjectName(QString::fromUtf8("gridLayout_5"));
@@ -575,20 +584,19 @@ public:
         widget_10 = new QWidget(home_page);
         widget_10->setObjectName(QString::fromUtf8("widget_10"));
         widget_10->setMinimumSize(QSize(1280, 780));
-        formLayout_2 = new QFormLayout(widget_10);
-        formLayout_2->setObjectName(QString::fromUtf8("formLayout_2"));
-        formLayout_2->setHorizontalSpacing(0);
-        formLayout_2->setVerticalSpacing(0);
-        formLayout_2->setContentsMargins(0, 0, 0, 0);
+        gridLayout_6 = new QGridLayout(widget_10);
+        gridLayout_6->setSpacing(0);
+        gridLayout_6->setObjectName(QString::fromUtf8("gridLayout_6"));
+        gridLayout_6->setContentsMargins(0, 0, 0, 0);
         widget_5 = new QWidget(widget_10);
         widget_5->setObjectName(QString::fromUtf8("widget_5"));
-        QSizePolicy sizePolicy1(QSizePolicy::Fixed, QSizePolicy::Preferred);
-        sizePolicy1.setHorizontalStretch(0);
-        sizePolicy1.setVerticalStretch(0);
-        sizePolicy1.setHeightForWidth(widget_5->sizePolicy().hasHeightForWidth());
-        widget_5->setSizePolicy(sizePolicy1);
+        QSizePolicy sizePolicy2(QSizePolicy::Fixed, QSizePolicy::Preferred);
+        sizePolicy2.setHorizontalStretch(0);
+        sizePolicy2.setVerticalStretch(0);
+        sizePolicy2.setHeightForWidth(widget_5->sizePolicy().hasHeightForWidth());
+        widget_5->setSizePolicy(sizePolicy2);
         widget_5->setMinimumSize(QSize(335, 780));
-        widget_5->setMaximumSize(QSize(389, 4000));
+        widget_5->setMaximumSize(QSize(16777215, 16777215));
         widget_5->setStyleSheet(QString::fromUtf8("background: #FFFFFF;"));
         verticalLayoutWidget_3 = new QWidget(widget_5);
         verticalLayoutWidget_3->setObjectName(QString::fromUtf8("verticalLayoutWidget_3"));
@@ -654,8 +662,34 @@ public:
 
         verticalLayout_3->addWidget(commandLinkButton_8);
 
+        commandLinkButton_10 = new QCommandLinkButton(widget_5);
+        commandLinkButton_10->setObjectName(QString::fromUtf8("commandLinkButton_10"));
+        commandLinkButton_10->setGeometry(QRect(20, 620, 250, 41));
+        commandLinkButton_10->setStyleSheet(QString::fromUtf8("color:white;\n"
+"background-color:#C4C4C4;"));
+        QIcon icon7;
+        icon7.addFile(QString::fromUtf8("pictures/home_page/Folder.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        commandLinkButton_10->setIcon(icon7);
+        commandLinkButton_11 = new QCommandLinkButton(widget_5);
+        commandLinkButton_11->setObjectName(QString::fromUtf8("commandLinkButton_11"));
+        commandLinkButton_11->setGeometry(QRect(20, 550, 250, 41));
+        commandLinkButton_11->setStyleSheet(QString::fromUtf8("color:white;\n"
+"background-color:#C4C4C4;"));
+        commandLinkButton_11->setIconSize(QSize(0, 0));
+        commandLinkButton_12 = new QCommandLinkButton(widget_5);
+        commandLinkButton_12->setObjectName(QString::fromUtf8("commandLinkButton_12"));
+        commandLinkButton_12->setGeometry(QRect(20, 700, 250, 41));
+        commandLinkButton_12->setStyleSheet(QString::fromUtf8("color:white;\n"
+"background-color:#C4C4C4;"));
+        commandLinkButton_12->setIcon(icon7);
+        commandLinkButton_13 = new QCommandLinkButton(widget_5);
+        commandLinkButton_13->setObjectName(QString::fromUtf8("commandLinkButton_13"));
+        commandLinkButton_13->setGeometry(QRect(20, 660, 250, 41));
+        commandLinkButton_13->setStyleSheet(QString::fromUtf8("color:white;\n"
+"background-color:#C4C4C4;"));
+        commandLinkButton_13->setIcon(icon7);
 
-        formLayout_2->setWidget(0, QFormLayout::LabelRole, widget_5);
+        gridLayout_6->addWidget(widget_5, 0, 0, 1, 1);
 
         widget_6 = new QWidget(widget_10);
         widget_6->setObjectName(QString::fromUtf8("widget_6"));
@@ -682,12 +716,12 @@ public:
 "border-radius: 15px;"));
         commandLinkButton_9 = new QCommandLinkButton(widget_8);
         commandLinkButton_9->setObjectName(QString::fromUtf8("commandLinkButton_9"));
-        commandLinkButton_9->setGeometry(QRect(447, 101, 50, 40));
+        commandLinkButton_9->setGeometry(QRect(446, 101, 51, 40));
         commandLinkButton_9->setStyleSheet(QString::fromUtf8("background: #F7F9FB;\n"
 "border-radius: 15px;"));
-        QIcon icon7;
-        icon7.addFile(QString::fromUtf8("pictures/home_page/filters.svg"), QSize(), QIcon::Normal, QIcon::Off);
-        commandLinkButton_9->setIcon(icon7);
+        QIcon icon8;
+        icon8.addFile(QString::fromUtf8("pictures/home_page/filters.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        commandLinkButton_9->setIcon(icon8);
         commandLinkButton_9->setIconSize(QSize(40, 40));
         widget_11 = new QWidget(widget_9);
         widget_11->setObjectName(QString::fromUtf8("widget_11"));
@@ -703,7 +737,7 @@ public:
         verticalLayout_6->addWidget(widget_9);
 
 
-        formLayout_2->setWidget(0, QFormLayout::FieldRole, widget_6);
+        gridLayout_6->addWidget(widget_6, 0, 1, 1, 1);
 
 
         gridLayout_5->addWidget(widget_10, 0, 0, 1, 1);
@@ -715,7 +749,7 @@ public:
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 1280, 22));
+        menubar->setGeometry(QRect(0, 0, 1303, 22));
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
@@ -776,6 +810,10 @@ public:
         commandLinkButton_5->setText(QCoreApplication::translate("MainWindow", "\320\235\320\260\321\201\321\202\321\200\320\276\320\271\320\272\320\270", nullptr));
         commandLinkButton_7->setText(QCoreApplication::translate("MainWindow", "\320\243\320\264\320\260\320\273\321\221\320\275\320\275\321\213\320\265 \321\204\320\260\320\271\320\273\321\213", nullptr));
         commandLinkButton_8->setText(QCoreApplication::translate("MainWindow", "\320\237\320\276\320\264\320\277\320\270\321\201\320\272\320\260 \320\277\321\200\320\265\320\274\320\270\321\203\320\274", nullptr));
+        commandLinkButton_10->setText(QCoreApplication::translate("MainWindow", "\320\237\320\276\321\200\321\202\321\204\320\276\320\273\320\270\320\276", nullptr));
+        commandLinkButton_11->setText(QCoreApplication::translate("MainWindow", "\320\237\320\276\321\201\320\273\320\265\320\264\320\275\320\270\320\265 \321\204\320\260\320\271\320\273\321\213", nullptr));
+        commandLinkButton_12->setText(QCoreApplication::translate("MainWindow", "\320\237\320\276\321\200\321\202\321\200\320\265\321\202\320\275\320\260\321\217 \321\201\321\212\321\221\320\274\320\272\320\260", nullptr));
+        commandLinkButton_13->setText(QCoreApplication::translate("MainWindow", "\320\230\320\273\320\273\321\216\321\201\321\202\321\200\320\260\321\206\320\270\320\270", nullptr));
         label_18->setText(QCoreApplication::translate("MainWindow", "User Name, \321\201\320\273\320\276\320\263\320\260\320\275 \320\262\320\274\320\265\321\201\321\202\320\276 \320\277\321\200\320\270\320\262\320\265\321\202\321\201\321\202\320\262\320\270\321\217", nullptr));
         lineEdit_8->setInputMask(QString());
         lineEdit_8->setPlaceholderText(QCoreApplication::translate("MainWindow", "\320\237\320\276\320\270\321\201\320\272", nullptr));

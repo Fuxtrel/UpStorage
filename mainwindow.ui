@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1280</width>
-    <height>780</height>
+    <width>1303</width>
+    <height>793</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -1128,6 +1128,12 @@ border-radius: 15px;</string>
        </layout>
       </widget>
       <widget class="QWidget" name="home_page">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
        <layout class="QGridLayout" name="gridLayout_5">
         <property name="leftMargin">
          <number>0</number>
@@ -1152,13 +1158,7 @@ border-radius: 15px;</string>
             <height>780</height>
            </size>
           </property>
-          <layout class="QFormLayout" name="formLayout_2">
-           <property name="horizontalSpacing">
-            <number>0</number>
-           </property>
-           <property name="verticalSpacing">
-            <number>0</number>
-           </property>
+          <layout class="QGridLayout" name="gridLayout_6">
            <property name="leftMargin">
             <number>0</number>
            </property>
@@ -1169,6 +1169,9 @@ border-radius: 15px;</string>
             <number>0</number>
            </property>
            <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <property name="spacing">
             <number>0</number>
            </property>
            <item row="0" column="0">
@@ -1187,8 +1190,8 @@ border-radius: 15px;</string>
              </property>
              <property name="maximumSize">
               <size>
-               <width>389</width>
-               <height>4000</height>
+               <width>16777215</width>
+               <height>16777215</height>
               </size>
              </property>
              <property name="styleSheet">
@@ -1297,6 +1300,92 @@ border-radius: 15px;</string>
                </item>
               </layout>
              </widget>
+             <widget class="QCommandLinkButton" name="commandLinkButton_10">
+              <property name="geometry">
+               <rect>
+                <x>20</x>
+                <y>620</y>
+                <width>250</width>
+                <height>41</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:white;
+background-color:#C4C4C4;</string>
+              </property>
+              <property name="text">
+               <string>Портфолио</string>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>pictures/home_page/Folder.svg</normaloff>pictures/home_page/Folder.svg</iconset>
+              </property>
+             </widget>
+             <widget class="QCommandLinkButton" name="commandLinkButton_11">
+              <property name="geometry">
+               <rect>
+                <x>20</x>
+                <y>550</y>
+                <width>250</width>
+                <height>41</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:white;
+background-color:#C4C4C4;</string>
+              </property>
+              <property name="text">
+               <string>Последние файлы</string>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>0</width>
+                <height>0</height>
+               </size>
+              </property>
+             </widget>
+             <widget class="QCommandLinkButton" name="commandLinkButton_12">
+              <property name="geometry">
+               <rect>
+                <x>20</x>
+                <y>700</y>
+                <width>250</width>
+                <height>41</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:white;
+background-color:#C4C4C4;</string>
+              </property>
+              <property name="text">
+               <string>Портретная съёмка</string>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>pictures/home_page/Folder.svg</normaloff>pictures/home_page/Folder.svg</iconset>
+              </property>
+             </widget>
+             <widget class="QCommandLinkButton" name="commandLinkButton_13">
+              <property name="geometry">
+               <rect>
+                <x>20</x>
+                <y>660</y>
+                <width>250</width>
+                <height>41</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:white;
+background-color:#C4C4C4;</string>
+              </property>
+              <property name="text">
+               <string>Иллюстрации</string>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>pictures/home_page/Folder.svg</normaloff>pictures/home_page/Folder.svg</iconset>
+              </property>
+             </widget>
             </widget>
            </item>
            <item row="0" column="1">
@@ -1372,9 +1461,9 @@ border-radius: 15px;</string>
                  <widget class="QCommandLinkButton" name="commandLinkButton_9">
                   <property name="geometry">
                    <rect>
-                    <x>447</x>
+                    <x>446</x>
                     <y>101</y>
-                    <width>50</width>
+                    <width>51</width>
                     <height>40</height>
                    </rect>
                   </property>
@@ -1444,7 +1533,7 @@ border-radius: 30px;</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1280</width>
+     <width>1303</width>
      <height>22</height>
     </rect>
    </property>

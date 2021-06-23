@@ -129,6 +129,16 @@ MainWindow::MainWindow(QWidget *parent)
     ui->commandLinkButton_6->setFont(lato);
     ui->commandLinkButton_7->setFont(lato);
     ui->commandLinkButton_8->setFont(lato);
+    ui->commandLinkButton_10->setFont(lato);
+    ui->commandLinkButton_11->setFont(lato);
+    ui->commandLinkButton_12->setFont(lato);
+    ui->commandLinkButton_13->setFont(lato);
+
+
+    blue_bg_bottom->stackUnder(ui->commandLinkButton_10);
+
+    ui->label_18->setFont(lato);
+    ui->lineEdit_8->setFont(lato);
     ui->commandLinkButton->setIconSize(QSize(26, 25));
     ui->commandLinkButton_3->setIconSize(QSize(26, 25));
     ui->commandLinkButton_4->setIconSize(QSize(26, 25));
@@ -136,6 +146,10 @@ MainWindow::MainWindow(QWidget *parent)
     ui->commandLinkButton_6->setIconSize(QSize(26, 25));
     ui->commandLinkButton_7->setIconSize(QSize(26, 25));
     ui->commandLinkButton_8->setIconSize(QSize(26, 25));
+    ui->commandLinkButton_10->setIconSize(QSize(26, 25));
+    ui->commandLinkButton_11->setIconSize(QSize(26, 25));
+    ui->commandLinkButton_12->setIconSize(QSize(26, 25));
+    ui->commandLinkButton_13->setIconSize(QSize(26, 25));
 }
 
 MainWindow::~MainWindow(){
@@ -229,6 +243,9 @@ void MainWindow::on_pushButton_4_clicked(){
         });
         ui->stackedWidget->setCurrentIndex(4);
         if(ui->stackedWidget->currentIndex() == 4) {
+            setMaximumWidth(3840);
+            setMaximumHeight(2160);
+            ui->centralwidget->setMaximumWidth(3840);
             ui->centralwidget->setMaximumHeight(2160);
             ui->home_page->setMaximumWidth(3840);
             ui->home_page->setMaximumHeight(2160);
