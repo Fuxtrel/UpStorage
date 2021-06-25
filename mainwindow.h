@@ -17,6 +17,7 @@
 #include <QFontDatabase>
 #include "fields_values.h"
 #include "./ui_mainwindow.h"
+#include "graphics.h"
 
 
 QT_BEGIN_NAMESPACE
@@ -50,7 +51,6 @@ private slots:
 
     void on_commandLinkButton_2();
 
-
 private:
 
     QString authoirty_data_file;
@@ -64,4 +64,5 @@ private:
     bool getSignInPass();
     bool getRecoverEmail();
 };
+
 #endif // MAINWINDOW_H

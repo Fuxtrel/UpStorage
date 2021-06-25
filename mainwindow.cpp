@@ -14,13 +14,27 @@ MainWindow::MainWindow(QWidget *parent)
     //Добавление шрифта
     int id = QFontDatabase::addApplicationFont("../fonts/Lato/Lato-Regular.ttf");
     QString Lato = QFontDatabase::applicationFontFamilies(id).at(0);
-    QFont lato(Lato, 15, QFont::Normal, false);
+    int id_n = QFontDatabase::addApplicationFont("../fonts/Nunito/Nunito-Regular.ttf");
+    QString Nunito = QFontDatabase::applicationFontFamilies(id_n).at(0);
+    //Добавление шрифта
+    //
+    QFont nunito_70(Nunito, 70, QFont::Normal, false);
+    QFont lato(Lato, 14, QFont::Normal, false);
+    QFont lato_21(Lato, 21, QFont::Normal, false);
+    QFont lato_13(Lato, 13, QFont::Normal, false);
+    QFont lato_19(Lato, 19, QFont::Normal, false);
+    QFont lato_11(Lato, 11, QFont::Normal, false);
+    QFont lato_16(Lato, 16, QFont::Normal, false);
+    QFont lato_30(Lato, 30, QFont::Normal, false);
+    QFont lato_14(Lato, 14, QFont::Normal, false);
+    //
+
 
 
 
     //фон из облачков на странице регистрации
     auto reg_clouds = new QSvgWidget(ui->widget_2);
-    QString path_clouds =  + "../clouds.svg";
+    QString path_clouds = "../clouds.svg";
     reg_clouds->setGeometry(0,0,560, 780);
     reg_clouds->setStyleSheet(
                      "border-color:#64AEEA;"
@@ -28,20 +42,18 @@ MainWindow::MainWindow(QWidget *parent)
                               "border-radius: 15px;"
                               );
     reg_clouds->load(path_clouds);
+    //фон из облачков на странице регистрации
 
-    //фон домашней страницы
-    auto blue_bg = new QSvgWidget(ui->widget_5);
-    QString path_blue_bg =  + "../pictures/home_page/Union_top.svg";
-    blue_bg->setGeometry(0,0,335, 91);
-    blue_bg->load(path_blue_bg);
-    //фон домашней страницы
+    //фото для аватарки
+    auto avatar = new QSvgWidget(ui->widget_11);
+    QString path_avatar = ":/picture/home_page/cmake-build-debug/pictures/home_page/ava.svg";
+    avatar->setGeometry(328,30,100, 100);
+    avatar->setStyleSheet(
+            "border-color:rgba(100, 100, 100, 0);"
+    );
+    avatar->load(path_avatar);
+    //фото для аватарки
 
-    //фон домашней страницы
-    auto blue_bg_bottom = new QSvgWidget(ui->widget_5);
-    QString blue_bg_bottom_path =  + "../pictures/home_page/Union_bottom.svg";
-    blue_bg_bottom->setGeometry(0,499,335, 281);
-    blue_bg_bottom->load(blue_bg_bottom_path);
-    //фон домашней страницы
 
     //фон из облачков на странице входа
     auto in_clouds = new QSvgWidget(ui->widget_4);
@@ -112,6 +124,8 @@ MainWindow::MainWindow(QWidget *parent)
     ui->label_7->setAlignment(Qt::AlignCenter);
     ui->label_7->setWordWrap(true);
     ui->label_7->setText(QCoreApplication::translate("MainWindow", "\320\224\320\276\320\261\321\200\320\276 \320\277\320\276\320\266\320\260\320\273\320\276\320\262\320\260\321\202\321\214 \320\262 UpStorage", nullptr));
+
+
     connect(ui->pushButton_2, SIGNAL (clicked()), this, SLOT (on_pushButton_2_clicked()));
     connect(ui->pushButton_3, SIGNAL (clicked()), this, SLOT (on_pushButton_3_clicked()));
     connect(ui->commandLinkButton_2, SIGNAL (clicked()), this, SLOT (on_commandLinkButton_2()));
@@ -130,12 +144,10 @@ MainWindow::MainWindow(QWidget *parent)
     ui->commandLinkButton_7->setFont(lato);
     ui->commandLinkButton_8->setFont(lato);
     ui->commandLinkButton_10->setFont(lato);
-    ui->commandLinkButton_11->setFont(lato);
+    ui->pushButton_9->setFont(lato);
     ui->commandLinkButton_12->setFont(lato);
     ui->commandLinkButton_13->setFont(lato);
 
-
-    blue_bg_bottom->stackUnder(ui->commandLinkButton_10);
 
     ui->label_18->setFont(lato);
     ui->lineEdit_8->setFont(lato);
@@ -147,9 +159,26 @@ MainWindow::MainWindow(QWidget *parent)
     ui->commandLinkButton_7->setIconSize(QSize(26, 25));
     ui->commandLinkButton_8->setIconSize(QSize(26, 25));
     ui->commandLinkButton_10->setIconSize(QSize(26, 25));
-    ui->commandLinkButton_11->setIconSize(QSize(26, 25));
     ui->commandLinkButton_12->setIconSize(QSize(26, 25));
     ui->commandLinkButton_13->setIconSize(QSize(26, 25));
+    ui->label_19->setFont(lato_21);
+    ui->label_20->setFont(lato_13);
+
+    ui->label_21->setFont(lato_19);
+    ui->label_22->setFont(lato_11);
+    ui->label_23->setFont(lato_11);
+    ui->label_24->setFont(nunito_70);
+    ui->label_26->setFont(lato_14);
+    ui->label_27->setFont(lato_14);
+    ui->label_28->setFont(nunito_70);
+    ui->label_29->setFont(lato_30);
+    ui->label_30->setFont(lato_30);
+
+    ui->pushButton_10->setFont(lato_16);
+    ui->pushButton_11->setFont(lato_16);
+
+    //ui->graphicsView->stackUnder(ui->label_30);
+
 }
 
 MainWindow::~MainWindow(){
@@ -163,11 +192,6 @@ void MainWindow::on_pushButton_2_clicked(){
 void MainWindow::on_pushButton_3_clicked(){
     ui->stackedWidget->setCurrentIndex(0);
 }
-
-void MainWindow::on_commandLinkButton_2(){
-    ui->stackedWidget->setCurrentIndex(2);
-}
-
 
 void MainWindow::on_pushButton_5_clicked(){
     if(getRecoverEmail()){
@@ -183,7 +207,9 @@ void MainWindow::on_pushButton_8_clicked(){
     ui->stackedWidget->setCurrentIndex(0);
 }
 
-
+void MainWindow::on_commandLinkButton_2(){
+    ui->stackedWidget->setCurrentIndex(2);
+}
 
 void MainWindow::on_pushButton_clicked(){
     if(getRegValues()){
@@ -243,12 +269,10 @@ void MainWindow::on_pushButton_4_clicked(){
         });
         ui->stackedWidget->setCurrentIndex(4);
         if(ui->stackedWidget->currentIndex() == 4) {
-            setMaximumWidth(3840);
-            setMaximumHeight(2160);
-            ui->centralwidget->setMaximumWidth(3840);
-            ui->centralwidget->setMaximumHeight(2160);
-            ui->home_page->setMaximumWidth(3840);
-            ui->home_page->setMaximumHeight(2160);
+            setMaximumWidth(1680);
+            setMaximumHeight(947);
+            setMinimumWidth(1680);
+            setMinimumHeight(967);
         }
     }
 }

@@ -1,0 +1,4 @@
+/home/alex/CLionProjects/UpStorage/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/alex/CLionProjects/UpStorage/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/alex/CLionProjects/UpStorage/cmake-build-debug/CMakeFiles/UpStorage.dir
+/home/alex/CLionProjects/UpStorage/cmake-build-debug/CMakeFiles/UpStorage_autogen.dir

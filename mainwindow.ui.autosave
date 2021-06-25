@@ -2010,6 +2010,7 @@ text-align: left;</string>
  </widget>
  <resources>
   <include location="graph.qrc"/>
+  <include location="graph.qrc"/>
  </resources>
  <connections/>
 </ui>

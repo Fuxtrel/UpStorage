@@ -27,12 +27,16 @@
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
+#include <QtWidgets/QGraphicsView>
 
 QT_BEGIN_NAMESPACE
 
 class Ui_MainWindow
 {
 public:
+    QGraphicsView *graphicsView;
+    QGraphicsScene *scene;
+    QGraphicsItemGroup *group;
     QWidget *centralwidget;
     QFormLayout *formLayout;
     QStackedWidget *stackedWidget;
@@ -94,6 +98,33 @@ public:
     QGridLayout *gridLayout_5;
     QWidget *widget_10;
     QGridLayout *gridLayout_6;
+    QWidget *widget_6;
+    QVBoxLayout *verticalLayout_6;
+    QWidget *widget_9;
+    QGridLayout *gridLayout_7;
+    QWidget *widget_8;
+    QLabel *label_18;
+    QLineEdit *lineEdit_8;
+    QCommandLinkButton *commandLinkButton_9;
+    QWidget *widget_11;
+    QLabel *label_19;
+    QLabel *label_20;
+    QCommandLinkButton *commandLinkButton_14;
+    QCommandLinkButton *commandLinkButton_15;
+    QCommandLinkButton *commandLinkButton_16;
+    QCommandLinkButton *commandLinkButton_17;
+    QWidget *widget_12;
+    QLabel *label_21;
+    QLabel *label_22;
+    QLabel *label_23;
+    QLabel *label_24;
+    QLabel *label_26;
+    QLabel *label_27;
+    QPushButton *pushButton_10;
+    QPushButton *pushButton_11;
+    QLabel *label_28;
+    QLabel *label_29;
+    QLabel *label_30;
     QWidget *widget_5;
     QWidget *verticalLayoutWidget_3;
     QVBoxLayout *verticalLayout_3;
@@ -104,19 +135,14 @@ public:
     QCommandLinkButton *commandLinkButton_5;
     QCommandLinkButton *commandLinkButton_7;
     QCommandLinkButton *commandLinkButton_8;
+    QWidget *verticalLayoutWidget_4;
+    QVBoxLayout *verticalLayout;
+    QPushButton *pushButton_9;
     QCommandLinkButton *commandLinkButton_10;
-    QCommandLinkButton *commandLinkButton_11;
-    QCommandLinkButton *commandLinkButton_12;
     QCommandLinkButton *commandLinkButton_13;
-    QWidget *widget_6;
-    QVBoxLayout *verticalLayout_6;
-    QWidget *widget_9;
-    QWidget *widget_8;
-    QLabel *label_18;
-    QLineEdit *lineEdit_8;
-    QCommandLinkButton *commandLinkButton_9;
-    QWidget *widget_11;
-    QWidget *widget_12;
+    QCommandLinkButton *commandLinkButton_12;
+    QWidget *home_page_gr;
+    QGridLayout *gridLayout_8;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -124,8 +150,8 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(1303, 793);
-        QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Minimum);
+        MainWindow->resize(2313, 1069);
+        QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(MainWindow->sizePolicy().hasHeightForWidth());
@@ -152,7 +178,7 @@ public:
         stackedWidget->setMinimumSize(QSize(1280, 780));
         stackedWidget->setMaximumSize(QSize(3840, 2160));
         stackedWidget->setAutoFillBackground(false);
-        stackedWidget->setStyleSheet(QString::fromUtf8("background-color:white;"));
+        stackedWidget->setStyleSheet(QString::fromUtf8("background-color:rgb(85, 87, 83);"));
         reg_page = new QWidget();
         reg_page->setObjectName(QString::fromUtf8("reg_page"));
         gridLayout_2 = new QGridLayout(reg_page);
@@ -577,6 +603,7 @@ public:
         sizePolicy1.setVerticalStretch(0);
         sizePolicy1.setHeightForWidth(home_page->sizePolicy().hasHeightForWidth());
         home_page->setSizePolicy(sizePolicy1);
+        home_page->setMaximumSize(QSize(1680, 947));
         gridLayout_5 = new QGridLayout(home_page);
         gridLayout_5->setSpacing(0);
         gridLayout_5->setObjectName(QString::fromUtf8("gridLayout_5"));
@@ -584,10 +611,197 @@ public:
         widget_10 = new QWidget(home_page);
         widget_10->setObjectName(QString::fromUtf8("widget_10"));
         widget_10->setMinimumSize(QSize(1280, 780));
+        widget_10->setMaximumSize(QSize(1680, 947));
         gridLayout_6 = new QGridLayout(widget_10);
         gridLayout_6->setSpacing(0);
         gridLayout_6->setObjectName(QString::fromUtf8("gridLayout_6"));
         gridLayout_6->setContentsMargins(0, 0, 0, 0);
+        widget_6 = new QWidget(widget_10);
+        widget_6->setObjectName(QString::fromUtf8("widget_6"));
+        verticalLayout_6 = new QVBoxLayout(widget_6);
+        verticalLayout_6->setSpacing(0);
+        verticalLayout_6->setObjectName(QString::fromUtf8("verticalLayout_6"));
+        verticalLayout_6->setContentsMargins(0, 0, 0, 0);
+        widget_9 = new QWidget(widget_6);
+        widget_9->setObjectName(QString::fromUtf8("widget_9"));
+        widget_9->setStyleSheet(QString::fromUtf8("background: rgb(179, 181, 253);"));
+        gridLayout_7 = new QGridLayout(widget_9);
+        gridLayout_7->setObjectName(QString::fromUtf8("gridLayout_7"));
+        widget_8 = new QWidget(widget_9);
+        widget_8->setObjectName(QString::fromUtf8("widget_8"));
+        widget_8->setMinimumSize(QSize(687, 164));
+        widget_8->setMaximumSize(QSize(687, 164));
+        widget_8->setStyleSheet(QString::fromUtf8("background-color:#FFFFFF;\n"
+"border-radius: 30px;\n"
+""));
+        label_18 = new QLabel(widget_8);
+        label_18->setObjectName(QString::fromUtf8("label_18"));
+        label_18->setGeometry(QRect(28, 38, 631, 29));
+        lineEdit_8 = new QLineEdit(widget_8);
+        lineEdit_8->setObjectName(QString::fromUtf8("lineEdit_8"));
+        lineEdit_8->setGeometry(QRect(28, 101, 409, 40));
+        lineEdit_8->setStyleSheet(QString::fromUtf8("background: #F7F9FB;\n"
+"border: 3px solid rgb(114, 159, 207); padding: 5px;\n"
+"border-radius: 15px;"));
+        commandLinkButton_9 = new QCommandLinkButton(widget_8);
+        commandLinkButton_9->setObjectName(QString::fromUtf8("commandLinkButton_9"));
+        commandLinkButton_9->setGeometry(QRect(446, 101, 51, 40));
+        commandLinkButton_9->setStyleSheet(QString::fromUtf8("background: #F7F9FB;\n"
+"border-radius: 15px;"));
+        QIcon icon;
+        icon.addFile(QString::fromUtf8("pictures/home_page/filters.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        commandLinkButton_9->setIcon(icon);
+        commandLinkButton_9->setIconSize(QSize(40, 40));
+
+        gridLayout_7->addWidget(widget_8, 0, 0, 1, 1);
+
+        widget_11 = new QWidget(widget_9);
+        widget_11->setObjectName(QString::fromUtf8("widget_11"));
+        widget_11->setMinimumSize(QSize(458, 164));
+        widget_11->setMaximumSize(QSize(458, 164));
+        widget_11->setStyleSheet(QString::fromUtf8("background-color:#FFFFFF;\n"
+"border-radius: 30px;"));
+        label_19 = new QLabel(widget_11);
+        label_19->setObjectName(QString::fromUtf8("label_19"));
+        label_19->setGeometry(QRect(34, 19, 251, 29));
+        QFont font15;
+        font15.setPointSize(21);
+        label_19->setFont(font15);
+        label_20 = new QLabel(widget_11);
+        label_20->setObjectName(QString::fromUtf8("label_20"));
+        label_20->setGeometry(QRect(32, 60, 200, 22));
+        QFont font16;
+        font16.setPointSize(13);
+        label_20->setFont(font16);
+        commandLinkButton_14 = new QCommandLinkButton(widget_11);
+        commandLinkButton_14->setObjectName(QString::fromUtf8("commandLinkButton_14"));
+        commandLinkButton_14->setGeometry(QRect(32, 99, 45, 45));
+        commandLinkButton_14->setStyleSheet(QString::fromUtf8("background: #F7F9FB;\n"
+"border: 3px solid rgb(114, 159, 207); padding: 5px;\n"
+"border-radius: 15px;"));
+        QIcon icon1;
+        icon1.addFile(QString::fromUtf8(":/picture/home_page/cmake-build-debug/pictures/home_page/gear.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        commandLinkButton_14->setIcon(icon1);
+        commandLinkButton_14->setIconSize(QSize(30, 30));
+        commandLinkButton_15 = new QCommandLinkButton(widget_11);
+        commandLinkButton_15->setObjectName(QString::fromUtf8("commandLinkButton_15"));
+        commandLinkButton_15->setGeometry(QRect(98, 99, 45, 45));
+        commandLinkButton_15->setStyleSheet(QString::fromUtf8("background: #F7F9FB;\n"
+"border: 3px solid rgb(114, 159, 207); padding: 5px;\n"
+"border-radius: 15px;"));
+        QIcon icon2;
+        icon2.addFile(QString::fromUtf8(":/picture/home_page/cmake-build-debug/pictures/home_page/bell.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        commandLinkButton_15->setIcon(icon2);
+        commandLinkButton_15->setIconSize(QSize(30, 30));
+        commandLinkButton_16 = new QCommandLinkButton(widget_11);
+        commandLinkButton_16->setObjectName(QString::fromUtf8("commandLinkButton_16"));
+        commandLinkButton_16->setGeometry(QRect(164, 99, 45, 45));
+        commandLinkButton_16->setStyleSheet(QString::fromUtf8("background: #F7F9FB;\n"
+"border: 3px solid rgb(114, 159, 207); padding: 5px;\n"
+"border-radius: 15px;"));
+        QIcon icon3;
+        icon3.addFile(QString::fromUtf8("../../\320\227\320\260\320\263\321\200\321\203\320\267\320\272\320\270/Group_139.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        commandLinkButton_16->setIcon(icon3);
+        commandLinkButton_16->setIconSize(QSize(30, 30));
+        commandLinkButton_17 = new QCommandLinkButton(widget_11);
+        commandLinkButton_17->setObjectName(QString::fromUtf8("commandLinkButton_17"));
+        commandLinkButton_17->setGeometry(QRect(230, 99, 45, 45));
+        commandLinkButton_17->setStyleSheet(QString::fromUtf8("background: #F7F9FB;\n"
+"border: 3px solid rgb(114, 159, 207); padding: 5px;\n"
+"border-radius: 15px;"));
+        QIcon icon4;
+        icon4.addFile(QString::fromUtf8(":/picture/home_page/cmake-build-debug/pictures/home_page/exit.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        commandLinkButton_17->setIcon(icon4);
+        commandLinkButton_17->setIconSize(QSize(30, 30));
+
+        gridLayout_7->addWidget(widget_11, 0, 1, 1, 1);
+
+        widget_12 = new QWidget(widget_9);
+        widget_12->setObjectName(QString::fromUtf8("widget_12"));
+        widget_12->setMaximumSize(QSize(1205, 682));
+        widget_12->setStyleSheet(QString::fromUtf8("background-color:#FFFFFF;\n"
+"border-radius: 30px;"));
+        label_21 = new QLabel(widget_12);
+        label_21->setObjectName(QString::fromUtf8("label_21"));
+        label_21->setGeometry(QRect(513, 25, 191, 38));
+        QFont font17;
+        font17.setPointSize(19);
+        label_21->setFont(font17);
+        label_22 = new QLabel(widget_12);
+        label_22->setObjectName(QString::fromUtf8("label_22"));
+        label_22->setGeometry(QRect(180, 300, 281, 51));
+        QFont font18;
+        font18.setPointSize(11);
+        label_22->setFont(font18);
+        label_22->setAlignment(Qt::AlignCenter);
+        label_22->setWordWrap(true);
+        label_23 = new QLabel(widget_12);
+        label_23->setObjectName(QString::fromUtf8("label_23"));
+        label_23->setGeometry(QRect(765, 299, 218, 51));
+        label_23->setAlignment(Qt::AlignCenter);
+        label_23->setWordWrap(true);
+        label_24 = new QLabel(widget_12);
+        label_24->setObjectName(QString::fromUtf8("label_24"));
+        label_24->setGeometry(QRect(160, 410, 321, 100));
+        QFont font19;
+        font19.setPointSize(70);
+        label_24->setFont(font19);
+        label_24->setStyleSheet(QString::fromUtf8("color: #5E9AD2;"));
+        label_24->setAlignment(Qt::AlignCenter);
+        label_26 = new QLabel(widget_12);
+        label_26->setObjectName(QString::fromUtf8("label_26"));
+        label_26->setGeometry(QRect(180, 520, 291, 29));
+        label_26->setFont(font11);
+        label_26->setAlignment(Qt::AlignCenter);
+        label_27 = new QLabel(widget_12);
+        label_27->setObjectName(QString::fromUtf8("label_27"));
+        label_27->setGeometry(QRect(800, 520, 151, 19));
+        label_27->setFont(font11);
+        pushButton_10 = new QPushButton(widget_12);
+        pushButton_10->setObjectName(QString::fromUtf8("pushButton_10"));
+        pushButton_10->setGeometry(QRect(170, 571, 293, 54));
+        pushButton_10->setFont(font13);
+        pushButton_10->setStyleSheet(QString::fromUtf8("background: #F7F9FB;\n"
+"border: 3px solid rgb(114, 159, 207); padding: 5px;\n"
+"border-radius: 20px;\n"
+"\n"
+"\n"
+""));
+        pushButton_11 = new QPushButton(widget_12);
+        pushButton_11->setObjectName(QString::fromUtf8("pushButton_11"));
+        pushButton_11->setGeometry(QRect(728, 571, 293, 54));
+        pushButton_11->setFont(font13);
+        pushButton_11->setStyleSheet(QString::fromUtf8("background: #F7F9FB;\n"
+"border: 3px solid rgb(114, 159, 207); padding: 5px;\n"
+"border-radius: 20px;"));
+        label_28 = new QLabel(widget_12);
+        label_28->setObjectName(QString::fromUtf8("label_28"));
+        label_28->setGeometry(QRect(640, 410, 471, 100));
+        label_28->setFont(font19);
+        label_28->setStyleSheet(QString::fromUtf8("color: #5E9AD2;"));
+        label_28->setAlignment(Qt::AlignCenter);
+        label_29 = new QLabel(widget_12);
+        label_29->setObjectName(QString::fromUtf8("label_29"));
+        label_29->setGeometry(QRect(828, 169, 141, 51));
+        QFont font20;
+        font20.setPointSize(30);
+        label_29->setFont(font20);
+        label_29->setStyleSheet(QString::fromUtf8("color: #5E9AD2;\n"
+""));
+        label_30 = new QLabel(widget_12);
+        label_30->setObjectName(QString::fromUtf8("label_30"));
+        label_30->setGeometry(QRect(261, 169, 141, 51));
+        label_30->setFont(font20);
+        label_30->setStyleSheet(QString::fromUtf8("color: #5E9AD2;"));
+
+        gridLayout_7->addWidget(widget_12, 1, 0, 1, 2);
+
+
+        verticalLayout_6->addWidget(widget_9);
+
+
+        gridLayout_6->addWidget(widget_6, 0, 1, 1, 1);
+
         widget_5 = new QWidget(widget_10);
         widget_5->setObjectName(QString::fromUtf8("widget_5"));
         QSizePolicy sizePolicy2(QSizePolicy::Fixed, QSizePolicy::Preferred);
@@ -604,152 +818,127 @@ public:
         verticalLayout_3 = new QVBoxLayout(verticalLayoutWidget_3);
         verticalLayout_3->setSpacing(0);
         verticalLayout_3->setObjectName(QString::fromUtf8("verticalLayout_3"));
-        verticalLayout_3->setContentsMargins(20, 0, 50, 0);
+        verticalLayout_3->setContentsMargins(20, 0, 20, 0);
         commandLinkButton = new QCommandLinkButton(verticalLayoutWidget_3);
         commandLinkButton->setObjectName(QString::fromUtf8("commandLinkButton"));
         commandLinkButton->setFont(font14);
-        QIcon icon;
-        icon.addFile(QString::fromUtf8("pictures/home_page/logo_home.svg"), QSize(), QIcon::Normal, QIcon::Off);
-        commandLinkButton->setIcon(icon);
+        QIcon icon5;
+        icon5.addFile(QString::fromUtf8("pictures/home_page/logo_home.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        commandLinkButton->setIcon(icon5);
 
         verticalLayout_3->addWidget(commandLinkButton);
 
         commandLinkButton_3 = new QCommandLinkButton(verticalLayoutWidget_3);
         commandLinkButton_3->setObjectName(QString::fromUtf8("commandLinkButton_3"));
-        QIcon icon1;
-        icon1.addFile(QString::fromUtf8("pictures/home_page/all_files.svg"), QSize(), QIcon::Normal, QIcon::Off);
-        commandLinkButton_3->setIcon(icon1);
+        QIcon icon6;
+        icon6.addFile(QString::fromUtf8("pictures/home_page/all_files.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        commandLinkButton_3->setIcon(icon6);
 
         verticalLayout_3->addWidget(commandLinkButton_3);
 
         commandLinkButton_6 = new QCommandLinkButton(verticalLayoutWidget_3);
         commandLinkButton_6->setObjectName(QString::fromUtf8("commandLinkButton_6"));
-        QIcon icon2;
-        icon2.addFile(QString::fromUtf8("pictures/home_page/favorites.svg"), QSize(), QIcon::Normal, QIcon::Off);
-        commandLinkButton_6->setIcon(icon2);
+        QIcon icon7;
+        icon7.addFile(QString::fromUtf8("pictures/home_page/favorites.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        commandLinkButton_6->setIcon(icon7);
 
         verticalLayout_3->addWidget(commandLinkButton_6);
 
         commandLinkButton_4 = new QCommandLinkButton(verticalLayoutWidget_3);
         commandLinkButton_4->setObjectName(QString::fromUtf8("commandLinkButton_4"));
-        QIcon icon3;
-        icon3.addFile(QString::fromUtf8("pictures/home_page/sale_place.svg"), QSize(), QIcon::Normal, QIcon::Off);
-        commandLinkButton_4->setIcon(icon3);
+        QIcon icon8;
+        icon8.addFile(QString::fromUtf8("pictures/home_page/sale_place.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        commandLinkButton_4->setIcon(icon8);
 
         verticalLayout_3->addWidget(commandLinkButton_4);
 
         commandLinkButton_5 = new QCommandLinkButton(verticalLayoutWidget_3);
         commandLinkButton_5->setObjectName(QString::fromUtf8("commandLinkButton_5"));
-        QIcon icon4;
-        icon4.addFile(QString::fromUtf8("pictures/home_page/settings.svg"), QSize(), QIcon::Normal, QIcon::Off);
-        commandLinkButton_5->setIcon(icon4);
+        QIcon icon9;
+        icon9.addFile(QString::fromUtf8("pictures/home_page/settings.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        commandLinkButton_5->setIcon(icon9);
 
         verticalLayout_3->addWidget(commandLinkButton_5);
 
         commandLinkButton_7 = new QCommandLinkButton(verticalLayoutWidget_3);
         commandLinkButton_7->setObjectName(QString::fromUtf8("commandLinkButton_7"));
-        QIcon icon5;
-        icon5.addFile(QString::fromUtf8("pictures/home_page/delete.svg"), QSize(), QIcon::Normal, QIcon::Off);
-        commandLinkButton_7->setIcon(icon5);
+        QIcon icon10;
+        icon10.addFile(QString::fromUtf8("pictures/home_page/delete.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        commandLinkButton_7->setIcon(icon10);
 
         verticalLayout_3->addWidget(commandLinkButton_7);
 
         commandLinkButton_8 = new QCommandLinkButton(verticalLayoutWidget_3);
         commandLinkButton_8->setObjectName(QString::fromUtf8("commandLinkButton_8"));
-        QIcon icon6;
-        icon6.addFile(QString::fromUtf8("pictures/home_page/premium.svg"), QSize(), QIcon::Normal, QIcon::Off);
-        commandLinkButton_8->setIcon(icon6);
+        QIcon icon11;
+        icon11.addFile(QString::fromUtf8("pictures/home_page/premium.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        commandLinkButton_8->setIcon(icon11);
 
         verticalLayout_3->addWidget(commandLinkButton_8);
 
-        commandLinkButton_10 = new QCommandLinkButton(widget_5);
+        verticalLayoutWidget_4 = new QWidget(widget_5);
+        verticalLayoutWidget_4->setObjectName(QString::fromUtf8("verticalLayoutWidget_4"));
+        verticalLayoutWidget_4->setGeometry(QRect(10, 530, 311, 241));
+        verticalLayout = new QVBoxLayout(verticalLayoutWidget_4);
+        verticalLayout->setSpacing(0);
+        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        verticalLayout->setContentsMargins(20, 0, 0, 0);
+        pushButton_9 = new QPushButton(verticalLayoutWidget_4);
+        pushButton_9->setObjectName(QString::fromUtf8("pushButton_9"));
+        pushButton_9->setMinimumSize(QSize(281, 54));
+        pushButton_9->setMaximumSize(QSize(281, 54));
+        pushButton_9->setStyleSheet(QString::fromUtf8("color:black;\n"
+"border:0px;\n"
+"text-align: left;"));
+
+        verticalLayout->addWidget(pushButton_9);
+
+        commandLinkButton_10 = new QCommandLinkButton(verticalLayoutWidget_4);
         commandLinkButton_10->setObjectName(QString::fromUtf8("commandLinkButton_10"));
-        commandLinkButton_10->setGeometry(QRect(20, 620, 250, 41));
-        commandLinkButton_10->setStyleSheet(QString::fromUtf8("color:white;\n"
-"background-color:#C4C4C4;"));
-        QIcon icon7;
-        icon7.addFile(QString::fromUtf8("pictures/home_page/Folder.svg"), QSize(), QIcon::Normal, QIcon::Off);
-        commandLinkButton_10->setIcon(icon7);
-        commandLinkButton_11 = new QCommandLinkButton(widget_5);
-        commandLinkButton_11->setObjectName(QString::fromUtf8("commandLinkButton_11"));
-        commandLinkButton_11->setGeometry(QRect(20, 550, 250, 41));
-        commandLinkButton_11->setStyleSheet(QString::fromUtf8("color:white;\n"
-"background-color:#C4C4C4;"));
-        commandLinkButton_11->setIconSize(QSize(0, 0));
-        commandLinkButton_12 = new QCommandLinkButton(widget_5);
-        commandLinkButton_12->setObjectName(QString::fromUtf8("commandLinkButton_12"));
-        commandLinkButton_12->setGeometry(QRect(20, 700, 250, 41));
-        commandLinkButton_12->setStyleSheet(QString::fromUtf8("color:white;\n"
-"background-color:#C4C4C4;"));
-        commandLinkButton_12->setIcon(icon7);
-        commandLinkButton_13 = new QCommandLinkButton(widget_5);
+        commandLinkButton_10->setMinimumSize(QSize(281, 54));
+        commandLinkButton_10->setMaximumSize(QSize(281, 54));
+        commandLinkButton_10->setStyleSheet(QString::fromUtf8("color:black;"));
+        QIcon icon12;
+        icon12.addFile(QString::fromUtf8("pictures/home_page/Folder.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        commandLinkButton_10->setIcon(icon12);
+
+        verticalLayout->addWidget(commandLinkButton_10);
+
+        commandLinkButton_13 = new QCommandLinkButton(verticalLayoutWidget_4);
         commandLinkButton_13->setObjectName(QString::fromUtf8("commandLinkButton_13"));
-        commandLinkButton_13->setGeometry(QRect(20, 660, 250, 41));
-        commandLinkButton_13->setStyleSheet(QString::fromUtf8("color:white;\n"
-"background-color:#C4C4C4;"));
-        commandLinkButton_13->setIcon(icon7);
+        commandLinkButton_13->setMinimumSize(QSize(281, 54));
+        commandLinkButton_13->setMaximumSize(QSize(281, 54));
+        commandLinkButton_13->setStyleSheet(QString::fromUtf8("color:black;"));
+        commandLinkButton_13->setIcon(icon12);
 
+        verticalLayout->addWidget(commandLinkButton_13);
+
+        commandLinkButton_12 = new QCommandLinkButton(verticalLayoutWidget_4);
+        commandLinkButton_12->setObjectName(QString::fromUtf8("commandLinkButton_12"));
+        commandLinkButton_12->setMinimumSize(QSize(281, 54));
+        commandLinkButton_12->setMaximumSize(QSize(281, 54));
+        commandLinkButton_12->setStyleSheet(QString::fromUtf8("color:black;"));
+        commandLinkButton_12->setIcon(icon12);
+        verticalLayout->addWidget(commandLinkButton_12);
         gridLayout_6->addWidget(widget_5, 0, 0, 1, 1);
-
-        widget_6 = new QWidget(widget_10);
-        widget_6->setObjectName(QString::fromUtf8("widget_6"));
-        verticalLayout_6 = new QVBoxLayout(widget_6);
-        verticalLayout_6->setSpacing(0);
-        verticalLayout_6->setObjectName(QString::fromUtf8("verticalLayout_6"));
-        verticalLayout_6->setContentsMargins(0, 0, 0, 0);
-        widget_9 = new QWidget(widget_6);
-        widget_9->setObjectName(QString::fromUtf8("widget_9"));
-        widget_9->setStyleSheet(QString::fromUtf8("background: #F7F9FB;"));
-        widget_8 = new QWidget(widget_9);
-        widget_8->setObjectName(QString::fromUtf8("widget_8"));
-        widget_8->setGeometry(QRect(40, 0, 687, 164));
-        widget_8->setStyleSheet(QString::fromUtf8("background-color:#FFFFFF;\n"
-"border-radius: 30px;\n"
-""));
-        label_18 = new QLabel(widget_8);
-        label_18->setObjectName(QString::fromUtf8("label_18"));
-        label_18->setGeometry(QRect(28, 38, 444, 29));
-        lineEdit_8 = new QLineEdit(widget_8);
-        lineEdit_8->setObjectName(QString::fromUtf8("lineEdit_8"));
-        lineEdit_8->setGeometry(QRect(28, 101, 409, 40));
-        lineEdit_8->setStyleSheet(QString::fromUtf8("background: #F7F9FB;\n"
-"border-radius: 15px;"));
-        commandLinkButton_9 = new QCommandLinkButton(widget_8);
-        commandLinkButton_9->setObjectName(QString::fromUtf8("commandLinkButton_9"));
-        commandLinkButton_9->setGeometry(QRect(446, 101, 51, 40));
-        commandLinkButton_9->setStyleSheet(QString::fromUtf8("background: #F7F9FB;\n"
-"border-radius: 15px;"));
-        QIcon icon8;
-        icon8.addFile(QString::fromUtf8("pictures/home_page/filters.svg"), QSize(), QIcon::Normal, QIcon::Off);
-        commandLinkButton_9->setIcon(icon8);
-        commandLinkButton_9->setIconSize(QSize(40, 40));
-        widget_11 = new QWidget(widget_9);
-        widget_11->setObjectName(QString::fromUtf8("widget_11"));
-        widget_11->setGeometry(QRect(767, 0, 458, 164));
-        widget_11->setStyleSheet(QString::fromUtf8("background-color:#FFFFFF;\n"
-"border-radius: 30px;"));
-        widget_12 = new QWidget(widget_9);
-        widget_12->setObjectName(QString::fromUtf8("widget_12"));
-        widget_12->setGeometry(QRect(40, 234, 1185, 682));
-        widget_12->setStyleSheet(QString::fromUtf8("background-color:#FFFFFF;\n"
-"border-radius: 30px;"));
-
-        verticalLayout_6->addWidget(widget_9);
-
-
-        gridLayout_6->addWidget(widget_6, 0, 1, 1, 1);
-
-
         gridLayout_5->addWidget(widget_10, 0, 0, 1, 1);
-
         stackedWidget->addWidget(home_page);
+        home_page_gr = new QWidget();
+        home_page_gr->setObjectName(QString::fromUtf8("home_page_gr"));
+        gridLayout_8 = new QGridLayout(home_page_gr);
+        gridLayout_8->setSpacing(0);
+        gridLayout_8->setObjectName(QString::fromUtf8("gridLayout_8"));
+        gridLayout_8->setContentsMargins(0, 0, 0, 0);
 
-        formLayout->setWidget(0, QFormLayout::LabelRole, stackedWidget);
+
+        stackedWidget->addWidget(home_page_gr);
+
+        formLayout->setWidget(0, QFormLayout::SpanningRole, stackedWidget);
 
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 1303, 22));
+        menubar->setGeometry(QRect(0, 0, 2313, 26));
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
@@ -803,21 +992,38 @@ public:
         lineEdit_7->setPlaceholderText(QCoreApplication::translate("MainWindow", "\320\232\320\276\320\264", nullptr));
         pushButton_7->setText(QCoreApplication::translate("MainWindow", "\320\222\320\262\320\276\320\264", nullptr));
         pushButton_8->setText(QCoreApplication::translate("MainWindow", "\320\235\320\260\320\267\320\260\320\264", nullptr));
+        label_18->setText(QCoreApplication::translate("MainWindow", "User Name, \321\201\320\273\320\276\320\263\320\260\320\275 \320\262\320\274\320\265\321\201\321\202\320\276 \320\277\321\200\320\270\320\262\320\265\321\202\321\201\321\202\320\262\320\270\321\217", nullptr));
+        lineEdit_8->setInputMask(QString());
+        lineEdit_8->setPlaceholderText(QCoreApplication::translate("MainWindow", "\320\237\320\276\320\270\321\201\320\272", nullptr));
+        commandLinkButton_9->setText(QString());
+        label_19->setText(QCoreApplication::translate("MainWindow", "Alex Somov", nullptr));
+        label_20->setText(QCoreApplication::translate("MainWindow", "Premium", nullptr));
+        commandLinkButton_14->setText(QString());
+        commandLinkButton_15->setText(QString());
+        commandLinkButton_16->setText(QString());
+        commandLinkButton_17->setText(QString());
+        label_21->setText(QCoreApplication::translate("MainWindow", "\320\222\321\213 \321\201\320\264\320\260\321\221\321\202\320\265", nullptr));
+        label_22->setText(QCoreApplication::translate("MainWindow", "\320\234\320\265\321\201\321\202\320\260 \320\275\320\260 \320\222\320\260\321\210\320\265\320\274 \321\203\321\201\321\202\321\200\320\276\320\271\321\201\321\202\320\262\320\265 \320\267\320\260\320\264\320\265\320\271\321\201\321\202\320\262\320\276\320\262\320\260\320\275\320\276", nullptr));
+        label_23->setText(QCoreApplication::translate("MainWindow", "\320\234\320\265\321\201\321\202\320\260 \320\275\320\260 \320\222\320\260\321\210\320\265\320\274 \321\203\321\201\321\202\321\200\320\276\320\271\321\201\321\202\320\262\320\265 \320\267\320\260\320\275\321\217\321\202\320\276", nullptr));
+        label_24->setText(QCoreApplication::translate("MainWindow", "30\342\202\275", nullptr));
+        label_26->setText(QCoreApplication::translate("MainWindow", "\320\222\320\260\321\210 \320\265\320\266\320\265\320\264\320\275\320\265\320\262\320\275\321\213\320\271 \320\264\320\276\321\205\320\276\320\264", nullptr));
+        label_27->setText(QCoreApplication::translate("MainWindow", "\320\222\320\260\321\210 \320\261\320\260\320\273\320\260\320\275\321\201", nullptr));
+        pushButton_10->setText(QCoreApplication::translate("MainWindow", "\320\243\320\262\320\265\320\273\320\270\321\207\320\270\321\202\321\214", nullptr));
+        pushButton_11->setText(QCoreApplication::translate("MainWindow", "\320\222\321\213\320\262\320\265\321\201\321\202\320\270", nullptr));
+        label_28->setText(QCoreApplication::translate("MainWindow", "3000\342\202\275", nullptr));
+        label_29->setText(QCoreApplication::translate("MainWindow", "10,5%", nullptr));
+        label_30->setText(QCoreApplication::translate("MainWindow", "10,5%", nullptr));
         commandLinkButton->setText(QCoreApplication::translate("MainWindow", "\320\223\320\273\320\260\320\262\320\275\320\260\321\217", nullptr));
         commandLinkButton_3->setText(QCoreApplication::translate("MainWindow", "\320\244\320\260\320\271\320\273\321\213", nullptr));
         commandLinkButton_6->setText(QCoreApplication::translate("MainWindow", "\320\230\320\267\320\261\321\200\320\260\320\275\320\275\320\276\320\265", nullptr));
         commandLinkButton_4->setText(QCoreApplication::translate("MainWindow", "\320\241\320\264\320\260\321\207\320\260 \320\274\320\265\321\201\321\202\320\260", nullptr));
         commandLinkButton_5->setText(QCoreApplication::translate("MainWindow", "\320\235\320\260\321\201\321\202\321\200\320\276\320\271\320\272\320\270", nullptr));
         commandLinkButton_7->setText(QCoreApplication::translate("MainWindow", "\320\243\320\264\320\260\320\273\321\221\320\275\320\275\321\213\320\265 \321\204\320\260\320\271\320\273\321\213", nullptr));
-        commandLinkButton_8->setText(QCoreApplication::translate("MainWindow", "\320\237\320\276\320\264\320\277\320\270\321\201\320\272\320\260 \320\277\321\200\320\265\320\274\320\270\321\203\320\274", nullptr));
+        commandLinkButton_8->setText(QCoreApplication::translate("MainWindow", "Premium", nullptr));
+        pushButton_9->setText(QCoreApplication::translate("MainWindow", "\320\237\320\276\321\201\320\273\320\265\320\264\320\275\320\270\320\265 \321\204\320\260\320\271\320\273\321\213", nullptr));
         commandLinkButton_10->setText(QCoreApplication::translate("MainWindow", "\320\237\320\276\321\200\321\202\321\204\320\276\320\273\320\270\320\276", nullptr));
-        commandLinkButton_11->setText(QCoreApplication::translate("MainWindow", "\320\237\320\276\321\201\320\273\320\265\320\264\320\275\320\270\320\265 \321\204\320\260\320\271\320\273\321\213", nullptr));
-        commandLinkButton_12->setText(QCoreApplication::translate("MainWindow", "\320\237\320\276\321\200\321\202\321\200\320\265\321\202\320\275\320\260\321\217 \321\201\321\212\321\221\320\274\320\272\320\260", nullptr));
         commandLinkButton_13->setText(QCoreApplication::translate("MainWindow", "\320\230\320\273\320\273\321\216\321\201\321\202\321\200\320\260\321\206\320\270\320\270", nullptr));
-        label_18->setText(QCoreApplication::translate("MainWindow", "User Name, \321\201\320\273\320\276\320\263\320\260\320\275 \320\262\320\274\320\265\321\201\321\202\320\276 \320\277\321\200\320\270\320\262\320\265\321\202\321\201\321\202\320\262\320\270\321\217", nullptr));
-        lineEdit_8->setInputMask(QString());
-        lineEdit_8->setPlaceholderText(QCoreApplication::translate("MainWindow", "\320\237\320\276\320\270\321\201\320\272", nullptr));
-        commandLinkButton_9->setText(QString());
+        commandLinkButton_12->setText(QCoreApplication::translate("MainWindow", "\320\237\320\276\321\200\321\202\321\200\320\265\321\202\320\275\320\260\321\217 \321\201\321\212\321\221\320\274\320\272\320\260", nullptr));
     } // retranslateUi
 
 };

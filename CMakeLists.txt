@@ -8,6 +8,8 @@ set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 
+
+
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 if(UNIX)
@@ -30,8 +32,8 @@ endif()
 #endif()
 
 find_package(OpenSSL REQUIRED)
-find_package(QT NAMES Qt5 Qt6 COMPONENTS Widgets SvgREQUIRED)
-find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Network Widgets Svg REQUIRED)
+find_package(QT NAMES Qt5 Qt6 COMPONENTS Widgets Svg Charts REQUIRED)
+find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Network Widgets Svg Charts REQUIRED)
 
 set(PROJECT_SOURCES
         main.cpp
@@ -40,7 +42,8 @@ set(PROJECT_SOURCES
         mainwindow.ui
         fields_values.cpp
         fields_values.h
-)
+        graph.qrc
+        graphics.cpp graphics.h)
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(UpStorage
@@ -61,7 +64,7 @@ endif()
 
 include_directories (${OpenSSL_INCLUDE_DIRS})
 link_directories(UpStorage ${OpenSSL_LIBRARY_DIRS})
-target_link_libraries(UpStorage PRIVATE Qt${QT_VERSION_MAJOR}::Network Qt${QT_VERSION_MAJOR}::Widgets OpenSSL::SSL Qt${QT_VERSION_MAJOR}::Svg)
+target_link_libraries(UpStorage PRIVATE Qt${QT_VERSION_MAJOR}::Network Qt${QT_VERSION_MAJOR}::Widgets OpenSSL::SSL Qt${QT_VERSION_MAJOR}::Svg Qt${QT_VERSION_MAJOR}::Charts)
 
 set_target_properties(UpStorage PROPERTIES
     MACOSX_BUNDLE_GUI_IDENTIFIER my.example.com
