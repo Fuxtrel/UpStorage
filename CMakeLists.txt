@@ -43,7 +43,7 @@ set(PROJECT_SOURCES
         fields_values.cpp
         fields_values.h
         graph.qrc
-        graphics.cpp graphics.h)
+        graphics.cpp graphics.h customshadoweffect.cpp customshadoweffect.h)
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(UpStorage

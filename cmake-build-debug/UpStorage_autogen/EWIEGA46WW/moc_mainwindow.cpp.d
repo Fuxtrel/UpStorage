@@ -141,9 +141,11 @@
   /home/alex/Qt/5.15.2/gcc_64/include/QtSvg/QSvgWidget \
   /home/alex/Qt/5.15.2/gcc_64/include/QtSvg/qsvgwidget.h \
   /home/alex/Qt/5.15.2/gcc_64/include/QtSvg/qtsvgglobal.h \
+  /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QGraphicsDropShadowEffect \
   /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QMainWindow \
   /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QStackedWidget \
   /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/qframe.h \
+  /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/qgraphicseffect.h \
   /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/qmainwindow.h \
   /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/qsizepolicy.h \
   /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/qstackedwidget.h \

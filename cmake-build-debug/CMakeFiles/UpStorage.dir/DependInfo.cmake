@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/alex/CLionProjects/UpStorage/cmake-build-debug/UpStorage_autogen/EWIEGA46WW/qrc_graph.cpp" "/home/alex/CLionProjects/UpStorage/cmake-build-debug/CMakeFiles/UpStorage.dir/UpStorage_autogen/EWIEGA46WW/qrc_graph.cpp.o"
   "/home/alex/CLionProjects/UpStorage/cmake-build-debug/UpStorage_autogen/mocs_compilation.cpp" "/home/alex/CLionProjects/UpStorage/cmake-build-debug/CMakeFiles/UpStorage.dir/UpStorage_autogen/mocs_compilation.cpp.o"
+  "/home/alex/CLionProjects/UpStorage/customshadoweffect.cpp" "/home/alex/CLionProjects/UpStorage/cmake-build-debug/CMakeFiles/UpStorage.dir/customshadoweffect.cpp.o"
   "/home/alex/CLionProjects/UpStorage/fields_values.cpp" "/home/alex/CLionProjects/UpStorage/cmake-build-debug/CMakeFiles/UpStorage.dir/fields_values.cpp.o"
   "/home/alex/CLionProjects/UpStorage/graphics.cpp" "/home/alex/CLionProjects/UpStorage/cmake-build-debug/CMakeFiles/UpStorage.dir/graphics.cpp.o"
   "/home/alex/CLionProjects/UpStorage/main.cpp" "/home/alex/CLionProjects/UpStorage/cmake-build-debug/CMakeFiles/UpStorage.dir/main.cpp.o"

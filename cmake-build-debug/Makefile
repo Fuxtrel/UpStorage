@@ -209,6 +209,33 @@ UpStorage_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/UpStorage.dir/build.make CMakeFiles/UpStorage.dir/UpStorage_autogen/mocs_compilation.cpp.s
 .PHONY : UpStorage_autogen/mocs_compilation.cpp.s
 
+customshadoweffect.o: customshadoweffect.cpp.o
+
+.PHONY : customshadoweffect.o
+
+# target to build an object file
+customshadoweffect.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UpStorage.dir/build.make CMakeFiles/UpStorage.dir/customshadoweffect.cpp.o
+.PHONY : customshadoweffect.cpp.o
+
+customshadoweffect.i: customshadoweffect.cpp.i
+
+.PHONY : customshadoweffect.i
+
+# target to preprocess a source file
+customshadoweffect.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UpStorage.dir/build.make CMakeFiles/UpStorage.dir/customshadoweffect.cpp.i
+.PHONY : customshadoweffect.cpp.i
+
+customshadoweffect.s: customshadoweffect.cpp.s
+
+.PHONY : customshadoweffect.s
+
+# target to generate assembly for a file
+customshadoweffect.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UpStorage.dir/build.make CMakeFiles/UpStorage.dir/customshadoweffect.cpp.s
+.PHONY : customshadoweffect.cpp.s
+
 fields_values.o: fields_values.cpp.o
 
 .PHONY : fields_values.o
@@ -333,6 +360,9 @@ help:
 	@echo "... UpStorage_autogen/mocs_compilation.o"
 	@echo "... UpStorage_autogen/mocs_compilation.i"
 	@echo "... UpStorage_autogen/mocs_compilation.s"
+	@echo "... customshadoweffect.o"
+	@echo "... customshadoweffect.i"
+	@echo "... customshadoweffect.s"
 	@echo "... fields_values.o"
 	@echo "... fields_values.i"
 	@echo "... fields_values.s"

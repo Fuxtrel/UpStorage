@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "UpStorage_autogen"
   "CMakeFiles/UpStorage.dir/UpStorage_autogen/EWIEGA46WW/qrc_graph.cpp.o"
   "CMakeFiles/UpStorage.dir/UpStorage_autogen/mocs_compilation.cpp.o"
+  "CMakeFiles/UpStorage.dir/customshadoweffect.cpp.o"
   "CMakeFiles/UpStorage.dir/fields_values.cpp.o"
   "CMakeFiles/UpStorage.dir/graphics.cpp.o"
   "CMakeFiles/UpStorage.dir/main.cpp.o"

@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>2313</width>
-    <height>1069</height>
+    <height>1124</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -99,7 +99,7 @@
        <string notr="true">background-color:rgb(85, 87, 83);</string>
       </property>
       <property name="currentIndex">
-       <number>4</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="reg_page">
        <layout class="QGridLayout" name="gridLayout_2">
@@ -184,10 +184,10 @@ border-radius:15px;</string>
            <widget class="QPushButton" name="pushButton_2">
             <property name="geometry">
              <rect>
-              <x>100</x>
-              <y>610</y>
-              <width>301</width>
-              <height>51</height>
+              <x>113</x>
+              <y>650</y>
+              <width>334</width>
+              <height>60</height>
              </rect>
             </property>
             <property name="font">
@@ -197,8 +197,8 @@ border-radius:15px;</string>
              </font>
             </property>
             <property name="styleSheet">
-             <string notr="true">background:rgb(100, 174, 234) ;
-border: 3px solid #F7F9FB; padding: 5px;
+             <string notr="true">background:white ;
+color:black;
 border-radius: 15px;
 </string>
             </property>
@@ -224,8 +224,8 @@ border-radius: 15px;
            </property>
            <property name="styleSheet">
             <string notr="true">background: #F7F9FB;
-border: 3px solid rgb(114, 159, 207); padding: 5px;
 border-radius: 15px;
+color:black;
 </string>
            </property>
            <property name="text">
@@ -242,6 +242,15 @@ border-radius: 15px;
             </rect>
            </property>
            <layout class="QVBoxLayout" name="verticalLayout_2">
+            <property name="leftMargin">
+             <number>40</number>
+            </property>
+            <property name="rightMargin">
+             <number>40</number>
+            </property>
+            <property name="bottomMargin">
+             <number>15</number>
+            </property>
             <item>
              <widget class="QLabel" name="label">
               <property name="enabled">
@@ -258,6 +267,9 @@ border-radius: 15px;
                 <family>Noto Sans CJK HK</family>
                 <pointsize>21</pointsize>
                </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:black;</string>
               </property>
               <property name="text">
                <string>Регистрация</string>
@@ -307,10 +319,11 @@ border-radius: 15px;
                </font>
               </property>
               <property name="styleSheet">
-               <string notr="true">background: rgb(238, 238, 236);
+               <string notr="true">background: white;
 border: 3px;
 border-color: rgb(114, 159, 207) ;
-border-radius: 15px;</string>
+border-radius: 15px;
+color:black;</string>
               </property>
               <property name="text">
                <string/>
@@ -360,10 +373,14 @@ border-radius: 15px;</string>
                </font>
               </property>
               <property name="styleSheet">
-               <string notr="true">background: rgb(238, 238, 236);
+               <string notr="true">background: white;
 border: 3px;
 border-color: rgb(114, 159, 207) ;
-border-radius: 15px;</string>
+border-radius: 15px;
+color:black;</string>
+              </property>
+              <property name="dragEnabled">
+               <bool>false</bool>
               </property>
               <property name="placeholderText">
                <string>Email</string>
@@ -410,10 +427,11 @@ border-radius: 15px;</string>
                </font>
               </property>
               <property name="styleSheet">
-               <string notr="true">background: rgb(238, 238, 236);
+               <string notr="true">background: white;
 border: 3px;
 border-color: rgb(114, 159, 207) ;
-border-radius: 15px;</string>
+border-radius: 15px;
+color:black;</string>
               </property>
               <property name="placeholderText">
                <string>Пароль</string>
@@ -431,6 +449,9 @@ border-radius: 15px;</string>
              <height>81</height>
             </rect>
            </property>
+           <property name="styleSheet">
+            <string notr="true">color:black;</string>
+           </property>
            <property name="text">
             <string>Я принимаю условия Пользовательского соглашения и даю свое согласие на обработку моей персональной информации на условиях определенных Политикой конфиденциальности</string>
            </property>
@@ -446,8 +467,8 @@ border-radius: 15px;</string>
             <rect>
              <x>650</x>
              <y>500</y>
-             <width>21</width>
-             <height>21</height>
+             <width>17</width>
+             <height>17</height>
             </rect>
            </property>
            <property name="minimumSize">
@@ -469,7 +490,8 @@ border-radius: 15px;</string>
             </font>
            </property>
            <property name="styleSheet">
-            <string notr="true">subcontrol-position: left top;</string>
+            <string notr="true">subcontrol-position: left top;
+</string>
            </property>
            <property name="text">
             <string/>
@@ -562,16 +584,16 @@ border-radius:15px;</string>
            <widget class="QPushButton" name="pushButton_3">
             <property name="geometry">
              <rect>
-              <x>128</x>
+              <x>113</x>
               <y>650</y>
               <width>334</width>
-              <height>70</height>
+              <height>60</height>
              </rect>
             </property>
             <property name="minimumSize">
              <size>
               <width>334</width>
-              <height>70</height>
+              <height>60</height>
              </size>
             </property>
             <property name="maximumSize">
@@ -590,10 +612,11 @@ border-radius:15px;</string>
              <string notr="true">background:white ;
 border: 3px solid #F7F9FB; padding: 5px;
 border-radius: 15px;
+color:black;
 </string>
             </property>
             <property name="text">
-             <string>Зарегестрироваться</string>
+             <string>Зарегистрироваться</string>
             </property>
            </widget>
            <widget class="QLabel" name="label_7">
@@ -661,7 +684,7 @@ border-color:rgb(100, 174, 234);</string>
            </property>
            <property name="styleSheet">
             <string notr="true">background: #F7F9FB;
-border: 3px solid rgb(114, 159, 207); padding: 5px;
+color:black;
 border-radius: 15px;</string>
            </property>
            <property name="text">
@@ -671,13 +694,16 @@ border-radius: 15px;</string>
           <widget class="QWidget" name="verticalLayoutWidget_2">
            <property name="geometry">
             <rect>
-             <x>120</x>
+             <x>90</x>
              <y>150</y>
-             <width>482</width>
+             <width>541</width>
              <height>406</height>
             </rect>
            </property>
            <layout class="QVBoxLayout" name="verticalLayout_4">
+            <property name="leftMargin">
+             <number>30</number>
+            </property>
             <property name="topMargin">
              <number>0</number>
             </property>
@@ -705,6 +731,9 @@ border-radius: 15px;</string>
                   <family>Noto Sans CJK HK</family>
                   <pointsize>19</pointsize>
                  </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">color:black;</string>
                 </property>
                 <property name="text">
                  <string>Вход в учётную запись</string>
@@ -870,6 +899,9 @@ border-radius: 15px;</string>
                  <height>20</height>
                 </size>
                </property>
+               <property name="styleSheet">
+                <string notr="true">color:black;</string>
+               </property>
                <property name="text">
                 <string>Запомнить меня</string>
                </property>
@@ -907,6 +939,9 @@ border-radius: 15px;</string>
                </property>
                <property name="layoutDirection">
                 <enum>Qt::LeftToRight</enum>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color:black;</string>
                </property>
                <property name="text">
                 <string>Забыли пароль?</string>
@@ -1207,7 +1242,7 @@ border-radius: 15px;</string>
               <item>
                <widget class="QWidget" name="widget_9" native="true">
                 <property name="styleSheet">
-                 <string notr="true">background: rgb(179, 181, 253);</string>
+                 <string notr="true">background-: rgb(223, 223, 223);</string>
                 </property>
                 <layout class="QGridLayout" name="gridLayout_7">
                  <item row="0" column="0">
@@ -1364,7 +1399,7 @@ border-radius: 15px;</string>
                      <string/>
                     </property>
                     <property name="icon">
-                     <iconset resource="graph.qrc">
+                     <iconset>
                       <normaloff>:/picture/home_page/cmake-build-debug/pictures/home_page/gear.svg</normaloff>:/picture/home_page/cmake-build-debug/pictures/home_page/gear.svg</iconset>
                     </property>
                     <property name="iconSize">
@@ -1392,7 +1427,7 @@ border-radius: 15px;</string>
                      <string/>
                     </property>
                     <property name="icon">
-                     <iconset resource="graph.qrc">
+                     <iconset>
                       <normaloff>:/picture/home_page/cmake-build-debug/pictures/home_page/bell.svg</normaloff>:/picture/home_page/cmake-build-debug/pictures/home_page/bell.svg</iconset>
                     </property>
                     <property name="iconSize">
@@ -1448,7 +1483,7 @@ border-radius: 15px;</string>
                      <string/>
                     </property>
                     <property name="icon">
-                     <iconset resource="graph.qrc">
+                     <iconset>
                       <normaloff>:/picture/home_page/cmake-build-debug/pictures/home_page/exit.svg</normaloff>:/picture/home_page/cmake-build-debug/pictures/home_page/exit.svg</iconset>
                     </property>
                     <property name="iconSize">
@@ -2008,8 +2043,6 @@ text-align: left;</string>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources>
-  <include location="graph.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>

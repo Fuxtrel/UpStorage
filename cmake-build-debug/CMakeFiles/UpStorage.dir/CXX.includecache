@@ -6,6 +6,16 @@
 
 #IncludeRegexTransform: 
 
+/home/alex/CLionProjects/UpStorage/cmake-build-debug/UpStorage_autogen/EWIEGA46WW/moc_customshadoweffect.cpp
+memory
+-
+../../../customshadoweffect.h
+/home/alex/CLionProjects/UpStorage/customshadoweffect.h
+QtCore/qbytearray.h
+-
+QtCore/qmetatype.h
+-
+
 /home/alex/CLionProjects/UpStorage/cmake-build-debug/UpStorage_autogen/EWIEGA46WW/moc_mainwindow.cpp
 memory
 -
@@ -17,8 +27,16 @@ QtCore/qmetatype.h
 -
 
 /home/alex/CLionProjects/UpStorage/cmake-build-debug/UpStorage_autogen/mocs_compilation.cpp
+EWIEGA46WW/moc_customshadoweffect.cpp
+/home/alex/CLionProjects/UpStorage/cmake-build-debug/UpStorage_autogen/EWIEGA46WW/moc_customshadoweffect.cpp
 EWIEGA46WW/moc_mainwindow.cpp
 /home/alex/CLionProjects/UpStorage/cmake-build-debug/UpStorage_autogen/EWIEGA46WW/moc_mainwindow.cpp
+
+/home/alex/CLionProjects/UpStorage/customshadoweffect.h
+QGraphicsDropShadowEffect
+-
+QGraphicsEffect
+-
 
 /home/alex/CLionProjects/UpStorage/fields_values.cpp
 fields_values.h
@@ -47,6 +65,8 @@ mainwindow.h
 /home/alex/CLionProjects/UpStorage/mainwindow.h
 ./ui_mainwindow.h
 /home/alex/CLionProjects/UpStorage/ui_mainwindow.h
+customshadoweffect.h
+/home/alex/CLionProjects/UpStorage/customshadoweffect.h
 
 /home/alex/CLionProjects/UpStorage/mainwindow.h
 QMainWindow
@@ -76,6 +96,8 @@ QNetworkReply
 QtSvg/QSvgWidget
 -
 QFontDatabase
+-
+QGraphicsDropShadowEffect
 -
 fields_values.h
 /home/alex/CLionProjects/UpStorage/fields_values.h
@@ -1202,38 +1224,6 @@ QtGui/qwindowdefs.h
 QtCore/qrect.h
 -
 
-/home/alex/Qt/5.15.2/gcc_64/include/QtGui/qpainter.h
-QtGui/qtguiglobal.h
--
-QtCore/qnamespace.h
--
-QtCore/qrect.h
--
-QtCore/qpoint.h
--
-QtCore/qscopedpointer.h
--
-QtGui/qpixmap.h
--
-QtGui/qimage.h
--
-QtGui/qtextoption.h
--
-QtGui/qpolygon.h
--
-QtGui/qpen.h
--
-QtGui/qbrush.h
--
-QtGui/qmatrix.h
--
-QtGui/qtransform.h
--
-QtGui/qfontinfo.h
--
-QtGui/qfontmetrics.h
--
-
 /home/alex/Qt/5.15.2/gcc_64/include/QtGui/qpalette.h
 QtGui/qtguiglobal.h
 -
@@ -1600,9 +1590,13 @@ qcommandlinkbutton.h
 qformlayout.h
 /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/qformlayout.h
 
-/home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QGraphicsView
-qgraphicsview.h
-/home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/qgraphicsview.h
+/home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QGraphicsDropShadowEffect
+qgraphicseffect.h
+/home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/qgraphicseffect.h
+
+/home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QGraphicsEffect
+qgraphicseffect.h
+/home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/qgraphicseffect.h
 
 /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QGridLayout
 qgridlayout.h
@@ -1664,12 +1658,6 @@ QtGui/qicon.h
 QtGui/qkeysequence.h
 -
 QtWidgets/qwidget.h
--
-
-/home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/qabstractscrollarea.h
-QtWidgets/qtwidgetsglobal.h
--
-QtWidgets/qframe.h
 -
 
 /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/qaction.h
@@ -1752,7 +1740,7 @@ QtWidgets/qtwidgetsglobal.h
 QtWidgets/qwidget.h
 -
 
-/home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/qgraphicsscene.h
+/home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/qgraphicseffect.h
 QtWidgets/qtwidgetsglobal.h
 -
 QtCore/qobject.h
@@ -1761,25 +1749,9 @@ QtCore/qpoint.h
 -
 QtCore/qrect.h
 -
+QtGui/qcolor.h
+-
 QtGui/qbrush.h
--
-QtGui/qfont.h
--
-QtGui/qtransform.h
--
-QtGui/qpen.h
--
-
-/home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/qgraphicsview.h
-QtWidgets/qtwidgetsglobal.h
--
-QtCore/qmetatype.h
--
-QtGui/qpainter.h
--
-QtWidgets/qscrollarea.h
--
-QtWidgets/qgraphicsscene.h
 -
 
 /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/qgridlayout.h
@@ -1870,12 +1842,6 @@ QtWidgets/qmenu.h
 QtWidgets/qtwidgetsglobal.h
 -
 QtWidgets/qabstractbutton.h
--
-
-/home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/qscrollarea.h
-QtWidgets/qtwidgetsglobal.h
--
-QtWidgets/qabstractscrollarea.h
 -
 
 /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/qsizepolicy.h
@@ -1982,7 +1948,5 @@ QtWidgets/QStatusBar
 QtWidgets/QVBoxLayout
 -
 QtWidgets/QWidget
--
-QtWidgets/QGraphicsView
 -
 

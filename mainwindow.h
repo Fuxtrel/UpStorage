@@ -15,6 +15,7 @@
 #include <QNetworkReply>
 #include <QtSvg/QSvgWidget>
 #include <QFontDatabase>
+#include <QGraphicsDropShadowEffect>
 #include "fields_values.h"
 #include "./ui_mainwindow.h"
 #include "graphics.h"

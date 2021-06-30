@@ -105,6 +105,11 @@
 	"HEADERS" : 
 	[
 		[
+			"/home/alex/CLionProjects/UpStorage/customshadoweffect.h",
+			"MU",
+			"EWIEGA46WW/moc_customshadoweffect.cpp"
+		],
+		[
 			"/home/alex/CLionProjects/UpStorage/fields_values.h",
 			"MU",
 			"EWIEGA46WW/moc_fields_values.cpp"
@@ -184,6 +189,7 @@
 	"SETTINGS_FILE" : "/home/alex/CLionProjects/UpStorage/cmake-build-debug/CMakeFiles/UpStorage_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "/home/alex/CLionProjects/UpStorage/customshadoweffect.cpp", "MU" ],
 		[ "/home/alex/CLionProjects/UpStorage/fields_values.cpp", "MU" ],
 		[ "/home/alex/CLionProjects/UpStorage/graphics.cpp", "MU" ],
 		[ "/home/alex/CLionProjects/UpStorage/main.cpp", "MU" ],

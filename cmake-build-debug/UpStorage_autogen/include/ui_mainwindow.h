@@ -27,16 +27,12 @@
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
-#include <QtWidgets/QGraphicsView>
 
 QT_BEGIN_NAMESPACE
 
 class Ui_MainWindow
 {
 public:
-    QGraphicsView *graphicsView;
-    QGraphicsScene *scene;
-    QGraphicsItemGroup *group;
     QWidget *centralwidget;
     QFormLayout *formLayout;
     QStackedWidget *stackedWidget;
@@ -150,7 +146,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(2313, 1069);
+        MainWindow->resize(2313, 1124);
         QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
@@ -208,13 +204,13 @@ public:
 "border-radius:15px;"));
         pushButton_2 = new QPushButton(widget_2);
         pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
-        pushButton_2->setGeometry(QRect(100, 610, 301, 51));
+        pushButton_2->setGeometry(QRect(113, 650, 334, 60));
         QFont font1;
         font1.setFamily(QString::fromUtf8("Loma"));
         font1.setPointSize(13);
         pushButton_2->setFont(font1);
-        pushButton_2->setStyleSheet(QString::fromUtf8("background:rgb(100, 174, 234) ;\n"
-"border: 3px solid #F7F9FB; padding: 5px;\n"
+        pushButton_2->setStyleSheet(QString::fromUtf8("background:white ;\n"
+"color:black;\n"
 "border-radius: 15px;\n"
 ""));
         pushButton = new QPushButton(widget);
@@ -225,15 +221,15 @@ public:
         font2.setPointSize(13);
         pushButton->setFont(font2);
         pushButton->setStyleSheet(QString::fromUtf8("background: #F7F9FB;\n"
-"border: 3px solid rgb(114, 159, 207); padding: 5px;\n"
 "border-radius: 15px;\n"
+"color:black;\n"
 ""));
         verticalLayoutWidget = new QWidget(widget);
         verticalLayoutWidget->setObjectName(QString::fromUtf8("verticalLayoutWidget"));
         verticalLayoutWidget->setGeometry(QRect(640, 100, 561, 391));
         verticalLayout_2 = new QVBoxLayout(verticalLayoutWidget);
         verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
-        verticalLayout_2->setContentsMargins(0, 0, 0, 0);
+        verticalLayout_2->setContentsMargins(40, 0, 40, 15);
         label = new QLabel(verticalLayoutWidget);
         label->setObjectName(QString::fromUtf8("label"));
         label->setEnabled(true);
@@ -242,6 +238,7 @@ public:
         font3.setFamily(QString::fromUtf8("Noto Sans CJK HK"));
         font3.setPointSize(21);
         label->setFont(font3);
+        label->setStyleSheet(QString::fromUtf8("color:black;"));
         label->setAlignment(Qt::AlignCenter);
 
         verticalLayout_2->addWidget(label);
@@ -261,10 +258,11 @@ public:
         font4.setFamily(QString::fromUtf8("MS Shell Dlg 2"));
         font4.setPointSize(14);
         lineEdit->setFont(font4);
-        lineEdit->setStyleSheet(QString::fromUtf8("background: rgb(238, 238, 236);\n"
+        lineEdit->setStyleSheet(QString::fromUtf8("background: white;\n"
 "border: 3px;\n"
 "border-color: rgb(114, 159, 207) ;\n"
-"border-radius: 15px;"));
+"border-radius: 15px;\n"
+"color:black;"));
 
         verticalLayout_2->addWidget(lineEdit);
 
@@ -280,10 +278,12 @@ public:
         lineEdit_2->setMinimumSize(QSize(480, 60));
         lineEdit_2->setMaximumSize(QSize(480, 60));
         lineEdit_2->setFont(font4);
-        lineEdit_2->setStyleSheet(QString::fromUtf8("background: rgb(238, 238, 236);\n"
+        lineEdit_2->setStyleSheet(QString::fromUtf8("background: white;\n"
 "border: 3px;\n"
 "border-color: rgb(114, 159, 207) ;\n"
-"border-radius: 15px;"));
+"border-radius: 15px;\n"
+"color:black;"));
+        lineEdit_2->setDragEnabled(false);
 
         verticalLayout_2->addWidget(lineEdit_2);
 
@@ -299,28 +299,31 @@ public:
         lineEdit_3->setMinimumSize(QSize(480, 60));
         lineEdit_3->setMaximumSize(QSize(480, 60));
         lineEdit_3->setFont(font4);
-        lineEdit_3->setStyleSheet(QString::fromUtf8("background: rgb(238, 238, 236);\n"
+        lineEdit_3->setStyleSheet(QString::fromUtf8("background: white;\n"
 "border: 3px;\n"
 "border-color: rgb(114, 159, 207) ;\n"
-"border-radius: 15px;"));
+"border-radius: 15px;\n"
+"color:black;"));
 
         verticalLayout_2->addWidget(lineEdit_3);
 
         label_2 = new QLabel(widget);
         label_2->setObjectName(QString::fromUtf8("label_2"));
         label_2->setGeometry(QRect(690, 500, 491, 81));
+        label_2->setStyleSheet(QString::fromUtf8("color:black;"));
         label_2->setAlignment(Qt::AlignJustify|Qt::AlignVCenter);
         label_2->setWordWrap(true);
         checkBox = new QCheckBox(widget);
         checkBox->setObjectName(QString::fromUtf8("checkBox"));
-        checkBox->setGeometry(QRect(650, 500, 21, 21));
+        checkBox->setGeometry(QRect(650, 500, 17, 17));
         checkBox->setMinimumSize(QSize(0, 0));
         checkBox->setMaximumSize(QSize(600, 90));
         QFont font5;
         font5.setFamily(QString::fromUtf8("aakar"));
         font5.setPointSize(12);
         checkBox->setFont(font5);
-        checkBox->setStyleSheet(QString::fromUtf8("subcontrol-position: left top;"));
+        checkBox->setStyleSheet(QString::fromUtf8("subcontrol-position: left top;\n"
+""));
 
         gridLayout_2->addWidget(widget, 0, 0, 1, 1);
 
@@ -354,13 +357,14 @@ public:
 "border-radius:15px;"));
         pushButton_3 = new QPushButton(widget_4);
         pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
-        pushButton_3->setGeometry(QRect(128, 650, 334, 70));
-        pushButton_3->setMinimumSize(QSize(334, 70));
+        pushButton_3->setGeometry(QRect(113, 650, 334, 60));
+        pushButton_3->setMinimumSize(QSize(334, 60));
         pushButton_3->setMaximumSize(QSize(334, 60));
         pushButton_3->setFont(font1);
         pushButton_3->setStyleSheet(QString::fromUtf8("background:white ;\n"
 "border: 3px solid #F7F9FB; padding: 5px;\n"
 "border-radius: 15px;\n"
+"color:black;\n"
 ""));
         label_7 = new QLabel(widget_4);
         label_7->setObjectName(QString::fromUtf8("label_7"));
@@ -382,14 +386,14 @@ public:
         pushButton_4->setMaximumSize(QSize(334, 60));
         pushButton_4->setFont(font2);
         pushButton_4->setStyleSheet(QString::fromUtf8("background: #F7F9FB;\n"
-"border: 3px solid rgb(114, 159, 207); padding: 5px;\n"
+"color:black;\n"
 "border-radius: 15px;"));
         verticalLayoutWidget_2 = new QWidget(widget_3);
         verticalLayoutWidget_2->setObjectName(QString::fromUtf8("verticalLayoutWidget_2"));
-        verticalLayoutWidget_2->setGeometry(QRect(120, 150, 482, 406));
+        verticalLayoutWidget_2->setGeometry(QRect(90, 150, 541, 406));
         verticalLayout_4 = new QVBoxLayout(verticalLayoutWidget_2);
         verticalLayout_4->setObjectName(QString::fromUtf8("verticalLayout_4"));
-        verticalLayout_4->setContentsMargins(0, 0, 0, 0);
+        verticalLayout_4->setContentsMargins(30, 0, 0, 0);
         horizontalLayout_2 = new QHBoxLayout();
         horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
         label_3 = new QLabel(verticalLayoutWidget_2);
@@ -400,6 +404,7 @@ public:
         font7.setFamily(QString::fromUtf8("Noto Sans CJK HK"));
         font7.setPointSize(19);
         label_3->setFont(font7);
+        label_3->setStyleSheet(QString::fromUtf8("color:black;"));
         label_3->setAlignment(Qt::AlignCenter);
 
         horizontalLayout_2->addWidget(label_3);
@@ -459,6 +464,7 @@ public:
         checkBox_2->setGeometry(QRect(0, 10, 171, 20));
         checkBox_2->setMinimumSize(QSize(0, 20));
         checkBox_2->setMaximumSize(QSize(1000, 20));
+        checkBox_2->setStyleSheet(QString::fromUtf8("color:black;"));
         commandLinkButton_2 = new QCommandLinkButton(widget_7);
         commandLinkButton_2->setObjectName(QString::fromUtf8("commandLinkButton_2"));
         commandLinkButton_2->setGeometry(QRect(310, 0, 165, 30));
@@ -473,6 +479,7 @@ public:
         font8.setKerning(false);
         commandLinkButton_2->setFont(font8);
         commandLinkButton_2->setLayoutDirection(Qt::LeftToRight);
+        commandLinkButton_2->setStyleSheet(QString::fromUtf8("color:black;"));
         commandLinkButton_2->setIconSize(QSize(0, 0));
         commandLinkButton_2->setCheckable(false);
 
@@ -624,7 +631,7 @@ public:
         verticalLayout_6->setContentsMargins(0, 0, 0, 0);
         widget_9 = new QWidget(widget_6);
         widget_9->setObjectName(QString::fromUtf8("widget_9"));
-        widget_9->setStyleSheet(QString::fromUtf8("background: rgb(179, 181, 253);"));
+        widget_9->setStyleSheet(QString::fromUtf8("background-: rgb(223, 223, 223);"));
         gridLayout_7 = new QGridLayout(widget_9);
         gridLayout_7->setObjectName(QString::fromUtf8("gridLayout_7"));
         widget_8 = new QWidget(widget_9);
@@ -919,9 +926,15 @@ public:
         commandLinkButton_12->setMaximumSize(QSize(281, 54));
         commandLinkButton_12->setStyleSheet(QString::fromUtf8("color:black;"));
         commandLinkButton_12->setIcon(icon12);
+
         verticalLayout->addWidget(commandLinkButton_12);
+
+
         gridLayout_6->addWidget(widget_5, 0, 0, 1, 1);
+
+
         gridLayout_5->addWidget(widget_10, 0, 0, 1, 1);
+
         stackedWidget->addWidget(home_page);
         home_page_gr = new QWidget();
         home_page_gr->setObjectName(QString::fromUtf8("home_page_gr"));
@@ -929,8 +942,6 @@ public:
         gridLayout_8->setSpacing(0);
         gridLayout_8->setObjectName(QString::fromUtf8("gridLayout_8"));
         gridLayout_8->setContentsMargins(0, 0, 0, 0);
-
-
         stackedWidget->addWidget(home_page_gr);
 
         formLayout->setWidget(0, QFormLayout::SpanningRole, stackedWidget);
@@ -946,7 +957,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        stackedWidget->setCurrentIndex(4);
+        stackedWidget->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -970,7 +981,7 @@ public:
                         "\320\271 \320\272\320\276\320\275\321\204\320\270\320\264\320\265\320\275\321\206\320\270\320\260\320\273\321\214\320\275\320\276\321\201\321\202\320\270", nullptr));
         checkBox->setText(QString());
         label_5->setText(QString());
-        pushButton_3->setText(QCoreApplication::translate("MainWindow", "\320\227\320\260\321\200\320\265\320\263\320\265\321\201\321\202\321\200\320\270\321\200\320\276\320\262\320\260\321\202\321\214\321\201\321\217", nullptr));
+        pushButton_3->setText(QCoreApplication::translate("MainWindow", "\320\227\320\260\321\200\320\265\320\263\320\270\321\201\321\202\321\200\320\270\321\200\320\276\320\262\320\260\321\202\321\214\321\201\321\217", nullptr));
         label_7->setText(QCoreApplication::translate("MainWindow", "\320\224\320\276\320\261\321\200\320\276 \320\277\320\276\320\266\320\260\320\273\320\276\320\262\320\260\321\202\321\214 \320\262 UpStorage", nullptr));
         pushButton_4->setText(QCoreApplication::translate("MainWindow", "\320\222\320\276\320\271\321\202\320\270", nullptr));
         label_3->setText(QCoreApplication::translate("MainWindow", "\320\222\321\205\320\276\320\264 \320\262 \321\203\321\207\321\221\321\202\320\275\321\203\321\216 \320\267\320\260\320\277\320\270\321\201\321\214", nullptr));

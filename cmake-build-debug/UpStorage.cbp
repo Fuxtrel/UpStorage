@@ -137,6 +137,12 @@
 		<Unit filename="/home/alex/CLionProjects/UpStorage/cmake-build-debug/UpStorage_autogen/mocs_compilation.cpp">
 			<Option target="UpStorage"/>
 		</Unit>
+		<Unit filename="/home/alex/CLionProjects/UpStorage/customshadoweffect.cpp">
+			<Option target="UpStorage"/>
+		</Unit>
+		<Unit filename="/home/alex/CLionProjects/UpStorage/customshadoweffect.h">
+			<Option target="UpStorage"/>
+		</Unit>
 		<Unit filename="/home/alex/CLionProjects/UpStorage/fields_values.cpp">
 			<Option target="UpStorage"/>
 		</Unit>

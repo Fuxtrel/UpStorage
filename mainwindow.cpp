@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
+#include "customshadoweffect.h"
 
 
 MainWindow::MainWindow(QWidget *parent)
@@ -29,8 +30,30 @@ MainWindow::MainWindow(QWidget *parent)
     QFont lato_14(Lato, 14, QFont::Normal, false);
     //
 
+    //эффект тени
+    CustomShadowEffect *bodyShadow = new CustomShadowEffect();
+    bodyShadow->setBlurRadius(20.0);
+    bodyShadow->setDistance(3.0);
+    bodyShadow->setColor(QColor(0, 0, 0, 80));
+    ui->pushButton_4->setAutoFillBackground(true);
+    CustomShadowEffect *shadow[8];
+    for(int i = 0; i < 8; i++){
+        shadow[i] = new CustomShadowEffect();
+        shadow[i]->setBlurRadius(20.0);
+        shadow[i]->setDistance(3.0);
+        shadow[i]->setColor(QColor(0, 0, 0, 20));
+    }
 
-
+    ui->pushButton_4->setGraphicsEffect(shadow[0]);
+    ui->pushButton->setGraphicsEffect(shadow[1]);
+    ui->lineEdit->setGraphicsEffect(shadow[2]);
+    ui->lineEdit_2->setGraphicsEffect(shadow[3]);
+    ui->lineEdit_3->setGraphicsEffect(shadow[4]);
+    ui->checkBox->setGraphicsEffect(shadow[5]);
+    ui->lineEdit_5->setGraphicsEffect(shadow[6]);
+    ui->lineEdit_6->setGraphicsEffect(shadow[7]);
+    ui->checkBox->setFocusPolicy(Qt::NoFocus);
+    //эффект тени
 
     //фон из облачков на странице регистрации
     auto reg_clouds = new QSvgWidget(ui->widget_2);
@@ -67,13 +90,13 @@ MainWindow::MainWindow(QWidget *parent)
     //фон из облачков на странице входа
 
     //чел ты на странице регистрации
-    auto svgw = new QSvgWidget(ui->widget_2);
-    QString path =  + "../chelty.svg";
-    svgw->setGeometry(30,110,363, 400);
-    svgw->setStyleSheet("border-color:#64AEEA;"
+    auto man_on_cloud = new QSvgWidget(ui->widget_2);
+    QString man_on_cloud_path =  + "../pictures/reg_page/man_on_cloud.svg";
+    man_on_cloud->setGeometry(12,210,540, 405);
+    man_on_cloud->setStyleSheet("border-color:#64AEEA;"
                         "background-color:rgba(0, 0, 0, 0);"
                         "border-color:rgba(100, 174, 234, 0);");
-    svgw->load(path);
+    man_on_cloud->load(man_on_cloud_path);
 
     //логотип на сранице входа
     auto svgw_1 = new QSvgWidget(ui->widget_3);
