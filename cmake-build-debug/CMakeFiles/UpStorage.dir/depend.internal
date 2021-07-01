@@ -177,14 +177,12 @@ CMakeFiles/UpStorage.dir/UpStorage_autogen/mocs_compilation.cpp.o
  /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QGraphicsDropShadowEffect
  /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QGraphicsEffect
  /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QGridLayout
- /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QHBoxLayout
  /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QLabel
  /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QLayout
  /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QLineEdit
  /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QMainWindow
  /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QMenuBar
  /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QPushButton
- /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QSpacerItem
  /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QStackedWidget
  /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QStatusBar
  /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QVBoxLayout
@@ -428,14 +426,12 @@ CMakeFiles/UpStorage.dir/fields_values.cpp.o
  /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QCommandLinkButton
  /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QFormLayout
  /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QGridLayout
- /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QHBoxLayout
  /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QLabel
  /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QLayout
  /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QLineEdit
  /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QMainWindow
  /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QMenuBar
  /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QPushButton
- /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QSpacerItem
  /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QStackedWidget
  /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QStatusBar
  /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QVBoxLayout
@@ -640,14 +636,12 @@ CMakeFiles/UpStorage.dir/main.cpp.o
  /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QFormLayout
  /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QGraphicsDropShadowEffect
  /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QGridLayout
- /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QHBoxLayout
  /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QLabel
  /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QLayout
  /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QLineEdit
  /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QMainWindow
  /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QMenuBar
  /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QPushButton
- /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QSpacerItem
  /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QStackedWidget
  /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QStatusBar
  /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QVBoxLayout
@@ -852,14 +846,12 @@ CMakeFiles/UpStorage.dir/mainwindow.cpp.o
  /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QGraphicsDropShadowEffect
  /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QGraphicsEffect
  /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QGridLayout
- /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QHBoxLayout
  /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QLabel
  /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QLayout
  /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QLineEdit
  /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QMainWindow
  /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QMenuBar
  /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QPushButton
- /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QSpacerItem
  /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QStackedWidget
  /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QStatusBar
  /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QVBoxLayout

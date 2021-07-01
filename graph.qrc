@@ -1,22 +1,67 @@
 <RCC>
-    <qresource prefix="/picture/home_page">
-        <file>cmake-build-debug/pictures/home_page/all_files.svg</file>
-        <file>cmake-build-debug/pictures/home_page/ava.svg</file>
-        <file>cmake-build-debug/pictures/home_page/bell.svg</file>
-        <file>cmake-build-debug/pictures/home_page/delete.svg</file>
-        <file>cmake-build-debug/pictures/home_page/exit.svg</file>
-        <file>cmake-build-debug/pictures/home_page/favorites.svg</file>
-        <file>cmake-build-debug/pictures/home_page/filters.svg</file>
-        <file>cmake-build-debug/pictures/home_page/Folder.svg</file>
-        <file>cmake-build-debug/pictures/home_page/gear.svg</file>
-        <file>cmake-build-debug/pictures/home_page/logo_home.svg</file>
-        <file>cmake-build-debug/pictures/home_page/Lupa.svg</file>
-        <file>cmake-build-debug/pictures/home_page/premium.svg</file>
-        <file>cmake-build-debug/pictures/home_page/Rectangle 211.svg</file>
-        <file>cmake-build-debug/pictures/home_page/sale_place.svg</file>
-        <file>cmake-build-debug/pictures/home_page/settings.svg</file>
-        <file>cmake-build-debug/pictures/home_page/stats.svg</file>
-        <file>cmake-build-debug/pictures/home_page/Union_bottom.svg</file>
-        <file>cmake-build-debug/pictures/home_page/Union_top.svg</file>
+    <qresource prefix="/pictures/home_page">
+        <file>pictures/home_page/all_files.svg</file>
+        <file>pictures/home_page/ava.svg</file>
+        <file>pictures/home_page/bell.svg</file>
+        <file>pictures/home_page/delete.svg</file>
+        <file>pictures/home_page/exit.svg</file>
+        <file>pictures/home_page/favorites.svg</file>
+        <file>pictures/home_page/filters.svg</file>
+        <file>pictures/home_page/Folder.svg</file>
+        <file>pictures/home_page/gear.svg</file>
+        <file>pictures/home_page/logo_home.svg</file>
+        <file>pictures/home_page/Lupa.svg</file>
+        <file>pictures/home_page/premium.svg</file>
+        <file>pictures/home_page/Rectangle 211.svg</file>
+        <file>pictures/home_page/sale_place.svg</file>
+        <file>pictures/home_page/settings.svg</file>
+        <file>pictures/home_page/stats.svg</file>
+        <file>pictures/home_page/Union_bottom.svg</file>
+        <file>pictures/home_page/Union_top.svg</file>
+    </qresource>
+    <qresource prefix="/pictures/in_page">
+        <file>pictures/in_page/facebook.svg</file>
+        <file>pictures/in_page/google.svg</file>
+        <file>pictures/in_page/logo.svg</file>
+        <file>pictures/in_page/separator.svg</file>
+    </qresource>
+    <qresource prefix="/pictures/reg_page">
+        <file>pictures/reg_page/big_cloud.svg</file>
+        <file>pictures/reg_page/logo.svg</file>
+        <file>pictures/reg_page/man_on_cloud.svg</file>
+        <file>pictures/reg_page/man_on_cloud_r.svg</file>
+    </qresource>
+    <qresource prefix="/pictures/logo">
+        <file>pictures/logo/logo.svg</file>
+    </qresource>
+    <qresource prefix="/fonts/Lato">
+        <file>fonts/Lato/Lato-Black.ttf</file>
+        <file>fonts/Lato/Lato-BlackItalic.ttf</file>
+        <file>fonts/Lato/Lato-Bold.ttf</file>
+        <file>fonts/Lato/Lato-BoldItalic.ttf</file>
+        <file>fonts/Lato/Lato-Italic.ttf</file>
+        <file>fonts/Lato/Lato-Light.ttf</file>
+        <file>fonts/Lato/Lato-LightItalic.ttf</file>
+        <file>fonts/Lato/Lato-Regular.ttf</file>
+        <file>fonts/Lato/Lato-Thin.ttf</file>
+        <file>fonts/Lato/Lato-ThinItalic.ttf</file>
+        <file>fonts/Lato/OFL.txt</file>
+    </qresource>
+    <qresource prefix="/fonts/Nunito">
+        <file>fonts/Nunito/Nunito-Black.ttf</file>
+        <file>fonts/Nunito/Nunito-BlackItalic.ttf</file>
+        <file>fonts/Nunito/Nunito-Bold.ttf</file>
+        <file>fonts/Nunito/Nunito-BoldItalic.ttf</file>
+        <file>fonts/Nunito/Nunito-ExtraBold.ttf</file>
+        <file>fonts/Nunito/Nunito-ExtraBoldItalic.ttf</file>
+        <file>fonts/Nunito/Nunito-ExtraLight.ttf</file>
+        <file>fonts/Nunito/Nunito-ExtraLightItalic.ttf</file>
+        <file>fonts/Nunito/Nunito-Italic.ttf</file>
+        <file>fonts/Nunito/Nunito-Light.ttf</file>
+        <file>fonts/Nunito/Nunito-LightItalic.ttf</file>
+        <file>fonts/Nunito/Nunito-Regular.ttf</file>
+        <file>fonts/Nunito/Nunito-SemiBold.ttf</file>
+        <file>fonts/Nunito/Nunito-SemiBoldItalic.ttf</file>
+        <file>fonts/Nunito/OFL.txt</file>
     </qresource>
 </RCC>

@@ -38,12 +38,6 @@ QGraphicsDropShadowEffect
 QGraphicsEffect
 -
 
-/home/alex/CLionProjects/UpStorage/fields_values.cpp
-fields_values.h
-/home/alex/CLionProjects/UpStorage/fields_values.h
-./ui_mainwindow.h
-/home/alex/CLionProjects/UpStorage/ui_mainwindow.h
-
 /home/alex/CLionProjects/UpStorage/fields_values.h
 QMainWindow
 -
@@ -1602,10 +1596,6 @@ qgraphicseffect.h
 qgridlayout.h
 /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/qgridlayout.h
 
-/home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QHBoxLayout
-qboxlayout.h
-/home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/qboxlayout.h
-
 /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QLabel
 qlabel.h
 /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/qlabel.h
@@ -1629,10 +1619,6 @@ qmenubar.h
 /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QPushButton
 qpushbutton.h
 /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/qpushbutton.h
-
-/home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QSpacerItem
-qlayoutitem.h
-/home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/qlayoutitem.h
 
 /home/alex/Qt/5.15.2/gcc_64/include/QtWidgets/QStackedWidget
 qstackedwidget.h
@@ -1927,8 +1913,6 @@ QtWidgets/QFormLayout
 -
 QtWidgets/QGridLayout
 -
-QtWidgets/QHBoxLayout
--
 QtWidgets/QLabel
 -
 QtWidgets/QLineEdit
@@ -1938,8 +1922,6 @@ QtWidgets/QMainWindow
 QtWidgets/QMenuBar
 -
 QtWidgets/QPushButton
--
-QtWidgets/QSpacerItem
 -
 QtWidgets/QStackedWidget
 -
