@@ -78,7 +78,9 @@ MainWindow::MainWindow(QWidget *parent)
 
     //фото для аватарки
     auto avatar = new QSvgWidget(ui->widget_11);
-    QString path_avatar = ":/picture/home_page/cmake-build-debug/pictures/home_page/ava.svg";
+
+//    TODO: путь из соурс файла не работает, только в этом случае
+    QString path_avatar = "../pictures/home_page/ava.svg";
     avatar->setGeometry(328, 30, 100, 100);
     avatar->setStyleSheet(
             "border-color:rgba(100, 100, 100, 0);"
@@ -188,121 +190,171 @@ MainWindow::MainWindow(QWidget *parent)
     //надпись на странице входа
 
     //кнопка скрыть/показать пароль на странице входа
-    pushButton_18 = new QPushButton(ui->lineEdit_6);
-    pushButton_18->setObjectName("pushbutton_18");
-    pushButton_18->setGeometry(423, 14, 32, 32);
-    pushButton_18->setStyleSheet("border:0px;");
-    pushButton_18->setCheckable(true);
-    QIcon icon15;
-    isPressed = false;
-    icon15.addFile(QString::fromUtf8("../pictures/in_page/eye_.svg"), QSize(), QIcon::Normal, QIcon::Off);
-    pushButton_18->setIcon(icon15);
-    pushButton_18->setIconSize(QSize(32, 32));
 
-    ui->lineEdit_6->stackUnder(pushButton_18);
+        pushButton_18 = new QPushButton(ui->lineEdit_6);
+        pushButton_18->setObjectName("pushbutton_18");
+        pushButton_18->setGeometry(423, 14, 32, 32);
+        pushButton_18->setStyleSheet("border:0px;");
+        pushButton_18->setCheckable(true);
+        QIcon icon15;
+        isPressed = false;
+        icon15.addFile(QString::fromUtf8("../pictures/in_page/eye_.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        pushButton_18->setIcon(icon15);
+        pushButton_18->setIconSize(QSize(32, 32));
+        ui->lineEdit_6->stackUnder(pushButton_18);
+
     //кнопка скрыть/показать пароль на странице входа
 
     //кнопка скрыть/показать пароль на странице входа
-    pushButton_19 = new QPushButton(ui->lineEdit_3);
-    pushButton_19->setObjectName("pushbutton_19");
-    pushButton_19->setGeometry(423, 14, 32, 32);
-    pushButton_19->setStyleSheet("border:0px;");
-    pushButton_19->setCheckable(true);
-    QIcon icon16;
-    isPressed_1 = false;
-    icon16.addFile(QString::fromUtf8("../pictures/in_page/eye_.svg"), QSize(), QIcon::Normal, QIcon::Off);
-    pushButton_19->setIcon(icon15);
-    pushButton_19->setIconSize(QSize(32, 32));
 
-    ui->lineEdit_6->stackUnder(pushButton_18);
+        pushButton_19 = new QPushButton(ui->lineEdit_3);
+        pushButton_19->setObjectName("pushbutton_19");
+        pushButton_19->setGeometry(423, 14, 32, 32);
+        pushButton_19->setStyleSheet("border:0px;");
+        pushButton_19->setCheckable(true);
+        QIcon icon16;
+        isPressed_1 = false;
+        icon16.addFile(QString::fromUtf8("../pictures/in_page/eye_.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        pushButton_19->setIcon(icon16);
+        pushButton_19->setIconSize(QSize(32, 32));
+        ui->lineEdit_6->stackUnder(pushButton_18);
+
     //кнопка скрыть/показать пароль на странице входа
 
     //лабел ворнинга о неверных данных
-    label_12 = new QLabel(ui->widget_3);
-    label_12->setObjectName("label_12");
-    label_12->setGeometry(155,610,500,25);
-    label_12->setFont(lato_11);
+
+        label_12 = new QLabel(ui->widget_3);
+        label_12->setObjectName("label_12");
+        label_12->setGeometry(155, 610, 500, 25);
+        label_12->setFont(lato_11);
+
     //лабел ворнинга о неверных данных
 
     //значёк ворнинга на сранице входа
-    warning = new QSvgWidget(ui->widget_3);
-    QString warning_path = + "../pictures/in_page/worning.svg";
-    warning->setGeometry(120, 610, 25, 25);
-    warning->setStyleSheet("border-color:#64AEEA");
-    warning->setAutoFillBackground(true);
-    warning->setStyleSheet("border-color:rgba(0,0,0,0);");
-    warning->load(warning_path);
-    warning->hide();
+
+        warning = new QSvgWidget(ui->widget_3);
+        QString warning_path = +"../pictures/in_page/warning.svg";
+        warning->setGeometry(120, 610, 25, 25);
+        warning->setStyleSheet("border-color:#64AEEA");
+        warning->setAutoFillBackground(true);
+        warning->setStyleSheet("border-color:rgba(0,0,0,0);");
+        warning->load(warning_path);
+        warning->hide();
+
     //значёк ворнинга на сранице входа
 
-    //активация гиперссылок
-    ui->label_2->setTextInteractionFlags(Qt::LinksAccessibleByMouse);
-    ui->label_2->setOpenExternalLinks(false);
+    //значёк ворнинга 1 на сранице регистрации
+
+        warning_password = new QSvgWidget(ui->widget);
+        QString warning_password_path = "../pictures/in_page/warning.svg";
+        warning_password->setGeometry(680, 610, 25, 25);
+        warning_password->setStyleSheet("border-color:#64AEEA");
+        warning_password->setAutoFillBackground(true);
+        warning_password->setStyleSheet("border-color:rgba(0,0,0,0);");
+        warning_password->load(warning_password_path);
+        warning_password->hide();
+
+    //значёк ворнинга 1 на сранице регистрации
+
+    //значёк ворнинга 2 на сранице регистрации
+
+        warning_email = new QSvgWidget(ui->widget);
+        QString warning_email_path = +"../pictures/in_page/warning.svg";
+        warning_email->setGeometry(680, 580, 25, 25);
+        warning_email->setStyleSheet("border-color:#64AEEA");
+        warning_email->setAutoFillBackground(true);
+        warning_email->setStyleSheet("border-color:rgba(0,0,0,0);");
+        warning_email->load(warning_email_path);
+        warning_email->hide();
+
+    //значёк ворнинга 2 на сранице регистрации
+
     //активация гиперссылок
 
-    
-    connect(ui->pushButton_2, SIGNAL (clicked()), this, SLOT (on_pushButton_2_clicked()));
-    connect(ui->pushButton_3, SIGNAL (clicked()), this, SLOT (on_pushButton_3_clicked()));
-    connect(ui->commandLinkButton_2, SIGNAL (clicked()), this, SLOT (on_commandLinkButton_2()));
-    connect(ui->pushButton_5, SIGNAL (clicked()), this, SLOT (on_commandLinkButton_5()));
-    connect(ui->pushButton_6, SIGNAL (clicked()), this, SLOT (on_commandLinkButton_6()));
-    connect(ui->pushButton_8, SIGNAL (clicked()), this, SLOT (on_commandLinkButton_8()));
-    connect(ui->pushButton_17, SIGNAL (clicked()), this, SLOT (on_pushButton_17_clicked()));
-    connect(pushButton_18, SIGNAL (clicked()), this, SLOT (on_pushButton_18_clicked()));
-    connect(pushButton_19, SIGNAL (clicked()), this, SLOT (on_pushButton_19_clicked()));
-    connect(ui->label_2, SIGNAL (linkActivated(const QString &link)), this, SLOT (on_label_2_linkActivated(QString&link)));
+        ui->label_2->setTextInteractionFlags(Qt::LinksAccessibleByMouse);
+        ui->label_2->setOpenExternalLinks(false);
+
+    //активация гиперссылок
+
+    //ворнинг лабел на странице регистрации
+        warning_reg_email = new QLabel(ui->widget);
+        warning_reg_email->setObjectName("warning_reg_email");
+        warning_reg_email->setGeometry(715, 580, 400, 25);
+        warning_reg_email->setStyleSheet("border:0px");
+        warning_reg_email->setFont(lato_11);
+
+    //ворнинг лабел на странице регистрации
+
+    //ворнинг лабел на странице регистрации
+        warning_reg_pass = new QLabel(ui->widget);
+        warning_reg_pass->setObjectName("warning_reg_email");
+        warning_reg_pass->setGeometry(715, 610, 400, 25);
+        warning_reg_pass->setStyleSheet("border:0px");
+        warning_reg_pass->setFont(lato_11);
+
+    //ворнинг лабел на странице регистрации
+
+        connect(ui->pushButton_2, SIGNAL (clicked()), this, SLOT (on_pushButton_2_clicked()));
+        connect(ui->pushButton_3, SIGNAL (clicked()), this, SLOT (on_pushButton_3_clicked()));
+        connect(ui->commandLinkButton_2, SIGNAL (clicked()), this, SLOT (on_commandLinkButton_2()));
+        connect(ui->pushButton_5, SIGNAL (clicked()), this, SLOT (on_commandLinkButton_5()));
+        connect(ui->pushButton_6, SIGNAL (clicked()), this, SLOT (on_commandLinkButton_6()));
+        connect(ui->pushButton_8, SIGNAL (clicked()), this, SLOT (on_commandLinkButton_8()));
+        connect(ui->pushButton_17, SIGNAL (clicked()), this, SLOT (on_pushButton_17_clicked()));
+        connect(pushButton_18, SIGNAL (clicked()), this, SLOT (on_pushButton_18_clicked()));
+        connect(pushButton_19, SIGNAL (clicked()), this, SLOT (on_pushButton_19_clicked()));
+        connect(ui->label_2, SIGNAL (linkActivated(const QString &link)), this, SLOT (on_label_2_linkActivated(QString & link)));
+
 
     setMaximumHeight(780);
     setMaximumWidth(1280);
     ui->centralwidget->setGeometry(0, 0, 1280, 780);
-    ui->commandLinkButton->setFont(lato);
-    ui->commandLinkButton_3->setFont(lato);
-    ui->commandLinkButton_4->setFont(lato);
-    ui->commandLinkButton_5->setFont(lato);
-    ui->commandLinkButton_6->setFont(lato);
-    ui->commandLinkButton_7->setFont(lato);
-    ui->commandLinkButton_8->setFont(lato);
-    ui->commandLinkButton_10->setFont(lato);
-    ui->pushButton_9->setFont(lato);
-    ui->commandLinkButton_12->setFont(lato);
-    ui->commandLinkButton_13->setFont(lato);
-    ui->label->setFont(lato_21);
-    ui->label_2->setFont(lato_11);
-    ui->pushButton_2->setFont(lato_14);
-    ui->lineEdit->setFont(lato_14);
-    ui->lineEdit_2->setFont(lato_14);
-    ui->lineEdit_3->setFont(lato_14);
 
 
-    ui->label_18->setFont(lato);
-    ui->lineEdit_8->setFont(lato);
-    ui->commandLinkButton->setIconSize(QSize(26, 25));
-    ui->commandLinkButton_3->setIconSize(QSize(26, 25));
-    ui->commandLinkButton_4->setIconSize(QSize(26, 25));
-    ui->commandLinkButton_5->setIconSize(QSize(26, 25));
-    ui->commandLinkButton_6->setIconSize(QSize(26, 25));
-    ui->commandLinkButton_7->setIconSize(QSize(26, 25));
-    ui->commandLinkButton_8->setIconSize(QSize(26, 25));
-    ui->commandLinkButton_10->setIconSize(QSize(26, 25));
-    ui->commandLinkButton_12->setIconSize(QSize(26, 25));
-    ui->commandLinkButton_13->setIconSize(QSize(26, 25));
-    ui->label_19->setFont(lato_21);
-    ui->label_20->setFont(lato_13);
+        ui->commandLinkButton->setFont(lato);
+        ui->commandLinkButton_3->setFont(lato);
+        ui->commandLinkButton_4->setFont(lato);
+        ui->commandLinkButton_5->setFont(lato);
+        ui->commandLinkButton_6->setFont(lato);
+        ui->commandLinkButton_7->setFont(lato);
+        ui->commandLinkButton_8->setFont(lato);
+        ui->commandLinkButton_10->setFont(lato);
+        ui->pushButton_9->setFont(lato);
+        ui->commandLinkButton_12->setFont(lato);
+        ui->commandLinkButton_13->setFont(lato);
+        ui->label->setFont(lato_21);
+        ui->label_2->setFont(lato_11);
+        ui->pushButton_2->setFont(lato_14);
+        ui->lineEdit->setFont(lato_14);
+        ui->lineEdit_2->setFont(lato_14);
+        ui->lineEdit_3->setFont(lato_14);
+        ui->label_18->setFont(lato);
+        ui->lineEdit_8->setFont(lato);
+        ui->label_19->setFont(lato_21);
+        ui->label_20->setFont(lato_13);
+        ui->label_21->setFont(lato_19);
+        ui->label_22->setFont(lato_11);
+        ui->label_23->setFont(lato_11);
+        ui->label_24->setFont(nunito_70);
+        ui->label_26->setFont(lato_14);
+        ui->label_27->setFont(lato_14);
+        ui->label_28->setFont(nunito_70);
+        ui->label_29->setFont(lato_30);
+        ui->label_30->setFont(lato_30);
+        ui->pushButton_10->setFont(lato_16);
+        ui->pushButton_11->setFont(lato_16);
 
-    ui->label_21->setFont(lato_19);
-    ui->label_22->setFont(lato_11);
-    ui->label_23->setFont(lato_11);
-    ui->label_24->setFont(nunito_70);
-    ui->label_26->setFont(lato_14);
-    ui->label_27->setFont(lato_14);
-    ui->label_28->setFont(nunito_70);
-    ui->label_29->setFont(lato_30);
-    ui->label_30->setFont(lato_30);
 
-    ui->pushButton_10->setFont(lato_16);
-    ui->pushButton_11->setFont(lato_16);
-
-
+        ui->commandLinkButton->setIconSize(QSize(26, 25));
+        ui->commandLinkButton_3->setIconSize(QSize(26, 25));
+        ui->commandLinkButton_4->setIconSize(QSize(26, 25));
+        ui->commandLinkButton_5->setIconSize(QSize(26, 25));
+        ui->commandLinkButton_6->setIconSize(QSize(26, 25));
+        ui->commandLinkButton_7->setIconSize(QSize(26, 25));
+        ui->commandLinkButton_8->setIconSize(QSize(26, 25));
+        ui->commandLinkButton_10->setIconSize(QSize(26, 25));
+        ui->commandLinkButton_12->setIconSize(QSize(26, 25));
+        ui->commandLinkButton_13->setIconSize(QSize(26, 25));
 
 }
 
@@ -372,13 +424,12 @@ void MainWindow::on_pushButton_19_clicked() {
     pushButton_19->setIcon(icon16);
 }
 
-
 void MainWindow::on_commandLinkButton_2() {
     ui->stackedWidget->setCurrentIndex(2);
 }
 
 void MainWindow::on_pushButton_clicked() {
-    if (getRegValues()) {
+    if ((getRegValues()) && (ui->checkBox->checkState() == Qt::Checked)) {
         QNetworkAccessManager *mgr = new QNetworkAccessManager(this);
         const QUrl url(QStringLiteral("https://upstorage.net/api/auth/sign-up"));
         QNetworkRequest request(url);
@@ -407,8 +458,8 @@ void MainWindow::on_pushButton_clicked() {
 }
 
 void MainWindow::on_pushButton_4_clicked() {
-    if ((getSignInValues()) && (ui->checkBox->checkState() == Qt::Checked)) {
-        QNetworkAccessManager *mgr = new QNetworkAccessManager(this);
+    if (getSignInValues()) {
+        /*QNetworkAccessManager *mgr = new QNetworkAccessManager(this);
         const QUrl url(QStringLiteral("https://upstorage.net/api/auth/sign-in"));
         QNetworkRequest request(url);
         request.setHeader(QNetworkRequest::ContentTypeHeader, "application/json");
@@ -430,14 +481,13 @@ void MainWindow::on_pushButton_4_clicked() {
                 qDebug() << err;
             }
             reply->deleteLater();
-        });
+        });*/
         ui->stackedWidget->setCurrentIndex(4);
         if (ui->stackedWidget->currentIndex() == 4) {
             setMaximumWidth(1680);
             setMaximumHeight(947);
             setMinimumWidth(1680);
             setMinimumHeight(967);
-
         }
     }
 }

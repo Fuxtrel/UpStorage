@@ -6,32 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/alex/CLionProjects/UpStorage/cmake-build-debug/UpStorage_autogen/EWIEGA46WW/moc_customshadoweffect.cpp
-memory
--
-../../../customshadoweffect.h
-/home/alex/CLionProjects/UpStorage/customshadoweffect.h
-QtCore/qbytearray.h
--
-QtCore/qmetatype.h
--
-
-/home/alex/CLionProjects/UpStorage/cmake-build-debug/UpStorage_autogen/EWIEGA46WW/moc_mainwindow.cpp
-memory
--
-../../../mainwindow.h
-/home/alex/CLionProjects/UpStorage/mainwindow.h
-QtCore/qbytearray.h
--
-QtCore/qmetatype.h
--
-
-/home/alex/CLionProjects/UpStorage/cmake-build-debug/UpStorage_autogen/mocs_compilation.cpp
-EWIEGA46WW/moc_customshadoweffect.cpp
-/home/alex/CLionProjects/UpStorage/cmake-build-debug/UpStorage_autogen/EWIEGA46WW/moc_customshadoweffect.cpp
-EWIEGA46WW/moc_mainwindow.cpp
-/home/alex/CLionProjects/UpStorage/cmake-build-debug/UpStorage_autogen/EWIEGA46WW/moc_mainwindow.cpp
-
 /home/alex/CLionProjects/UpStorage/customshadoweffect.h
 QGraphicsDropShadowEffect
 -
@@ -45,14 +19,6 @@ QDebug
 -
 
 /home/alex/CLionProjects/UpStorage/graphics.h
-
-/home/alex/CLionProjects/UpStorage/main.cpp
-mainwindow.h
-/home/alex/CLionProjects/UpStorage/mainwindow.h
-fields_values.h
-/home/alex/CLionProjects/UpStorage/fields_values.h
-QApplication
--
 
 /home/alex/CLionProjects/UpStorage/mainwindow.cpp
 mainwindow.h

@@ -37,7 +37,12 @@ public:
     QPushButton *pushButton_18;
     QPushButton *pushButton_19;
     QLabel *label_12;
+    QLabel *warning_reg_email;
+    QLabel *warning_reg_pass;
     QSvgWidget *warning;
+    QSvgWidget *warning_email;
+    QSvgWidget *warning_password;
+
 
 private slots:
     void on_pushButton_clicked();
